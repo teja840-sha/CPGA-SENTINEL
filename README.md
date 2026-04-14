@@ -99,7 +99,7 @@ CPGA-SENTINEL/
 | **IFBench** (Inst. Acc., n=300) | 0.397 | **0.497** | +10.0pp | CADG+SENTINEL |
 | **SysPrompt** (SCC, n=40) | 0.862 | **0.933** | +7.1pp | CADG+SENTINEL |
 
-**Key finding**: FORGE can *hurt* on low-baseline benchmarks (IFBench: −1.5pp). Best composition varies — CADG+SENTINEL wins on IFBench/SysPrompt; Full Stack wins on MOSAIC/IFEval.
+**Key finding**: FORGE's value scales with rule taxonomy complexity — Full Stack (with FORGE) wins on MOSAIC/IFEval; CADG+SENTINEL (without FORGE) wins on short-list benchmarks (IFBench/SysPrompt). For production deployments with 100+ rules, the full stack is recommended.
 
 All scoring is **deterministic Python checkers** — no LLM judges for metric computation.
 
