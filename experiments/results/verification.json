@@ -1,0 +1,163 @@
+{
+  "mosaic": {
+    "baseline": {
+      "tasks": 200,
+      "mean_scc": 0.7583
+    },
+    "cadg": {
+      "tasks": 200,
+      "mean_scc": 0.7888
+    },
+    "cadg_sentinel": {
+      "tasks": 200,
+      "mean_scc": 0.8187
+    },
+    "forge": {
+      "tasks": 200,
+      "mean_scc": 0.6995
+    },
+    "forge_cadg": {
+      "tasks": 200,
+      "mean_scc": 0.7857
+    },
+    "forge_sentinel": {
+      "tasks": 200,
+      "mean_scc": 0.7556
+    },
+    "full_stack": {
+      "tasks": 200,
+      "mean_scc": 0.8222
+    },
+    "retry_feedback": {
+      "tasks": 200,
+      "mean_scc": 0.7632
+    },
+    "sentinel": {
+      "tasks": 200,
+      "mean_scc": 0.7961
+    }
+  },
+  "ifeval": {
+    "baseline": {
+      "tasks": 541,
+      "mean_instruction_accuracy": 0.7985,
+      "prompt_accuracy": 0.7172
+    },
+    "cadg": {
+      "tasks": 541,
+      "mean_instruction_accuracy": 0.8204,
+      "prompt_accuracy": 0.7394
+    },
+    "cadg_sentinel": {
+      "tasks": 541,
+      "mean_instruction_accuracy": 0.8527,
+      "prompt_accuracy": 0.7874
+    },
+    "forge": {
+      "tasks": 541,
+      "mean_instruction_accuracy": 0.7985,
+      "prompt_accuracy": 0.7135
+    },
+    "forge_cadg": {
+      "tasks": 541,
+      "mean_instruction_accuracy": 0.8213,
+      "prompt_accuracy": 0.7394
+    },
+    "forge_sentinel": {
+      "tasks": 541,
+      "mean_instruction_accuracy": 0.8494,
+      "prompt_accuracy": 0.78
+    },
+    "full_stack": {
+      "tasks": 541,
+      "mean_instruction_accuracy": 0.8604,
+      "prompt_accuracy": 0.7948
+    },
+    "retry_feedback": {
+      "tasks": 541,
+      "mean_instruction_accuracy": 0.8287,
+      "prompt_accuracy": 0.7523
+    },
+    "sentinel": {
+      "tasks": 541,
+      "mean_instruction_accuracy": 0.8457,
+      "prompt_accuracy": 0.7782
+    }
+  },
+  "ifbench": {
+    "baseline": {
+      "tasks": 300,
+      "mean_instruction_accuracy": 0.3967
+    },
+    "cadg": {
+      "tasks": 300,
+      "mean_instruction_accuracy": 0.4767
+    },
+    "cadg_sentinel": {
+      "tasks": 300,
+      "mean_instruction_accuracy": 0.4967
+    },
+    "forge": {
+      "tasks": 300,
+      "mean_instruction_accuracy": 0.3817
+    },
+    "forge_cadg": {
+      "tasks": 300,
+      "mean_instruction_accuracy": 0.4867
+    },
+    "forge_sentinel": {
+      "tasks": 300,
+      "mean_instruction_accuracy": 0.4283
+    },
+    "full_stack": {
+      "tasks": 300,
+      "mean_instruction_accuracy": 0.4783
+    },
+    "retry_feedback": {
+      "tasks": 300,
+      "mean_instruction_accuracy": 0.48
+    },
+    "sentinel": {
+      "tasks": 300,
+      "mean_instruction_accuracy": 0.4183
+    }
+  },
+  "sysprompt": {
+    "baseline": {
+      "tasks": 40,
+      "mean_scc": 0.8624
+    },
+    "cadg": {
+      "tasks": 40,
+      "mean_scc": 0.8972
+    },
+    "cadg_sentinel": {
+      "tasks": 40,
+      "mean_scc": 0.933
+    },
+    "forge": {
+      "tasks": 40,
+      "mean_scc": 0.869
+    },
+    "forge_cadg": {
+      "tasks": 40,
+      "mean_scc": 0.8039
+    },
+    "forge_sentinel": {
+      "tasks": 40,
+      "mean_scc": 0.9285
+    },
+    "full_stack": {
+      "tasks": 40,
+      "mean_scc": 0.9098
+    },
+    "retry_feedback": {
+      "tasks": 40,
+      "mean_scc": 0.8935
+    },
+    "sentinel": {
+      "tasks": 40,
+      "mean_scc": 0.9257
+    }
+  }
+}

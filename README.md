@@ -92,13 +92,12 @@ CPGA-SENTINEL/
 
 ## Key Results
 
-| Benchmark | Baseline | Full Stack | Δ |
-|-----------|----------|-----------|---|
-| **MOSAIC** (SCC) | 0.758 | **0.822** | +6.4pp |
-| **IFEval** (Inst. Acc.) | 0.820 | **0.878** | +5.8pp |
-| **IFBench** (Acc.) | 0.604 | **0.696** | +9.2pp |
-| **SysPrompt** (Compliance) | 0.682 | **0.759** | +7.6pp |
-| **FollowBench** (HSR) | 0.671 | **0.743** | +7.2pp |
+| Benchmark | Baseline | Best Composition | Δ | Best Condition |
+|-----------|----------|-----------------|---|----------------|
+| **MOSAIC** (SCC, n=200) | 0.758 | **0.822** | +6.4pp | Full Stack |
+| **IFEval** (Inst. Acc., n=541) | 0.799 | **0.860** | +6.2pp | Full Stack |
+| **IFBench** (Inst. Acc., n=300) | 0.397 | **0.489** | +9.2pp | CADG+SENTINEL |
+| **SysPrompt** (SCC, n=40) | 0.862 | **0.933** | +7.1pp | CADG+SENTINEL |
 
 All scoring is **deterministic Python checkers** — no LLM judges for metric computation.
 
