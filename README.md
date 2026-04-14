@@ -1,89 +1,122 @@
-# CPGA+SENTINEL: Context-Partitioned Generic Assembly with Swarm-External Enforcement
+# CPGA+SENTINEL Experiment Suite
 
-**Overcoming LLM Context Degradation in Instruction-Following Tasks**
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fteja840-sha%2FCPGA-SENTINEL&label=Visitors&countColor=%23263759)
 
-## Abstract
+> Reproducible experiments for **"Context-Partitioned Generic Assembly with Swarm-External Enforcement for Overcoming LLM Context Degradation"**
 
-Large Language Models lose instruction-following compliance as prompt context grows — a consequence of finite softmax attention. CPGA+SENTINEL addresses this through:
+## What This Repo Contains
 
-1. **FORGE** (Filtered Orchestration for Rule-Governed Execution) — classifies each context item into the cheapest reliable enforcement layer (token mask, compiled checker, residual prompt, or post-generation judge)
-2. **CADG** (Constraint-Aware Diverse Generation) — permutes constraint order across N candidates to de-correlate position-bias failures
-3. **SENTINEL** swarm — enforces rules externally via independent per-rule agents across four tiers, removing enforcement context from the LLM prompt entirely
+Everything needed to reproduce the benchmark results from the paper:
 
-The full stack achieves **+6.4pp** on MOSAIC, **+7.6pp** on SysPrompt, **+5.8pp** on IFEval, and **+14.3pp** in production deployment over baselines.
+- **Experiment harness** — LLM client wrappers, cost tracking, scoring primitives
+- **CPGA method implementations** — FORGE classifier, CADG permutation, SENTINEL swarm
+- **6 benchmark adapters** — MOSAIC, IFEval, IFBench, FollowBench, SysPrompt, ToolSelection
+- **52 result JSONs** — raw results for all conditions across all benchmarks
+- **Bootstrap CI analysis** — statistical significance testing
+
+## Quick Start
+
+```bash
+git clone https://github.com/teja840-sha/CPGA-SENTINEL.git
+cd CPGA-SENTINEL
+
+pip install -r experiments/requirements.txt
+
+export ANTHROPIC_API_KEY=sk-ant-...
+export OPENAI_API_KEY=sk-...
+```
+
+### Run Experiments
+
+```bash
+# Dry run (no API calls — validates the pipeline)
+python experiments/run_benchmarks.py --dry-run
+
+# Run MOSAIC with all conditions
+python experiments/run_benchmarks.py -b mosaic -c all
+
+# Run IFEval baseline only (first 50 tasks)
+python experiments/run_benchmarks.py -b ifeval -c baseline --max-tasks 50
+
+# Run everything
+python experiments/run_benchmarks.py -b all -c all
+
+# Bootstrap confidence intervals
+python experiments/analyze_bootstrap.py
+```
 
 ## Repository Structure
 
 ```
 CPGA-SENTINEL/
-├── paper/
-│   ├── CPGA_SENTINEL_PUBLISH_v4.html   # Full paper
-│   ├── BENCHMARK_RESULTS.md            # Results summary
-│   ├── fig1_architecture.png           # Architecture diagram
-│   └── fig2_forge.png                  # FORGE protocol diagram
-├── config/
-│   └── config.yaml                     # API configuration template
 ├── experiments/
-│   ├── cpga_harness.py                 # Main experiment harness
-│   ├── cpga_methods.py                 # CPGA method implementations
-│   ├── run_benchmarks.py               # Benchmark runner
-│   ├── run_all_missing.py              # Run missing conditions
-│   ├── extract_results.py              # Result extraction
-│   ├── analyze_bootstrap.py            # Bootstrap CI analysis
-│   ├── requirements.txt                # Python dependencies
-│   ├── adapters/                       # Benchmark adapters
-│   │   ├── ifeval_adapter.py
-│   │   ├── ifbench_adapter.py
-│   │   ├── mosaic_adapter.py
-│   │   ├── followbench_adapter.py
-│   │   ├── system_prompt_adapter.py
-│   │   └── tool_selection_adapter.py
-│   └── results/                        # Raw result JSONs (52 files)
+│   ├── cpga_harness.py            # LLM client, cost tracking, scoring
+│   ├── cpga_methods.py            # FORGE, CADG, SENTINEL implementations
+│   ├── run_benchmarks.py          # CLI orchestrator
+│   ├── run_all_missing.py         # Fill in missing conditions
+│   ├── extract_results.py         # Result extraction utilities
+│   ├── analyze_bootstrap.py       # Bootstrap CI analysis
+│   ├── requirements.txt           # Python dependencies
+│   ├── README.md                  # Detailed experiment documentation
+│   ├── adapters/
+│   │   ├── mosaic_adapter.py      # 21-constraint library
+│   │   ├── ifeval_adapter.py      # 25 instruction checkers
+│   │   ├── ifbench_adapter.py     # 58 constraint types
+│   │   ├── followbench_adapter.py # Multi-level constraint ladder
+│   │   ├── system_prompt_adapter.py  # System prompt compliance
+│   │   └── tool_selection_adapter.py # Tool selection accuracy
+│   └── results/                   # 52 raw result JSONs
+│       ├── mosaic_*.json
+│       ├── ifeval_*.json
+│       ├── ifbench_*.json
+│       ├── followbench_*.json
+│       ├── sysprompt_*.json
+│       ├── toolsel_*.json
+│       └── summary.json
 └── README.md
 ```
 
-## Quick Start
+## Experimental Conditions
 
-```bash
-# Install dependencies
-pip install -r experiments/requirements.txt
-
-# Set API keys
-export ANTHROPIC_API_KEY=your_key
-export OPENAI_API_KEY=your_key
-
-# Run all experiments
-python experiments/run_benchmarks.py --all
-
-# Analyze results with bootstrap CIs
-python experiments/analyze_bootstrap.py
-```
-
-## Benchmarks
-
-| Benchmark | Source | Tasks |
-|-----------|--------|-------|
-| IFEval | Zhou et al. (2023) | 541 |
-| IFBench | Allen AI (2025) | 58 constraint types |
-| MOSAIC | EACL 2026 | Multi-constraint |
-| FollowBench | Multi-level | 5 difficulty levels |
-| SysPrompt | Custom (released here) | System prompt compliance |
+| Condition | Description |
+|-----------|-------------|
+| **Baseline** | All constraints in prompt → generate → score |
+| **FORGE** | Classify constraints by layer, remove Layer 0/1, generate with residual only |
+| **CADG** | Permute constraint order across N candidates → score → select best |
+| **SENTINEL** | Generate → post-gen Tier 2/3/4 checking + repair |
+| **FORGE+CADG** | FORGE filtering + CADG permutation |
+| **FORGE+SENTINEL** | FORGE filtering + SENTINEL enforcement |
+| **CADG+SENTINEL** | CADG permutation + SENTINEL enforcement |
+| **Full Stack** | FORGE + CADG + SENTINEL composed |
+| **Retry-Feedback** | Strong baseline: retry with error feedback (up to 3 attempts) |
 
 ## Key Results
 
-| Condition | MOSAIC SCC | IFEval Inst. | IFBench | SysPrompt |
-|-----------|-----------|-------------|---------|-----------|
-| Baseline | 0.758 | 0.820 | 0.604 | 0.682 |
-| Full Stack | **0.822** | **0.878** | **0.696** | **0.759** |
-| Δ | +6.4pp | +5.8pp | +9.2pp | +7.6pp |
+| Benchmark | Baseline | Full Stack | Δ |
+|-----------|----------|-----------|---|
+| **MOSAIC** (SCC) | 0.758 | **0.822** | +6.4pp |
+| **IFEval** (Inst. Acc.) | 0.820 | **0.878** | +5.8pp |
+| **IFBench** (Acc.) | 0.604 | **0.696** | +9.2pp |
+| **SysPrompt** (Compliance) | 0.682 | **0.759** | +7.6pp |
+| **FollowBench** (HSR) | 0.671 | **0.743** | +7.2pp |
+
+All scoring is **deterministic Python checkers** — no LLM judges for metric computation.
+
+## Design Principles
+
+1. **Deterministic scoring only** — all check functions are pure Python (regex, counts, AST parsers). Reproducible without API calls for scoring.
+2. **Real API calls for generation** — uses Claude Opus 4.6 and GPT-5.4 via standard APIs.
+3. **Modular adapters** — each benchmark is a self-contained adapter; add new benchmarks by implementing the adapter interface.
+4. **Full cost tracking** — every run logs token counts, API calls, and dollar costs.
 
 ## Citation
 
 ```bibtex
 @article{cpga_sentinel_2026,
-  title={Context-Partitioned Generic Assembly with Swarm-External Enforcement for Overcoming LLM Context Degradation},
+  title={Context-Partitioned Generic Assembly with Swarm-External Enforcement
+         for Overcoming LLM Context Degradation},
   year={2026},
-  note={Preprint}
+  url={https://github.com/teja840-sha/CPGA-SENTINEL}
 }
 ```
 
