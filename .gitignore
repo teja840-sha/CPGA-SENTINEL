@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+*.pdf
+experiments/CPGA_SENTINEL_PUBLISH_v4.html
+experiments/repos/

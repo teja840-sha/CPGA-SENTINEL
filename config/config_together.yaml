@@ -1,0 +1,15 @@
+# Together AI — Llama 3.3 70B (open-weight replication)
+# Get API key: https://api.together.xyz/
+openai:
+  api_key: ${OPENAI_API_KEY}
+  model: meta-llama/Llama-3.3-70B-Instruct-Turbo
+  base_url: https://api.together.xyz/v1
+
+experiment:
+  seed: 42
+  tasks_per_condition: 15
+  cadg_candidates: 5
+  constraint_counts: [5, 10, 15, 20]
+  max_tokens: 4096
+  retry_max_rounds: 2
+  budget_limit_usd: 50.0

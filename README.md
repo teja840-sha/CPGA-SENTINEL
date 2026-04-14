@@ -102,12 +102,44 @@ CPGA-SENTINEL/
 
 All scoring is **deterministic Python checkers** — no LLM judges for metric computation.
 
+## Reproducibility Protocol
+
+### 1. Verify scores without API calls
+The `results/` directory contains raw LLM outputs for every task. Re-run scoring locally:
+```bash
+python experiments/verify_cached.py   # re-scores all cached outputs, compares to reported numbers
+```
+
+### 2. Run with open-weight models
+The harness works with any OpenAI-compatible endpoint:
+```bash
+# Together AI (Llama 3.3 70B)
+export OPENAI_API_KEY=your-together-key
+python experiments/run_benchmarks.py -b mosaic -c baseline --provider openai \
+  --config config/config_together.yaml
+
+# Local vLLM
+python experiments/run_benchmarks.py -b ifeval -c all --provider openai \
+  --config config/config_vllm.yaml
+```
+
+### 3. Cost to reproduce
+| Scope | API Cost | Time |
+|-------|----------|------|
+| Subset (baseline + full_stack, MOSAIC + IFEval) | ~$30 | ~2 hrs |
+| Full (9 conditions × 4 benchmarks) | ~$200 | ~8 hrs |
+| Open-weight (vLLM on 1× A100) | $0 API | ~4 hrs |
+
+### 4. Open-weight projections
+Published IFEval baselines for open-weight models (Llama 3.1 70B: ~0.72; Mistral Large: ~0.74) are 3–8pp below the Claude Opus 4.6 baseline (0.799). Because CPGA+SENTINEL gains are architectural (reducing context competition, enforcing externally), we expect comparable relative improvement. Open-weight results planned for v2.
+
 ## Design Principles
 
 1. **Deterministic scoring only** — all check functions are pure Python (regex, counts, AST parsers). Reproducible without API calls for scoring.
-2. **Real API calls for generation** — uses Claude Opus 4.6 and GPT-5.4 via standard APIs.
+2. **Real API calls for generation** — uses Claude Opus 4.6 and GPT-5.4 via standard APIs. Provider-agnostic: works with any OpenAI-compatible endpoint.
 3. **Modular adapters** — each benchmark is a self-contained adapter; add new benchmarks by implementing the adapter interface.
 4. **Full cost tracking** — every run logs token counts, API calls, and dollar costs.
+5. **Cached outputs included** — all 52 result files include raw LLM responses for score verification without API access.
 
 ## Citation
 

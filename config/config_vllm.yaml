@@ -1,0 +1,15 @@
+# Local vLLM server (open-weight, zero API cost)
+# Start server: vllm serve meta-llama/Llama-3.3-70B-Instruct --port 8000
+openai:
+  api_key: not-needed
+  model: meta-llama/Llama-3.3-70B-Instruct
+  base_url: http://localhost:8000/v1
+
+experiment:
+  seed: 42
+  tasks_per_condition: 15
+  cadg_candidates: 5
+  constraint_counts: [5, 10, 15, 20]
+  max_tokens: 4096
+  retry_max_rounds: 2
+  budget_limit_usd: 99999.0

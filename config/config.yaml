@@ -1,0 +1,17 @@
+# Default config — Anthropic Claude Opus 4.6
+anthropic:
+  api_key: ${ANTHROPIC_API_KEY}
+  model: claude-opus-4-6
+
+openai:
+  api_key: ${OPENAI_API_KEY}
+  model: gpt-5.4
+
+experiment:
+  seed: 42
+  tasks_per_condition: 15
+  cadg_candidates: 5
+  constraint_counts: [5, 10, 15, 20]
+  max_tokens: 4096
+  retry_max_rounds: 2
+  budget_limit_usd: 250.0
