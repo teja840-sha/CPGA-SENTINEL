@@ -1,0 +1,424 @@
+{
+  "benchmark": "toolsel",
+  "condition": "baseline",
+  "timestamp": "2026-04-13T15:57:17",
+  "n_results": 52,
+  "results": [
+    {
+      "task_id": "toolsel_10t_0",
+      "condition": "baseline",
+      "n_tools": 10,
+      "correct": true,
+      "correct_tool": "get_weather",
+      "correct_position": 1
+    },
+    {
+      "task_id": "toolsel_10t_1",
+      "condition": "baseline",
+      "n_tools": 10,
+      "correct": true,
+      "correct_tool": "send_email",
+      "correct_position": 2
+    },
+    {
+      "task_id": "toolsel_10t_2",
+      "condition": "baseline",
+      "n_tools": 10,
+      "correct": true,
+      "correct_tool": "convert_currency",
+      "correct_position": 9
+    },
+    {
+      "task_id": "toolsel_10t_4",
+      "condition": "baseline",
+      "n_tools": 10,
+      "correct": true,
+      "correct_tool": "get_stock_price",
+      "correct_position": 6
+    },
+    {
+      "task_id": "toolsel_10t_6",
+      "condition": "baseline",
+      "n_tools": 10,
+      "correct": true,
+      "correct_tool": "translate_text",
+      "correct_position": 4
+    },
+    {
+      "task_id": "toolsel_10t_11",
+      "condition": "baseline",
+      "n_tools": 10,
+      "correct": true,
+      "correct_tool": "calculate",
+      "correct_position": 5
+    },
+    {
+      "task_id": "toolsel_10t_12",
+      "condition": "baseline",
+      "n_tools": 10,
+      "correct": true,
+      "correct_tool": "set_reminder",
+      "correct_position": 7
+    },
+    {
+      "task_id": "toolsel_10t_13",
+      "condition": "baseline",
+      "n_tools": 10,
+      "correct": true,
+      "correct_tool": "summarize_text",
+      "correct_position": 8
+    },
+    {
+      "task_id": "toolsel_15t_0",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "get_weather",
+      "correct_position": 1
+    },
+    {
+      "task_id": "toolsel_15t_1",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "send_email",
+      "correct_position": 2
+    },
+    {
+      "task_id": "toolsel_15t_2",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "convert_currency",
+      "correct_position": 9
+    },
+    {
+      "task_id": "toolsel_15t_4",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "get_stock_price",
+      "correct_position": 6
+    },
+    {
+      "task_id": "toolsel_15t_6",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "translate_text",
+      "correct_position": 4
+    },
+    {
+      "task_id": "toolsel_15t_7",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "check_flight_status",
+      "correct_position": 12
+    },
+    {
+      "task_id": "toolsel_15t_11",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "calculate",
+      "correct_position": 5
+    },
+    {
+      "task_id": "toolsel_15t_12",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "set_reminder",
+      "correct_position": 7
+    },
+    {
+      "task_id": "toolsel_15t_13",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "summarize_text",
+      "correct_position": 8
+    },
+    {
+      "task_id": "toolsel_15t_16",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "get_directions",
+      "correct_position": 10
+    },
+    {
+      "task_id": "toolsel_15t_17",
+      "condition": "baseline",
+      "n_tools": 15,
+      "correct": true,
+      "correct_tool": "book_restaurant",
+      "correct_position": 11
+    },
+    {
+      "task_id": "toolsel_20t_0",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "get_weather",
+      "correct_position": 1
+    },
+    {
+      "task_id": "toolsel_20t_1",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "send_email",
+      "correct_position": 2
+    },
+    {
+      "task_id": "toolsel_20t_2",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "convert_currency",
+      "correct_position": 9
+    },
+    {
+      "task_id": "toolsel_20t_3",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "find_nearby",
+      "correct_position": 17
+    },
+    {
+      "task_id": "toolsel_20t_4",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "get_stock_price",
+      "correct_position": 6
+    },
+    {
+      "task_id": "toolsel_20t_6",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "translate_text",
+      "correct_position": 4
+    },
+    {
+      "task_id": "toolsel_20t_7",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "check_flight_status",
+      "correct_position": 12
+    },
+    {
+      "task_id": "toolsel_20t_10",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "manage_todo",
+      "correct_position": 18
+    },
+    {
+      "task_id": "toolsel_20t_11",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "calculate",
+      "correct_position": 5
+    },
+    {
+      "task_id": "toolsel_20t_12",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "set_reminder",
+      "correct_position": 7
+    },
+    {
+      "task_id": "toolsel_20t_13",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "summarize_text",
+      "correct_position": 8
+    },
+    {
+      "task_id": "toolsel_20t_16",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "get_directions",
+      "correct_position": 10
+    },
+    {
+      "task_id": "toolsel_20t_17",
+      "condition": "baseline",
+      "n_tools": 20,
+      "correct": true,
+      "correct_tool": "book_restaurant",
+      "correct_position": 11
+    },
+    {
+      "task_id": "toolsel_30t_0",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "get_weather",
+      "correct_position": 1
+    },
+    {
+      "task_id": "toolsel_30t_1",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "send_email",
+      "correct_position": 2
+    },
+    {
+      "task_id": "toolsel_30t_2",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "convert_currency",
+      "correct_position": 9
+    },
+    {
+      "task_id": "toolsel_30t_3",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "find_nearby",
+      "correct_position": 17
+    },
+    {
+      "task_id": "toolsel_30t_4",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "get_stock_price",
+      "correct_position": 6
+    },
+    {
+      "task_id": "toolsel_30t_5",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "schedule_meeting",
+      "correct_position": 24
+    },
+    {
+      "task_id": "toolsel_30t_6",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "translate_text",
+      "correct_position": 4
+    },
+    {
+      "task_id": "toolsel_30t_7",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "check_flight_status",
+      "correct_position": 12
+    },
+    {
+      "task_id": "toolsel_30t_8",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "create_invoice",
+      "correct_position": 26
+    },
+    {
+      "task_id": "toolsel_30t_9",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "track_package",
+      "correct_position": 27
+    },
+    {
+      "task_id": "toolsel_30t_10",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "manage_todo",
+      "correct_position": 18
+    },
+    {
+      "task_id": "toolsel_30t_11",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "calculate",
+      "correct_position": 5
+    },
+    {
+      "task_id": "toolsel_30t_12",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "set_reminder",
+      "correct_position": 7
+    },
+    {
+      "task_id": "toolsel_30t_13",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "summarize_text",
+      "correct_position": 8
+    },
+    {
+      "task_id": "toolsel_30t_14",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "backup_data",
+      "correct_position": 29
+    },
+    {
+      "task_id": "toolsel_30t_15",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "convert_units",
+      "correct_position": 28
+    },
+    {
+      "task_id": "toolsel_30t_16",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "get_directions",
+      "correct_position": 10
+    },
+    {
+      "task_id": "toolsel_30t_17",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "book_restaurant",
+      "correct_position": 11
+    },
+    {
+      "task_id": "toolsel_30t_18",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "run_diagnostic",
+      "correct_position": 25
+    },
+    {
+      "task_id": "toolsel_30t_19",
+      "condition": "baseline",
+      "n_tools": 30,
+      "correct": true,
+      "correct_tool": "generate_code",
+      "correct_position": 20
+    }
+  ]
+}

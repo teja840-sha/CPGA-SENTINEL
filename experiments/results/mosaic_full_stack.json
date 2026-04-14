@@ -1,0 +1,4408 @@
+{
+  "benchmark": "mosaic",
+  "condition": "full_stack",
+  "timestamp": "2026-04-13T04:54:13",
+  "n_results": 200,
+  "results": [
+    {
+      "task_id": "mosaic_real_3",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_4",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 0,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_9",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 0,
+          "1": 1,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_11",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_14",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_26",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_32",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_36",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 0,
+          "1": 1,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_37",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_39",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_46",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_51",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_53",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_55",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_59",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_61",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 0,
+          "1": 1,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_68",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_74",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_80",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_83",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_87",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.8,
+      "satisfied": 8,
+      "total_checkable": 8,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_94",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7777777777777778,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_104",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_111",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_123",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 9,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_127",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_130",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_131",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_150",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_161",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_174",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_192",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_204",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_211",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_216",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 9,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_219",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_220",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_224",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_232",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_243",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.7692307692307693,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_256",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 4
+      }
+    },
+    {
+      "task_id": "mosaic_real_259",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_265",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_269",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_272",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_291",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.6,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 4
+      }
+    },
+    {
+      "task_id": "mosaic_real_295",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_308",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_314",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_316",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_323",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_327",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_330",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_331",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 4,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_334",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_349",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 0,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_371",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_373",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_376",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_379",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6153846153846154,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.75,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_386",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_388",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_392",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_393",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 9,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_394",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_398",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_400",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_402",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_409",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_410",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_411",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_417",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_418",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 9,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_456",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_462",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6153846153846154,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.75,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_469",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_470",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_474",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_475",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 0,
+          "1": 1,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_480",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_487",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_495",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_497",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 0,
+          "1": 1,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_499",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_515",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_523",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_527",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.875,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 8,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_535",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_536",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_537",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_546",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_548",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 0,
+          "1": 1,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_558",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_566",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_567",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_572",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_579",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_581",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_584",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 0,
+          "1": 1,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_590",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 5,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 8,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_605",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_610",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_615",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 9,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_618",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_623",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_631",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_633",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_639",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_642",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_643",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 0,
+          "1": 1,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_645",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.6,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_647",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_657",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_662",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_663",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_673",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_678",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_679",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_681",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_685",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_687",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_688",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.875,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 8,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_698",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 0,
+          "1": 1,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_701",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_705",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 0,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_707",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_711",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_712",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_717",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_719",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_738",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_748",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_751",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 0,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_752",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_753",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_758",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_762",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_765",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_767",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_770",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_772",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_776",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_795",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_796",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_797",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.7692307692307693,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.75,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_800",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_802",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_805",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_820",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_824",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_826",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_829",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_830",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_838",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_840",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_849",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_850",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_856",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.9166666666666666,
+      "pa": 0.55,
+      "satisfied": 11,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_862",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_865",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_875",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_877",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_880",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 8,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_883",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_884",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_885",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_890",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_897",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "forge_layers": {
+          "0": 6,
+          "1": 1,
+          "3": 13,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_899",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_905",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_918",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_927",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_929",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_930",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_932",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_935",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 9,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_936",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_940",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_944",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_946",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_956",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 9,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_958",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 14,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_960",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_965",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_971",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_972",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_975",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_978",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_983",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_1004",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1016",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 0,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 4
+      }
+    },
+    {
+      "task_id": "mosaic_real_1028",
+      "condition": "full_stack",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "forge_layers": {
+          "0": 1,
+          "1": 0,
+          "3": 4,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1030",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 11,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1040",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1047",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 5,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1061",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "forge_layers": {
+          "0": 4,
+          "1": 1,
+          "3": 10,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1067",
+      "condition": "full_stack",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "forge_layers": {
+          "0": 5,
+          "1": 1,
+          "3": 9,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1070",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 1,
+          "3": 7,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1102",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "forge_layers": {
+          "0": 3,
+          "1": 1,
+          "3": 6,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1106",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "forge_layers": {
+          "0": 2,
+          "1": 0,
+          "3": 8,
+          "4": 0
+        },
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    }
+  ]
+}

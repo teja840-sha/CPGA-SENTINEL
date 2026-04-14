@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-04-14T16:31:53",
+  "benchmarks": [
+    "ifeval"
+  ],
+  "conditions": [
+    "cadg_sentinel"
+  ],
+  "total_cost_usd": 13.128807000000004,
+  "total_calls": 1893,
+  "dry_run": false
+}

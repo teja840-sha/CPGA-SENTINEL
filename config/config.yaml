@@ -1,0 +1,17 @@
+anthropic:
+  api_key: ${ANTHROPIC_API_KEY}
+  model: claude-sonnet-4-20250514
+
+openai:
+  api_key: ${OPENAI_API_KEY}
+  model: gpt-4o-mini
+
+experiment:
+  seed: 42
+  max_tokens: 4096
+  temperature: 1.0
+  tasks_per_condition: 50
+  cadg_candidates: 3
+  retry_max_rounds: 2
+  constraint_counts: [5, 10, 15, 20]
+  budget_limit_usd: 400.0

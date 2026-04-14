@@ -1,0 +1,2808 @@
+{
+  "benchmark": "mosaic",
+  "condition": "cadg",
+  "timestamp": "2026-04-13T02:10:28",
+  "n_results": 200,
+  "results": [
+    {
+      "task_id": "mosaic_real_3",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_4",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_9",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_11",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_14",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_26",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_32",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_36",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_37",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_39",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_46",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_51",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_53",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_55",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_59",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_61",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_68",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_74",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_80",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_83",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_87",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.875,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 8,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_94",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.7777777777777778,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_104",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_111",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_123",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_127",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_130",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_131",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_150",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7
+      }
+    },
+    {
+      "task_id": "mosaic_real_161",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_174",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_192",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_204",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_211",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_216",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_219",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_220",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_224",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_232",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7
+      }
+    },
+    {
+      "task_id": "mosaic_real_243",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_256",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_259",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_265",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_269",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_272",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_291",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.0,
+      "pa": 0.0,
+      "satisfied": 0,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.6
+      }
+    },
+    {
+      "task_id": "mosaic_real_295",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_308",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_314",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_316",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_323",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_327",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_330",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_331",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 4,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_334",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_349",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_371",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7
+      }
+    },
+    {
+      "task_id": "mosaic_real_373",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_376",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.5,
+      "pa": 0.2,
+      "satisfied": 1,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_379",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_386",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_388",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_392",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_393",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_394",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_398",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7
+      }
+    },
+    {
+      "task_id": "mosaic_real_400",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_402",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_409",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_410",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_411",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_417",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_418",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_456",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_462",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_469",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_470",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_474",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_475",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_480",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_487",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_495",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_497",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_499",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_515",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_523",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_527",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.875,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 8,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_535",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7
+      }
+    },
+    {
+      "task_id": "mosaic_real_536",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_537",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_546",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_548",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_558",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_566",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_567",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_572",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_579",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_581",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_584",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_590",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 5,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_605",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_610",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_615",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_618",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_623",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_631",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_633",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7
+      }
+    },
+    {
+      "task_id": "mosaic_real_639",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_642",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_643",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_645",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.5,
+      "pa": 0.2,
+      "satisfied": 1,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_647",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_657",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_662",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_663",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_673",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_678",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_679",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_681",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_685",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_687",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_688",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 8,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_698",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_701",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_705",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_707",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_711",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_712",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_717",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_719",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7
+      }
+    },
+    {
+      "task_id": "mosaic_real_738",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_748",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_751",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_752",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_753",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_758",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_762",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_765",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7
+      }
+    },
+    {
+      "task_id": "mosaic_real_767",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_770",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_772",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_776",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_795",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_796",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_797",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_800",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.85
+      }
+    },
+    {
+      "task_id": "mosaic_real_802",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_805",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_820",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_824",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_826",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_829",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_830",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_838",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_840",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_849",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.5833333333333334,
+      "pa": 0.35,
+      "satisfied": 7,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.75
+      }
+    },
+    {
+      "task_id": "mosaic_real_850",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.5,
+      "pa": 0.2,
+      "satisfied": 1,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_856",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_862",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_865",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_875",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_877",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_880",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 8,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_883",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_884",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_885",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_890",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_897",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_899",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_905",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_918",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_927",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_929",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_930",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_932",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_935",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_936",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_940",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_944",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_946",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_956",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_958",
+      "condition": "cadg",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_960",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_965",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_971",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_972",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 0.5,
+      "pa": 0.2,
+      "satisfied": 1,
+      "total_checkable": 2,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    },
+    {
+      "task_id": "mosaic_real_975",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_978",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7
+      }
+    },
+    {
+      "task_id": "mosaic_real_983",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.7333333333333333
+      }
+    },
+    {
+      "task_id": "mosaic_real_1004",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1016",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.42857142857142855,
+      "pa": 0.3,
+      "satisfied": 3,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.6
+      }
+    },
+    {
+      "task_id": "mosaic_real_1028",
+      "condition": "cadg",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1030",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_1040",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_1047",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_1061",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_1067",
+      "condition": "cadg",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8666666666666667
+      }
+    },
+    {
+      "task_id": "mosaic_real_1070",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.9
+      }
+    },
+    {
+      "task_id": "mosaic_real_1102",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 1.0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1106",
+      "condition": "cadg",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_best_score": 0.8
+      }
+    }
+  ]
+}

@@ -1,0 +1,5418 @@
+{
+  "benchmark": "ifeval",
+  "condition": "cadg_sentinel",
+  "timestamp": "2026-04-14T16:31:53",
+  "n_results": 541,
+  "results": [
+    {
+      "task_id": "ifeval_0",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_1",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_2",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_3",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_4",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_5",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_6",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_7",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_8",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_9",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_10",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_11",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_12",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_13",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_14",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_15",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_16",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_17",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_18",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_19",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_20",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_21",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_22",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_23",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_24",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_25",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_26",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_27",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_28",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_29",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_30",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_31",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_32",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_33",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_34",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_35",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_36",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_37",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_38",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_39",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_40",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_41",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_42",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_43",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_44",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_45",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_46",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_47",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_48",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_49",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_50",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_51",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_52",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_53",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_54",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_55",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_56",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_57",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_58",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_59",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_60",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_61",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_62",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_63",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_64",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_65",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_66",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_67",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_68",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_69",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_70",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_71",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_72",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_73",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_74",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_75",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_76",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_77",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_78",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_79",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_80",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_81",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_82",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_83",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_84",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_85",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_86",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_87",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_88",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_89",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_90",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_91",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_92",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_93",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_94",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_95",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_96",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_97",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_98",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_99",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_100",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_101",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_102",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_103",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_104",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_105",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_106",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_107",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_108",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_109",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_110",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_111",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_112",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_113",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_114",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_115",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_116",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_117",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_118",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_119",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_120",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_121",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_122",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_123",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_124",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_125",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_126",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_127",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_128",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_129",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_130",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_131",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_132",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_133",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_134",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_135",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_136",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_137",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_138",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_139",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_140",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_141",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_142",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_143",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_144",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_145",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_146",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_147",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_148",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_149",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_150",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_151",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_152",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_153",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_154",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_155",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_156",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_157",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_158",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_159",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_160",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_161",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_162",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_163",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_164",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_165",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_166",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_167",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_168",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_169",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_170",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_171",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_172",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_173",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_174",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_175",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_176",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_177",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_178",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_179",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_180",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_181",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_182",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_183",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_184",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_185",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_186",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_187",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_188",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_189",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_190",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_191",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_192",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_193",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_194",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_195",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_196",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_197",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_198",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_199",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_200",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_201",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_202",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_203",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_204",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_205",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_206",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_207",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_208",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_209",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_210",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_211",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_212",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_213",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_214",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_215",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_216",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_217",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_218",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_219",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_220",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_221",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_222",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_223",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_224",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_225",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_226",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_227",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_228",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_229",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_230",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_231",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_232",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_233",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_234",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_235",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_236",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_237",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_238",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_239",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_240",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_241",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_242",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_243",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_244",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_245",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_246",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_247",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_248",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_249",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_250",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_251",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_252",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_253",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_254",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_255",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_256",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_257",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_258",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_259",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_260",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_261",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_262",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_263",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_264",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_265",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_266",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_267",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_268",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_269",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_270",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_271",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_272",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_273",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_274",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_275",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_276",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_277",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_278",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_279",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_280",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_281",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_282",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_283",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_284",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_285",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_286",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_287",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_288",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_289",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_290",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_291",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_292",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_293",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_294",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_295",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_296",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_297",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_298",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_299",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_300",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_301",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_302",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_303",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_304",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_305",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_306",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_307",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_308",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_309",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_310",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_311",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_312",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_313",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_314",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_315",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_316",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_317",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_318",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_319",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_320",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_321",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_322",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_323",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_324",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_325",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_326",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_327",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_328",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_329",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_330",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_331",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_332",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_333",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_334",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_335",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_336",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_337",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_338",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_339",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_340",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_341",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_342",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_343",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_344",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_345",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_346",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_347",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_348",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_349",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_350",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_351",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_352",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_353",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_354",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_355",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_356",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_357",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_358",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_359",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_360",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_361",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_362",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_363",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_364",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_365",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_366",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_367",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_368",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_369",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_370",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_371",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_372",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_373",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_374",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_375",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_376",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_377",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_378",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_379",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_380",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_381",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_382",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_383",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_384",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_385",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_386",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_387",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_388",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_389",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_390",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_391",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_392",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_393",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_394",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_395",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_396",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_397",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_398",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_399",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_400",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_401",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_402",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_403",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_404",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_405",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_406",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_407",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_408",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_409",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_410",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_411",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_412",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_413",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_414",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_415",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_416",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_417",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_418",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_419",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_420",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_421",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_422",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_423",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_424",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_425",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_426",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_427",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_428",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_429",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_430",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_431",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_432",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_433",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_434",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_435",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_436",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_437",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_438",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_439",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_440",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_441",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_442",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_443",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_444",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_445",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_446",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_447",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_448",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_449",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_450",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_451",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_452",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_453",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_454",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_455",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_456",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_457",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_458",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_459",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_460",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_461",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_462",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_463",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_464",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_465",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_466",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_467",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_468",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_469",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_470",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_471",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_472",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_473",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_474",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_475",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_476",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_477",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_478",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_479",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_480",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_481",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_482",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_483",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_484",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_485",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_486",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_487",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_488",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_489",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_490",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_491",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_492",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_493",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_494",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_495",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_496",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_497",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_498",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_499",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_500",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_501",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_502",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_503",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_504",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_505",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_506",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_507",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_508",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_509",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_510",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_511",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_512",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_513",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_514",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_515",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_516",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_517",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_518",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_519",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_520",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_521",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_522",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_523",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_524",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_525",
+      "condition": "cadg_sentinel",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_526",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_527",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_528",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_529",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_530",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_531",
+      "condition": "cadg_sentinel",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_532",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_533",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_534",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_535",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_536",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_537",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_538",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_539",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_540",
+      "condition": "cadg_sentinel",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    }
+  ]
+}

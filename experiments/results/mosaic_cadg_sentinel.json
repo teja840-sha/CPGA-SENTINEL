@@ -1,0 +1,3408 @@
+{
+  "benchmark": "mosaic",
+  "condition": "cadg_sentinel",
+  "timestamp": "2026-04-14T01:56:01",
+  "n_results": 200,
+  "results": [
+    {
+      "task_id": "mosaic_real_3",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_4",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_9",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_11",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_14",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_26",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_32",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_36",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_37",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_39",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_46",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_51",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_53",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_55",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_59",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_61",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_68",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_74",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_80",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_83",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_87",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.8,
+      "satisfied": 8,
+      "total_checkable": 8,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_94",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.7777777777777778,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_104",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_111",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_123",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_127",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_130",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_131",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_150",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_161",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_174",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_192",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_204",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_211",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_216",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_219",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_220",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_224",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_232",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_243",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_256",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_259",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_265",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_269",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_272",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_291",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.6,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_295",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_308",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_314",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_316",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_323",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_327",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_330",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_331",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 4,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_334",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_349",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_371",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_373",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_376",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_379",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_386",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_388",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_392",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_393",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_394",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_398",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_400",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_402",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_409",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_410",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_411",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_417",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_418",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_456",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_462",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6153846153846154,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.75,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_469",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_470",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_474",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_475",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_480",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_487",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_495",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_497",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_499",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_515",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_523",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_527",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.875,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 8,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_535",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_536",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_537",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_546",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_548",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_558",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_566",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_567",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_572",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_579",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_581",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_584",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_590",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 5,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_605",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_610",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_615",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_618",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_623",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_631",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_633",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_639",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_642",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_643",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_645",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_647",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_657",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_662",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_663",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_673",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_678",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_679",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_681",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_685",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_687",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_688",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.875,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 8,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_698",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_701",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_705",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_707",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_711",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_712",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_717",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_719",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_738",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_748",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_751",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_752",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_753",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_758",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_762",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_765",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_767",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_770",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_772",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_776",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_795",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_796",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_797",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_800",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_802",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_805",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_820",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_824",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_826",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_829",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_830",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_838",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_840",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_849",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_850",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_856",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_862",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_865",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_875",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6153846153846154,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.75,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_877",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_880",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 8,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_883",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_884",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_885",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_890",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_897",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6923076923076923,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 13,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_899",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_905",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_918",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_927",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_929",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_930",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_932",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_935",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_936",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.75,
+      "pa": 0.45,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 2,
+        "cadg_pre_sentinel_score": 0.85,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_940",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7272727272727273,
+      "pa": 0.5333333333333333,
+      "satisfied": 8,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_944",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_946",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_956",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_958",
+      "condition": "cadg_sentinel",
+      "constraint_count": 20,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 12,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_960",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_965",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_971",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_972",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 2,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "REPAIR",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_975",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_978",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_983",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.6,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 10,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.7333333333333333,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1004",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1016",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.5714285714285714,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.6,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 2
+      }
+    },
+    {
+      "task_id": "mosaic_real_1028",
+      "condition": "cadg_sentinel",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1030",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1040",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8333333333333334,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1047",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 1,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1061",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.8181818181818182,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 11,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1067",
+      "condition": "cadg_sentinel",
+      "constraint_count": 15,
+      "scc": 0.7777777777777778,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8666666666666667,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1070",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.9,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1102",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 6,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 1.0,
+        "sentinel_decision": "SHIP",
+        "sentinel_auto_fixed": 0
+      }
+    },
+    {
+      "task_id": "mosaic_real_1106",
+      "condition": "cadg_sentinel",
+      "constraint_count": 10,
+      "scc": 0.7142857142857143,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 7,
+      "meta": {
+        "ablation": "cadg_sentinel",
+        "cadg_candidates": 3,
+        "cadg_best_index": 0,
+        "cadg_pre_sentinel_score": 0.8,
+        "sentinel_decision": "ESCALATE",
+        "sentinel_auto_fixed": 0
+      }
+    }
+  ]
+}

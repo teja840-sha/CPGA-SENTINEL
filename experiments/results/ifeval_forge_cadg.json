@@ -1,0 +1,5418 @@
+{
+  "benchmark": "ifeval",
+  "condition": "forge_cadg",
+  "timestamp": "2026-04-14T16:15:16",
+  "n_results": 541,
+  "results": [
+    {
+      "task_id": "ifeval_0",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_1",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_2",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_3",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_4",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_5",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_6",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_7",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_8",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_9",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_10",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_11",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_12",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_13",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_14",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_15",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_16",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_17",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_18",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_19",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_20",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_21",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_22",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_23",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_24",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_25",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_26",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_27",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_28",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_29",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_30",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_31",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_32",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_33",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_34",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_35",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_36",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_37",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_38",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_39",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_40",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_41",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_42",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_43",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_44",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_45",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_46",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_47",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_48",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_49",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_50",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_51",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_52",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_53",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_54",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_55",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_56",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_57",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_58",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_59",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_60",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_61",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_62",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_63",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_64",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_65",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_66",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_67",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_68",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_69",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_70",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_71",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_72",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_73",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_74",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_75",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_76",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_77",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_78",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_79",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_80",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_81",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_82",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_83",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_84",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_85",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_86",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_87",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_88",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_89",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_90",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_91",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_92",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_93",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_94",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_95",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_96",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_97",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_98",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_99",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_100",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_101",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_102",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_103",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_104",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_105",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_106",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_107",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_108",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_109",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_110",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_111",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_112",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_113",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_114",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_115",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_116",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_117",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_118",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_119",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_120",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_121",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_122",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_123",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_124",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_125",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_126",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_127",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_128",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_129",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_130",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_131",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_132",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_133",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_134",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_135",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_136",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_137",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_138",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_139",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_140",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_141",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_142",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_143",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_144",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_145",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_146",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_147",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_148",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_149",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_150",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_151",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_152",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_153",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_154",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_155",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_156",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_157",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_158",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_159",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_160",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_161",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_162",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_163",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_164",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_165",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_166",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_167",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_168",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_169",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_170",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_171",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_172",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_173",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_174",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_175",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_176",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_177",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_178",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_179",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_180",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_181",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_182",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_183",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_184",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_185",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_186",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_187",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_188",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_189",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_190",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_191",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_192",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_193",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_194",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_195",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_196",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_197",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_198",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_199",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_200",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_201",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_202",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_203",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_204",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_205",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_206",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_207",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_208",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_209",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_210",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_211",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_212",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_213",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_214",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_215",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_216",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_217",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_218",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_219",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_220",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_221",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_222",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_223",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_224",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_225",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_226",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_227",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_228",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_229",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_230",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_231",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_232",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_233",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_234",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_235",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_236",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_237",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_238",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_239",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_240",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_241",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_242",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_243",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_244",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_245",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_246",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_247",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_248",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_249",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_250",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_251",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_252",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_253",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_254",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_255",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_256",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_257",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_258",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_259",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_260",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_261",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_262",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_263",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_264",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_265",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_266",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_267",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_268",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_269",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_270",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_271",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_272",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_273",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_274",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_275",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_276",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_277",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_278",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_279",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_280",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_281",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_282",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_283",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_284",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_285",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_286",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_287",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_288",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_289",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_290",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_291",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_292",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_293",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_294",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_295",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_296",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_297",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_298",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_299",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_300",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_301",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_302",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_303",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_304",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_305",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_306",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_307",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_308",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_309",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_310",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_311",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_312",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_313",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_314",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_315",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_316",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_317",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_318",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_319",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_320",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_321",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_322",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_323",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_324",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_325",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_326",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_327",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_328",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_329",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_330",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_331",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_332",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_333",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_334",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_335",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_336",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_337",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_338",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_339",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_340",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_341",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_342",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_343",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_344",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_345",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_346",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_347",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_348",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_349",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_350",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_351",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_352",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_353",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_354",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_355",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_356",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_357",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_358",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_359",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_360",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_361",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_362",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_363",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_364",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_365",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_366",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_367",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_368",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_369",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_370",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_371",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_372",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_373",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_374",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_375",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_376",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_377",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_378",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_379",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_380",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_381",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_382",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_383",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_384",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_385",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_386",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_387",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_388",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_389",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_390",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_391",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_392",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_393",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_394",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_395",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_396",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_397",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_398",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_399",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_400",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_401",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_402",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_403",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_404",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_405",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_406",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_407",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_408",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_409",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_410",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_411",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_412",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_413",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_414",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_415",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_416",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_417",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_418",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_419",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_420",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_421",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_422",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_423",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_424",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_425",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_426",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_427",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_428",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_429",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_430",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_431",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_432",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_433",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_434",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_435",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_436",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_437",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_438",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_439",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_440",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_441",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_442",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_443",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_444",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_445",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_446",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_447",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_448",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_449",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_450",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_451",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_452",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_453",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_454",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_455",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_456",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_457",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_458",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_459",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_460",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_461",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_462",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_463",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_464",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_465",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_466",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_467",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_468",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_469",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_470",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_471",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_472",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_473",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_474",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_475",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_476",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_477",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_478",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_479",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_480",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_481",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_482",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_483",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_484",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_485",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_486",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_487",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_488",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_489",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_490",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_491",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_492",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_493",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_494",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_495",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_496",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_497",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_498",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_499",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_500",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_501",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_502",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_503",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_504",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_505",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_506",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_507",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_508",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_509",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_510",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_511",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_512",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_513",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_514",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_515",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_516",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_517",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_518",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_519",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_520",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_521",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_522",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.6666666666666666,
+      "prompt_accuracy": 0.0,
+      "n_passed": 2,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_523",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_524",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_525",
+      "condition": "forge_cadg",
+      "constraint_count": 3,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 3,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_526",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_527",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_528",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": false,
+      "instruction_accuracy": 0.5,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_529",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_530",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_531",
+      "condition": "forge_cadg",
+      "constraint_count": 2,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 2,
+      "n_total": 2
+    },
+    {
+      "task_id": "ifeval_532",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_533",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_534",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_535",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_536",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_537",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_538",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_539",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": false,
+      "instruction_accuracy": 0.0,
+      "prompt_accuracy": 0.0,
+      "n_passed": 0,
+      "n_total": 1
+    },
+    {
+      "task_id": "ifeval_540",
+      "condition": "forge_cadg",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    }
+  ]
+}

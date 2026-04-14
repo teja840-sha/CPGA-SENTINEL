@@ -1,0 +1,328 @@
+{
+  "benchmark": "sysprompt",
+  "condition": "full_stack",
+  "timestamp": "2026-04-14T15:51:48",
+  "n_results": 40,
+  "results": [
+    {
+      "task_id": "sysprompt_10g_0",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.9,
+      "satisfied": 9,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_10g_1",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8,
+      "satisfied": 8,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_10g_2",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.9,
+      "satisfied": 9,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_10g_3",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8,
+      "satisfied": 8,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_10g_4",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.9,
+      "satisfied": 9,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_10g_5",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.9,
+      "satisfied": 9,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_10g_6",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.9,
+      "satisfied": 9,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_10g_7",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.9,
+      "satisfied": 9,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_10g_8",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 0.8,
+      "satisfied": 8,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_10g_9",
+      "condition": "full_stack",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "satisfied": 10,
+      "total_checkable": 10
+    },
+    {
+      "task_id": "sysprompt_20g_0",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.9,
+      "satisfied": 18,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_20g_1",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.9,
+      "satisfied": 18,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_20g_2",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.9,
+      "satisfied": 18,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_20g_3",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.9,
+      "satisfied": 18,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_20g_4",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.95,
+      "satisfied": 19,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_20g_5",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.9,
+      "satisfied": 18,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_20g_6",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.85,
+      "satisfied": 17,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_20g_7",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.9,
+      "satisfied": 18,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_20g_8",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.9,
+      "satisfied": 18,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_20g_9",
+      "condition": "full_stack",
+      "constraint_count": 20,
+      "scc": 0.95,
+      "satisfied": 19,
+      "total_checkable": 20
+    },
+    {
+      "task_id": "sysprompt_30g_0",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9,
+      "satisfied": 27,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_30g_1",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9,
+      "satisfied": 27,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_30g_2",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9666666666666667,
+      "satisfied": 29,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_30g_3",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9666666666666667,
+      "satisfied": 29,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_30g_4",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9666666666666667,
+      "satisfied": 29,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_30g_5",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9,
+      "satisfied": 27,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_30g_6",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9,
+      "satisfied": 27,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_30g_7",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9666666666666667,
+      "satisfied": 29,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_30g_8",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9,
+      "satisfied": 27,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_30g_9",
+      "condition": "full_stack",
+      "constraint_count": 30,
+      "scc": 0.9333333333333333,
+      "satisfied": 28,
+      "total_checkable": 30
+    },
+    {
+      "task_id": "sysprompt_50g_0",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.88,
+      "satisfied": 44,
+      "total_checkable": 50
+    },
+    {
+      "task_id": "sysprompt_50g_1",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.94,
+      "satisfied": 47,
+      "total_checkable": 50
+    },
+    {
+      "task_id": "sysprompt_50g_2",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.94,
+      "satisfied": 47,
+      "total_checkable": 50
+    },
+    {
+      "task_id": "sysprompt_50g_3",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.94,
+      "satisfied": 47,
+      "total_checkable": 50
+    },
+    {
+      "task_id": "sysprompt_50g_4",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.92,
+      "satisfied": 46,
+      "total_checkable": 50
+    },
+    {
+      "task_id": "sysprompt_50g_5",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.96,
+      "satisfied": 48,
+      "total_checkable": 50
+    },
+    {
+      "task_id": "sysprompt_50g_6",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.9,
+      "satisfied": 45,
+      "total_checkable": 50
+    },
+    {
+      "task_id": "sysprompt_50g_7",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.92,
+      "satisfied": 46,
+      "total_checkable": 50
+    },
+    {
+      "task_id": "sysprompt_50g_8",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.92,
+      "satisfied": 46,
+      "total_checkable": 50
+    },
+    {
+      "task_id": "sysprompt_50g_9",
+      "condition": "full_stack",
+      "constraint_count": 50,
+      "scc": 0.92,
+      "satisfied": 46,
+      "total_checkable": 50
+    }
+  ]
+}

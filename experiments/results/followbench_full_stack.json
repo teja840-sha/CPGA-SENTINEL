@@ -1,0 +1,458 @@
+{
+  "benchmark": "followbench",
+  "condition": "full_stack",
+  "timestamp": "2026-04-12T02:10:00",
+  "n_results": 50,
+  "results": [
+    {
+      "task_id": "followbench_content_constraints_1_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_1_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_1_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_1_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_1_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L1",
+      "condition": "full_stack",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L2",
+      "condition": "full_stack",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L3",
+      "condition": "full_stack",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L4",
+      "condition": "full_stack",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L5",
+      "condition": "full_stack",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    }
+  ]
+}

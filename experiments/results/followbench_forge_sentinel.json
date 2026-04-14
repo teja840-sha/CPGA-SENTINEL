@@ -1,0 +1,7388 @@
+{
+  "benchmark": "followbench",
+  "condition": "forge_sentinel",
+  "timestamp": "2026-04-14T04:24:17",
+  "n_results": 820,
+  "results": [
+    {
+      "task_id": "followbench_content_constraints_1_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_1_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_1_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_1_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_1_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_2_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_3_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_4_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_5_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_6_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_7_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_8_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_9_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_10_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_11_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_11_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_11_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_11_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_11_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_12_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_12_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_12_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_12_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_12_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_13_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_13_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_13_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_13_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_13_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_14_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_14_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_14_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_14_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_14_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_15_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_15_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_15_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_15_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_15_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_16_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_16_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_16_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_16_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_16_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_17_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_17_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_17_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_17_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_17_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_18_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_18_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_18_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_18_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_18_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_19_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_19_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_19_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_19_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_19_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_20_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_20_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_20_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_20_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_20_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_21_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_21_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_21_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_21_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_21_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_22_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_22_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_22_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_22_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_22_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_23_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_23_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_23_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_23_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_23_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_24_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_24_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_24_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_24_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_24_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_25_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_25_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_25_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_25_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_content_constraints_25_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_1_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_1_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_1_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_1_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_1_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_2_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_2_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_2_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_2_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_2_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_3_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_3_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_3_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_3_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_3_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_4_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_4_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_4_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_4_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_4_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_5_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_5_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_5_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_5_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_5_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_6_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_6_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_6_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_6_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_6_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_7_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_7_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_7_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_7_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_7_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_8_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_8_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_8_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_8_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_8_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_9_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_9_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_9_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_9_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_9_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_10_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_10_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_10_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_10_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_10_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_11_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_11_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_11_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_11_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_11_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_12_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_12_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_12_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_12_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_12_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_13_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_13_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_13_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_13_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_13_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_14_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_14_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_14_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_14_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_14_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_15_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_15_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_15_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_15_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_15_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_16_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_16_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_16_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_16_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_16_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_17_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_17_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_17_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_17_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_17_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_18_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_18_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_18_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_18_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_18_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_19_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_19_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_19_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_19_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_19_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_20_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_20_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_20_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_20_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_20_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_21_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_21_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_21_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_21_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_21_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_22_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_22_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_22_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_22_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_22_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_23_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_23_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_23_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_23_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_23_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_24_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_24_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_24_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_24_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_24_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_25_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_25_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_25_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_25_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_25_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_26_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_26_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_26_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_26_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_26_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_27_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_27_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 0.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_example_constraints_27_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_example_constraints_27_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 3,
+      "total_checkable": 3
+    },
+    {
+      "task_id": "followbench_example_constraints_27_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 0.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 4
+    },
+    {
+      "task_id": "followbench_example_constraints_28_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_28_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_28_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_28_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_28_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_29_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_29_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_29_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_29_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_29_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_30_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_30_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_30_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_30_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_30_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_31_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_31_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_31_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_31_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_31_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_32_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_32_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_32_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_32_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_32_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_33_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_33_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_33_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_33_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_33_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_34_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_34_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_34_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_34_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_34_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_35_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_35_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_35_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_35_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_35_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_36_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_36_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_36_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_36_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_36_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_37_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_37_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_37_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_37_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_37_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_38_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_38_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_38_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_38_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_38_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_39_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_39_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_39_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_39_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_39_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_40_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_40_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_40_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_40_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_example_constraints_40_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_1_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_1_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_1_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_1_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_1_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_2_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_2_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_2_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_2_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 0.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_2_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_format_constraints_3_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_3_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_3_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_3_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_format_constraints_3_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_format_constraints_4_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_4_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_4_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_4_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_4_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_5_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_5_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_5_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_format_constraints_5_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 3,
+      "total_checkable": 3
+    },
+    {
+      "task_id": "followbench_format_constraints_5_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 3,
+      "total_checkable": 3
+    },
+    {
+      "task_id": "followbench_format_constraints_6_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_6_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_6_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_6_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_6_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_7_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_7_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_7_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_7_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_7_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_8_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_8_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_8_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_8_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_8_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_9_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_9_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_9_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_9_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_9_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_10_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_10_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_10_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_10_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_10_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_11_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_11_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_11_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_11_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_11_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_12_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_12_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_12_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_12_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_12_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_13_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_13_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_13_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_13_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_13_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_14_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_14_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_14_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_14_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_14_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_15_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_15_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_15_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_15_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_15_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_16_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_16_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_16_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_16_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_16_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_17_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_17_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_17_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_17_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_17_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_18_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_18_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_18_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_18_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_18_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_19_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_19_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_19_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_format_constraints_19_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 3,
+      "total_checkable": 3
+    },
+    {
+      "task_id": "followbench_format_constraints_19_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 3,
+      "total_checkable": 3
+    },
+    {
+      "task_id": "followbench_format_constraints_20_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_20_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_20_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_20_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_20_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_21_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_21_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_21_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_21_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_21_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_22_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_22_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_22_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_22_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_22_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_23_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_23_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_23_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_23_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_23_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_24_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_24_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_24_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_24_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_24_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_25_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_25_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_25_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_25_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_25_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_26_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_26_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_format_constraints_26_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_format_constraints_26_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 3,
+      "total_checkable": 3
+    },
+    {
+      "task_id": "followbench_format_constraints_26_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 4,
+      "total_checkable": 4
+    },
+    {
+      "task_id": "followbench_format_constraints_27_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_27_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_27_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_27_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_27_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_28_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_28_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_28_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_28_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_28_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_29_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_29_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_29_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_29_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_29_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_30_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_30_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_30_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_30_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_format_constraints_30_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_1_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_1_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_1_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_1_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_1_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_2_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_2_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_2_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_2_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_2_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_3_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_3_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_3_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_mixed_constraints_3_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_mixed_constraints_3_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 3,
+      "total_checkable": 3
+    },
+    {
+      "task_id": "followbench_mixed_constraints_4_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_4_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_4_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_4_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_4_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_5_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_5_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_mixed_constraints_5_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_mixed_constraints_5_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 3,
+      "total_checkable": 3
+    },
+    {
+      "task_id": "followbench_mixed_constraints_5_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 4,
+      "total_checkable": 4
+    },
+    {
+      "task_id": "followbench_mixed_constraints_6_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_6_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_6_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_6_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_6_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_7_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_7_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_7_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_7_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_7_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_8_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_8_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_8_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_8_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 0.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_mixed_constraints_8_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_mixed_constraints_9_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_9_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_9_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_9_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_9_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_10_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_10_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_10_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_10_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_10_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_11_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_11_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_11_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_11_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_11_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_12_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_12_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_12_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_12_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_12_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_13_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_13_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_13_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_13_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_13_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_14_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_14_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_14_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 1,
+      "total_checkable": 1
+    },
+    {
+      "task_id": "followbench_mixed_constraints_14_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 2,
+      "total_checkable": 2
+    },
+    {
+      "task_id": "followbench_mixed_constraints_14_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 1.0,
+      "satisfied": 3,
+      "total_checkable": 3
+    },
+    {
+      "task_id": "followbench_mixed_constraints_15_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_15_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_15_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_15_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_15_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_16_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_16_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_16_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_16_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_16_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_17_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_17_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_17_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_17_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_mixed_constraints_17_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_1_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_1_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_1_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_1_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_1_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_2_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_2_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_2_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_2_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_2_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_3_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_3_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_3_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_3_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_3_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_4_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_4_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_4_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_4_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_4_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_5_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_5_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_5_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_5_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_5_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_6_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_6_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_6_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_6_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_6_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_7_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_7_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_7_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_7_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_7_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_8_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_8_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_8_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_8_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_8_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_9_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_9_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_9_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_9_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_9_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_10_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_10_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_10_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_10_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_10_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_11_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_11_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_11_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_11_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_11_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_12_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_12_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_12_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_12_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_12_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_13_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_13_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_13_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_13_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_13_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_14_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_14_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_14_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_14_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_14_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_15_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_15_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_15_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_15_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_15_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_16_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_16_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_16_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_16_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_16_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_17_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_17_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_17_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_17_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_17_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_18_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_18_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_18_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_18_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_18_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_19_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_19_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_19_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_19_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_19_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_20_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_20_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_20_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_20_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_20_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_21_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_21_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_21_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_21_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_21_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_22_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_22_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_22_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_22_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_situation_constraints_22_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_1_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_1_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_1_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_1_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_1_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_2_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_2_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_2_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_2_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_2_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_3_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_3_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_3_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_3_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_3_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_4_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_4_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_4_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_4_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_4_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_5_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_5_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_5_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_5_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_5_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_6_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_6_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_6_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_6_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_6_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_7_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_7_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_7_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_7_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_7_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_8_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_8_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_8_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_8_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_8_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_9_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_9_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_9_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_9_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_9_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_10_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_10_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_10_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_10_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_10_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_11_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_11_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_11_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_11_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_11_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_12_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_12_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_12_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_12_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_12_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_13_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_13_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_13_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_13_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_13_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_14_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_14_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_14_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_14_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_14_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_15_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_15_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_15_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_15_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_15_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_16_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_16_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_16_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_16_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_16_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_17_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_17_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_17_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_17_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_17_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_18_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_18_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_18_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_18_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_18_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_19_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_19_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_19_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_19_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_19_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_20_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_20_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_20_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_20_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_20_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_21_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_21_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_21_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_21_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_21_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_22_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_22_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_22_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_22_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_22_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_23_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_23_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_23_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_23_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_23_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_24_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_24_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_24_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_24_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_24_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_25_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_25_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_25_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_25_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_25_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_26_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_26_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_26_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_26_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_26_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_27_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_27_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_27_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_27_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_27_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_28_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_28_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_28_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_28_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_28_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_29_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_29_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_29_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_29_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_29_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_30_L1",
+      "condition": "forge_sentinel",
+      "level": 1,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_30_L2",
+      "condition": "forge_sentinel",
+      "level": 2,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_30_L3",
+      "condition": "forge_sentinel",
+      "level": 3,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_30_L4",
+      "condition": "forge_sentinel",
+      "level": 4,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    },
+    {
+      "task_id": "followbench_style_constraints_30_L5",
+      "condition": "forge_sentinel",
+      "level": 5,
+      "hsr": 1.0,
+      "ssr": 0.0,
+      "satisfied": 0,
+      "total_checkable": 0
+    }
+  ]
+}
