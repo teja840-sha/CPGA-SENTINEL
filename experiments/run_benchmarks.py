@@ -58,6 +58,7 @@ REPOS_DIR = Path(__file__).parent / "repos"
 CONDITIONS = [
     "baseline",
     "retry_feedback",
+    "retry_feedback_5",
     "forge",
     "cadg",
     "sentinel",
@@ -73,7 +74,7 @@ def _log(msg: str):
     print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
 
 
-def _extra_condition_kwargs(condition: str, exp: dict, n_candidates: int, seed: int) -> dict:
+def _extra_condition_kwargs(condition: str, exp: dict, n_candidates: int, seed: int, forge_mode: str = "type") -> dict:
     """CADG-style conditions need n_candidates/seed; retry_feedback needs max_rounds."""
     kw: dict = {}
     if condition in ("cadg", "full_stack", "forge_cadg", "cadg_sentinel"):
@@ -81,6 +82,10 @@ def _extra_condition_kwargs(condition: str, exp: dict, n_candidates: int, seed: 
         kw["seed"] = seed
     if condition == "retry_feedback":
         kw["max_rounds"] = int(exp.get("retry_max_rounds", 2))
+    if condition == "retry_feedback_5":
+        kw["max_rounds"] = 5
+    if condition in ("forge", "full_stack", "forge_cadg", "forge_sentinel"):
+        kw["forge_mode"] = forge_mode
     return kw
 
 
@@ -117,12 +122,16 @@ def run_forge(
     provider: str = "anthropic",
     model: str | None = None,
     max_tokens: int = 4096,
+    forge_mode: str = "type",
 ) -> tuple[str, dict]:
     """FORGE: classify constraints, remove Layer 0/1, generate with residual."""
     from cpga_harness import run_single_task
 
     constraints = task["constraints"]
-    filtered_prompt, layers = forge_filter_prompt(task["prompt"], constraints)
+    filtered_prompt, layers = forge_filter_prompt(
+        task["prompt"], constraints, forge_mode=forge_mode,
+        client=client, provider=provider, model=model,
+    )
 
     layer_counts = {k: len(v) for k, v in layers.items()}
     _log(f"  FORGE layers: {layer_counts}")
@@ -227,6 +236,7 @@ def run_full_stack_condition(
     provider: str = "anthropic",
     model: str | None = None,
     max_tokens: int = 4096,
+    forge_mode: str = "type",
 ) -> tuple[str, dict]:
     """Full stack: FORGE + CADG + SENTINEL composed."""
     output, score, meta = run_full_stack(
@@ -239,6 +249,7 @@ def run_full_stack_condition(
         provider=provider,
         model=model,
         max_tokens=max_tokens,
+        forge_mode=forge_mode,
     )
     _log(f"  Full stack: score {score:.3f}")
     return output, meta
@@ -304,6 +315,7 @@ def run_forge_cadg_condition(
     provider: str = "anthropic",
     model: str | None = None,
     max_tokens: int = 4096,
+    forge_mode: str = "type",
 ) -> tuple[str, dict]:
     output, meta = run_forge_cadg(
         client=client,
@@ -315,6 +327,7 @@ def run_forge_cadg_condition(
         provider=provider,
         model=model,
         max_tokens=max_tokens,
+        forge_mode=forge_mode,
     )
     _log(f"  forge_cadg: best_idx={meta.get('cadg_best_index')}")
     return output, meta
@@ -326,6 +339,7 @@ def run_forge_sentinel_condition(
     provider: str = "anthropic",
     model: str | None = None,
     max_tokens: int = 4096,
+    forge_mode: str = "type",
 ) -> tuple[str, dict]:
     output, meta = run_forge_sentinel(
         client=client,
@@ -336,6 +350,7 @@ def run_forge_sentinel_condition(
         provider=provider,
         model=model,
         max_tokens=max_tokens,
+        forge_mode=forge_mode,
     )
     _log(f"  forge_sentinel: {meta.get('sentinel_decision')}")
     return output, meta
@@ -365,9 +380,25 @@ def run_cadg_sentinel_condition(
     return output, meta
 
 
+def run_retry_feedback_5(
+    client: LLMClient,
+    task: dict,
+    provider: str = "anthropic",
+    model: str | None = None,
+    max_tokens: int = 4096,
+    max_rounds: int = 5,
+) -> tuple[str, dict]:
+    """Guardrails-proxy baseline: 5 retries with feedback (matches Guardrails AI loop)."""
+    return run_retry_feedback(
+        client, task, provider=provider, model=model,
+        max_tokens=max_tokens, max_rounds=max_rounds,
+    )
+
+
 CONDITION_RUNNERS = {
     "baseline": run_baseline,
     "retry_feedback": run_retry_feedback,
+    "retry_feedback_5": run_retry_feedback_5,
     "forge": run_forge,
     "cadg": run_cadg,
     "sentinel": run_sentinel,
@@ -388,6 +419,10 @@ def run_mosaic(
     config: dict,
     dry_run: bool = False,
     max_tasks: int | None = None,
+    provider: str = "anthropic",
+    model_override: str | None = None,
+    forge_mode: str = "type",
+    result_suffix: str | None = None,
 ) -> dict:
     """Run MOSAIC benchmark across specified conditions."""
     exp = config.get("experiment", {})
@@ -397,8 +432,7 @@ def run_mosaic(
     if max_tasks:
         tasks_per = max(1, max_tasks // len(constraint_counts))
     n_candidates = exp.get("cadg_candidates", 5)
-    provider = "anthropic"
-    model = config.get("anthropic", {}).get("model")
+    model = model_override or config.get(provider, {}).get("model")
     max_tokens = exp.get("max_tokens", 4096)
 
     adapter = MOSAICAdapter(seed=seed)
@@ -431,7 +465,7 @@ def run_mosaic(
                 runner = CONDITION_RUNNERS[condition]
                 kwargs = {"client": client, "task": task, "provider": provider,
                           "model": model, "max_tokens": max_tokens}
-                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed))
+                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed, forge_mode))
                 output, meta = runner(**kwargs)
 
             score_result = adapter.score(output, task)
@@ -449,7 +483,8 @@ def run_mosaic(
                  f"({score_result['satisfied']}/{score_result['total_checkable']})")
 
         all_results[condition] = results
-        out_path = RESULTS_DIR / f"mosaic_{condition}.json"
+        suffix = f"_{result_suffix}" if result_suffix else ""
+        out_path = RESULTS_DIR / f"mosaic_{condition}{suffix}.json"
         _save_benchmark_results("mosaic", condition, results, out_path)
 
     return all_results
@@ -461,11 +496,14 @@ def run_ifeval(
     config: dict,
     dry_run: bool = False,
     max_tasks: int | None = None,
+    provider: str = "anthropic",
+    model_override: str | None = None,
+    forge_mode: str = "type",
+    result_suffix: str | None = None,
 ) -> dict:
     """Run IFEval benchmark across specified conditions."""
     exp = config.get("experiment", {})
-    provider = "anthropic"
-    model = config.get("anthropic", {}).get("model")
+    model = model_override or config.get(provider, {}).get("model")
     max_tokens = exp.get("max_tokens", 4096)
     seed = exp.get("seed", 42)
     n_candidates = exp.get("cadg_candidates", 5)
@@ -489,7 +527,7 @@ def run_ifeval(
                 runner = CONDITION_RUNNERS[condition]
                 kwargs = {"client": client, "task": task, "provider": provider,
                           "model": model, "max_tokens": max_tokens}
-                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed))
+                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed, forge_mode))
                 output, _ = runner(**kwargs)
 
             score_result = adapter.score(output, task)
@@ -509,7 +547,8 @@ def run_ifeval(
                  f"instr_acc={score_result['instruction_accuracy']:.3f}")
 
         all_results[condition] = results
-        out_path = RESULTS_DIR / f"ifeval_{condition}.json"
+        suffix = f"_{result_suffix}" if result_suffix else ""
+        out_path = RESULTS_DIR / f"ifeval_{condition}{suffix}.json"
         _save_benchmark_results("ifeval", condition, results, out_path)
 
         cat_agg = adapter.aggregate_by_category(strict_scores_for_cat) if strict_scores_for_cat else {}
@@ -525,11 +564,14 @@ def run_ifbench(
     config: dict,
     dry_run: bool = False,
     max_tasks: int | None = None,
+    provider: str = "anthropic",
+    model_override: str | None = None,
+    forge_mode: str = "type",
+    result_suffix: str | None = None,
 ) -> dict:
     """Run IFBench (Allen AI, NeurIPS 2025) across specified conditions."""
     exp = config.get("experiment", {})
-    provider = "anthropic"
-    model = config.get("anthropic", {}).get("model")
+    model = model_override or config.get(provider, {}).get("model")
     max_tokens = exp.get("max_tokens", 4096)
     seed = exp.get("seed", 42)
     n_candidates = exp.get("cadg_candidates", 5)
@@ -553,7 +595,7 @@ def run_ifbench(
                 runner = CONDITION_RUNNERS[condition]
                 kwargs = {"client": client, "task": task, "provider": provider,
                           "model": model, "max_tokens": max_tokens}
-                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed))
+                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed, forge_mode))
                 output, _ = runner(**kwargs)
 
             score_result = adapter.score(output, task)
@@ -571,7 +613,8 @@ def run_ifbench(
                  f"instr_acc={score_result['instruction_accuracy']:.3f}")
 
         all_results[condition] = results
-        out_path = RESULTS_DIR / f"ifbench_{condition}.json"
+        suffix = f"_{result_suffix}" if result_suffix else ""
+        out_path = RESULTS_DIR / f"ifbench_{condition}{suffix}.json"
         _save_benchmark_results("ifbench", condition, results, out_path)
 
     return all_results
@@ -583,11 +626,14 @@ def run_sysprompt(
     config: dict,
     dry_run: bool = False,
     max_tasks: int | None = None,
+    provider: str = "anthropic",
+    model_override: str | None = None,
+    forge_mode: str = "type",
+    result_suffix: str | None = None,
 ) -> dict:
     """Run System Prompt Adherence test (T2)."""
     exp = config.get("experiment", {})
-    provider = "anthropic"
-    model = config.get("anthropic", {}).get("model")
+    model = model_override or config.get(provider, {}).get("model")
     max_tokens = exp.get("max_tokens", 4096)
     seed = exp.get("seed", 42)
     n_candidates = exp.get("cadg_candidates", 5)
@@ -608,7 +654,7 @@ def run_sysprompt(
                 runner = CONDITION_RUNNERS[condition]
                 kwargs = {"client": client, "task": task, "provider": provider,
                           "model": model, "max_tokens": max_tokens}
-                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed))
+                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed, forge_mode))
                 output, _ = runner(**kwargs)
             score_result = adapter.score(output, task)
             results.append({
@@ -621,7 +667,8 @@ def run_sysprompt(
             })
             _log(f"    SCC={score_result['scc']:.3f} ({score_result['satisfied']}/{score_result['total_checkable']})")
         all_results[condition] = results
-        out_path = RESULTS_DIR / f"sysprompt_{condition}.json"
+        suffix = f"_{result_suffix}" if result_suffix else ""
+        out_path = RESULTS_DIR / f"sysprompt_{condition}{suffix}.json"
         _save_benchmark_results("sysprompt", condition, results, out_path)
     return all_results
 
@@ -632,11 +679,14 @@ def run_toolsel(
     config: dict,
     dry_run: bool = False,
     max_tasks: int | None = None,
+    provider: str = "anthropic",
+    model_override: str | None = None,
+    forge_mode: str = "type",
+    result_suffix: str | None = None,
 ) -> dict:
     """Run Multi-Tool Selection test (T4)."""
     exp = config.get("experiment", {})
-    provider = "anthropic"
-    model = config.get("anthropic", {}).get("model")
+    model = model_override or config.get(provider, {}).get("model")
     max_tokens = exp.get("max_tokens", 4096)
     seed = exp.get("seed", 42)
     n_candidates = exp.get("cadg_candidates", 5)
@@ -657,7 +707,7 @@ def run_toolsel(
                 runner = CONDITION_RUNNERS[condition]
                 kwargs = {"client": client, "task": task, "provider": provider,
                           "model": model, "max_tokens": max_tokens}
-                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed))
+                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed, forge_mode))
                 output, _ = runner(**kwargs)
             score_result = adapter.score(output, task)
             results.append({
@@ -670,7 +720,8 @@ def run_toolsel(
             })
             _log(f"    correct={score_result['correct']} (tool={task['correct_tool']} pos={task['correct_position']})")
         all_results[condition] = results
-        out_path = RESULTS_DIR / f"toolsel_{condition}.json"
+        suffix = f"_{result_suffix}" if result_suffix else ""
+        out_path = RESULTS_DIR / f"toolsel_{condition}{suffix}.json"
         _save_benchmark_results("toolsel", condition, results, out_path)
     return all_results
 
@@ -682,11 +733,14 @@ def run_followbench(
     dry_run: bool = False,
     max_tasks: int | None = None,
     repo_path: str | None = None,
+    provider: str = "anthropic",
+    model_override: str | None = None,
+    forge_mode: str = "type",
+    result_suffix: str | None = None,
 ) -> dict:
     """Run FollowBench across specified conditions."""
     exp = config.get("experiment", {})
-    provider = "anthropic"
-    model = config.get("anthropic", {}).get("model")
+    model = model_override or config.get(provider, {}).get("model")
     max_tokens = exp.get("max_tokens", 4096)
     seed = exp.get("seed", 42)
     n_candidates = exp.get("cadg_candidates", 5)
@@ -714,7 +768,7 @@ def run_followbench(
                 runner = CONDITION_RUNNERS[condition]
                 kwargs = {"client": client, "task": task, "provider": provider,
                           "model": model, "max_tokens": max_tokens}
-                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed))
+                kwargs.update(_extra_condition_kwargs(condition, exp, n_candidates, seed, forge_mode))
                 output, _ = runner(**kwargs)
 
             score_result = adapter.score(output, task)
@@ -730,7 +784,8 @@ def run_followbench(
             _log(f"    HSR={score_result['hsr']:.1f} SSR={score_result['ssr']:.3f}")
 
         all_results[condition] = results
-        out_path = RESULTS_DIR / f"followbench_{condition}.json"
+        suffix = f"_{result_suffix}" if result_suffix else ""
+        out_path = RESULTS_DIR / f"followbench_{condition}{suffix}.json"
         _save_benchmark_results("followbench", condition, results, out_path)
 
         level_agg = adapter.aggregate_by_level(
@@ -853,13 +908,21 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Skip LLM calls, test pipeline")
     parser.add_argument("--max-tasks", type=int, default=None, help="Limit tasks per benchmark")
     parser.add_argument("--provider", choices=["anthropic", "openai"], default="anthropic")
+    parser.add_argument("--model", type=str, default=None, help="Override model name from config")
+    parser.add_argument("--forge-mode", choices=["type", "full"], default="type",
+                        help="FORGE classification mode: type (heuristic) or full (LLM-probe)")
     parser.add_argument("--followbench-repo", type=str, default=None, help="Path to cloned FollowBench repo")
     parser.add_argument("--mosaic-repo", type=str, default=None, help="Path to cloned MOSAIC repo")
+    parser.add_argument("--result-suffix", type=str, default=None,
+                        help="Suffix appended to result filenames (e.g. 'openai' -> ifeval_baseline_openai.json)")
 
     args = parser.parse_args()
 
     config = load_config(args.config)
     client = LLMClient(config)
+
+    if args.model:
+        config.setdefault(args.provider, {})["model"] = args.model
 
     benchmarks = BENCHMARKS if args.benchmark == "all" else [args.benchmark]
     conditions = CONDITIONS if args.condition == "all" else [args.condition]
@@ -871,26 +934,33 @@ def main():
 
     all_results = {}
 
+    common_kw = dict(
+        provider=args.provider,
+        model_override=args.model,
+        forge_mode=args.forge_mode,
+        result_suffix=args.result_suffix,
+    )
+
     for benchmark in benchmarks:
         _log(f"\n{'='*60}")
         _log(f"BENCHMARK: {benchmark.upper()}")
         _log(f"{'='*60}")
 
         if benchmark == "mosaic":
-            results = run_mosaic(client, conditions, config, args.dry_run, args.max_tasks)
+            results = run_mosaic(client, conditions, config, args.dry_run, args.max_tasks, **common_kw)
         elif benchmark == "ifeval":
-            results = run_ifeval(client, conditions, config, args.dry_run, args.max_tasks)
+            results = run_ifeval(client, conditions, config, args.dry_run, args.max_tasks, **common_kw)
         elif benchmark == "followbench":
             results = run_followbench(
                 client, conditions, config, args.dry_run,
-                args.max_tasks, args.followbench_repo,
+                args.max_tasks, args.followbench_repo, **common_kw,
             )
         elif benchmark == "ifbench":
-            results = run_ifbench(client, conditions, config, args.dry_run, args.max_tasks)
+            results = run_ifbench(client, conditions, config, args.dry_run, args.max_tasks, **common_kw)
         elif benchmark == "sysprompt":
-            results = run_sysprompt(client, conditions, config, args.dry_run, args.max_tasks)
+            results = run_sysprompt(client, conditions, config, args.dry_run, args.max_tasks, **common_kw)
         elif benchmark == "toolsel":
-            results = run_toolsel(client, conditions, config, args.dry_run, args.max_tasks)
+            results = run_toolsel(client, conditions, config, args.dry_run, args.max_tasks, **common_kw)
         else:
             continue
 

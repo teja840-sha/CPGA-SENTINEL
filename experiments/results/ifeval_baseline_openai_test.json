@@ -1,0 +1,28 @@
+{
+  "benchmark": "ifeval",
+  "condition": "baseline",
+  "timestamp": "2026-04-15T15:38:15",
+  "n_results": 2,
+  "results": [
+    {
+      "task_id": "ifeval_0",
+      "condition": "baseline",
+      "constraint_count": 3,
+      "follow_all": false,
+      "instruction_accuracy": 0.3333333333333333,
+      "prompt_accuracy": 0.0,
+      "n_passed": 1,
+      "n_total": 3
+    },
+    {
+      "task_id": "ifeval_1",
+      "condition": "baseline",
+      "constraint_count": 1,
+      "follow_all": true,
+      "instruction_accuracy": 1.0,
+      "prompt_accuracy": 1.0,
+      "n_passed": 1,
+      "n_total": 1
+    }
+  ]
+}

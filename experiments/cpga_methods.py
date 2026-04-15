@@ -130,11 +130,124 @@ def classify_constraint(constraint: dict) -> ClassifiedConstraint:
     )
 
 
-def forge_classify(constraints: list[dict]) -> dict[int, list[ClassifiedConstraint]]:
-    """Classify all constraints into FORGE layers. Returns {layer: [constraints]}."""
+def classify_constraint_full(
+    constraint: dict,
+    client: Any,
+    provider: str = "openai",
+    model: str | None = None,
+) -> ClassifiedConstraint:
+    """Full FORGE LLM-probe classification (production mode).
+
+    Three-phase protocol:
+    1. LLM classifies constraint as token/structural/semantic/holistic
+    2. LLM generates a Python checker function
+    3. Checker is validated against 3 test outputs; demoted to Layer 3 on failure
+    """
+    cid = constraint["id"]
+    text = constraint["text"]
+    check_fn = constraint.get("check_fn")
+
+    classify_prompt = (
+        "Classify this constraint into exactly one category.\n\n"
+        f"Constraint: \"{text}\"\n\n"
+        "Categories:\n"
+        "- TOKEN: Can be verified by regex or simple string matching (word bans, "
+        "exact counts, positional checks, case requirements, punctuation rules)\n"
+        "- STRUCTURAL: Can be verified by structural parsing (JSON schema, list "
+        "format, section structure, markdown formatting)\n"
+        "- SEMANTIC: Requires understanding meaning, tone, style, persuasiveness, "
+        "creativity — cannot be checked by code\n"
+        "- HOLISTIC: Requires evaluating overall quality, coherence, or "
+        "cross-section consistency\n\n"
+        "Respond with ONLY the category name (TOKEN, STRUCTURAL, SEMANTIC, or HOLISTIC)."
+    )
+    try:
+        category_text, _, _ = client.generate(
+            classify_prompt, provider=provider, model=model,
+            max_tokens=20, temperature=0.0,
+        )
+        category = category_text.strip().upper()
+    except Exception:
+        category = "SEMANTIC"
+
+    layer_map = {"TOKEN": 0, "STRUCTURAL": 1, "SEMANTIC": 4, "HOLISTIC": 4}
+    layer = layer_map.get(category, 3)
+
+    if layer in (0, 1) and check_fn is None:
+        checker_prompt = (
+            "Write a Python function `check(output: str) -> bool` that returns True "
+            "if the output satisfies this constraint, False otherwise.\n\n"
+            f"Constraint: \"{text}\"\n\n"
+            "Return ONLY the function body, no imports needed (re is available). "
+            "The function must be self-contained."
+        )
+        try:
+            code_text, _, _ = client.generate(
+                checker_prompt, provider=provider, model=model,
+                max_tokens=300, temperature=0.0,
+            )
+            code_clean = code_text.strip()
+            if "```" in code_clean:
+                code_clean = code_clean.split("```")[1]
+                if code_clean.startswith("python"):
+                    code_clean = code_clean[6:]
+                code_clean = code_clean.strip()
+
+            ns: dict[str, Any] = {"re": __import__("re")}
+            exec(code_clean, ns)
+            generated_fn = ns.get("check")
+
+            if generated_fn and callable(generated_fn):
+                test_outputs = [
+                    "This is a simple test output for validation.",
+                    "Another test output with numbers 123 and UPPERCASE.",
+                    "A third output.\n\nWith multiple paragraphs.\n1. And a list.",
+                ]
+                valid = True
+                for to in test_outputs:
+                    try:
+                        result = generated_fn(to)
+                        if not isinstance(result, bool):
+                            valid = False
+                            break
+                    except Exception:
+                        valid = False
+                        break
+
+                if valid:
+                    check_fn = generated_fn
+                else:
+                    layer = 3
+            else:
+                layer = 3
+        except Exception:
+            layer = 3
+
+    return ClassifiedConstraint(
+        id=cid, text=text, layer=layer,
+        check_fn=check_fn, probe_hit=f"llm_probe:{category}",
+        original=constraint,
+    )
+
+
+def forge_classify(
+    constraints: list[dict],
+    mode: str = "type",
+    client: Any = None,
+    provider: str = "openai",
+    model: str | None = None,
+) -> dict[int, list[ClassifiedConstraint]]:
+    """Classify all constraints into FORGE layers. Returns {layer: [constraints]}.
+
+    mode='type': heuristic type-based routing (default, benchmark mode)
+    mode='full': LLM-probe three-phase classification (production mode)
+    """
     layers: dict[int, list[ClassifiedConstraint]] = {0: [], 1: [], 3: [], 4: []}
     for c in constraints:
-        classified = classify_constraint(c)
+        if mode == "full" and client is not None:
+            classified = classify_constraint_full(c, client, provider, model)
+        else:
+            classified = classify_constraint(c)
         layers[classified.layer].append(classified)
     return layers
 
@@ -142,6 +255,10 @@ def forge_classify(constraints: list[dict]) -> dict[int, list[ClassifiedConstrai
 def forge_filter_prompt(
     task_prompt: str,
     constraints: list[dict],
+    forge_mode: str = "type",
+    client: Any = None,
+    provider: str = "openai",
+    model: str | None = None,
 ) -> tuple[str, dict[int, list[ClassifiedConstraint]]]:
     """FORGE: Remove Layer 0/1 constraints from prompt, keep Layer 3 residual.
 
@@ -150,7 +267,8 @@ def forge_filter_prompt(
     Layer 3 stays in the prompt.
     Layer 4 is evaluated post-generation by judge.
     """
-    layers = forge_classify(constraints)
+    layers = forge_classify(constraints, mode=forge_mode, client=client,
+                            provider=provider, model=model)
 
     removable_texts = set()
     for layer_idx in (0, 1):
@@ -552,6 +670,7 @@ def run_full_stack(
     model: str | None = None,
     max_tokens: int = 4096,
     temperature: float = 1.0,
+    forge_mode: str = "type",
 ) -> tuple[str, float, dict]:
     """FORGE + CADG + SENTINEL composed.
 
@@ -562,7 +681,8 @@ def run_full_stack(
     """
     from cpga_harness import score_output
 
-    layers = forge_classify(constraints)
+    layers = forge_classify(constraints, mode=forge_mode, client=client,
+                            provider=provider, model=model)
     layer3_constraints = [cc.original for cc in layers[3]]
 
     # CADG with only Layer 3 in prompt
@@ -608,9 +728,11 @@ def run_forge_cadg(
     model: str | None = None,
     max_tokens: int = 4096,
     temperature: float = 1.0,
+    forge_mode: str = "type",
 ) -> tuple[str, dict]:
     """FORGE + CADG only (no SENTINEL). CADG permutes Layer-3 residual constraints."""
-    layers = forge_classify(constraints)
+    layers = forge_classify(constraints, mode=forge_mode, client=client,
+                            provider=provider, model=model)
     layer3_constraints = [cc.original for cc in layers[3]]
     candidates = cadg_generate(
         client, task_id, base_prompt, layer3_constraints,
@@ -639,11 +761,15 @@ def run_forge_sentinel(
     model: str | None = None,
     max_tokens: int = 4096,
     temperature: float = 1.0,
+    forge_mode: str = "type",
 ) -> tuple[str, dict]:
     """FORGE + single generation + SENTINEL (no CADG)."""
     from cpga_harness import run_single_task
 
-    filtered_prompt, layers = forge_filter_prompt(task_prompt, constraints)
+    filtered_prompt, layers = forge_filter_prompt(
+        task_prompt, constraints, forge_mode=forge_mode,
+        client=client, provider=provider, model=model,
+    )
     result = run_single_task(
         client=client,
         task_id=task_id,

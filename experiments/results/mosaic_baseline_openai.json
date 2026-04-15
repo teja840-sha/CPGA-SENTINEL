@@ -1,0 +1,1388 @@
+{
+  "benchmark": "mosaic",
+  "condition": "baseline",
+  "timestamp": "2026-04-15T15:50:20",
+  "n_results": 60,
+  "results": [
+    {
+      "task_id": "mosaic_marketing_email_5c_0",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 4,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_5c_0",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "SUBJECT: KEEP YOUR FILES ORGANIZED, SECURE, AND ALWAYS WITHIN REACH\n\nYOUR TEAM MOVES FAST. YOUR FILES SHOULD TOO.\n\nCLOUDSYNC PRO HELPS YOU STORE, ACCESS, AND SHARE FILES FROM ANY INTERNET-CONNECTED DEVICE.  \nIT SUPPORTS REAL-TIME FILE SYNCING, SO UPDATES APPEAR ACROSS CONNECTED DEVICES WITHOUT MANUAL TRANSFERS.\n\nWITH CLOUDSYNC PRO, YOU CAN:\n\n- STORE FILES SECURELY IN THE CLOUD\n- ACCESS DOCUMENTS FROM YOUR PHONE, TABLET, OR COMPUTER\n- SHARE FILES WITH TEAM MEMBERS AND CLIENTS\n- KEEP PROJECTS ORGANIZED ACROSS DEVICES\n\nIT IS BUILT FOR BUSINESSES AND PROFESSIONALS WHO NEED SIMPLE, RELIABLE FILE MANAGEMENT.  \nYOUR TEAM CAN COLLABORATE MORE SMOOTHLY WHEN EVERYONE WORKS FROM THE SAME LATEST VERSION.\n\nWHY TEAMS CHOOSE CLOUDSYNC PRO:\n\n- FAST ACCESS TO FILES WHEN INTERNET IS AVAILABLE\n- CENTRALIZED STORAGE FOR EASIER FILE ORGANIZATION\n- REAL-TIME SYNCING ACROSS CONNECTED DEVICES\n- SIMPLE SHARING TO SUPPORT COLLABORATION\n\nSTOP WASTING TIME SEARCHING THROUGH OUTDATED FILES AND EMAIL ATTACHMENTS.  \nCHOOSE A CLOUD STORAGE SERVICE THAT HELPS YOUR TEAM STAY ALIGNED AND PRODUCTIVE.\n\nGET STARTED WITH CLOUDSYNC PRO TODAY.",
+          "input_tokens": 89,
+          "output_tokens": 294,
+          "cost_usd": 0.006325000000000001,
+          "latency_ms": 8409.716499998467,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_5c_1",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 4,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_5c_1",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "# SmartLock X200 Review\n\nThe SmartLock X200 stands out as a polished, dependable, and feature-rich IoT door lock that delivers the kind of convenience and confidence modern smart homes deserve. Its strongest qualities appear immediately: fast access control, reliable remote management, broad smart-home compatibility, and a refined hardware design that feels thoroughly premium. For homeowners seeking a connected lock that combines security-focused engineering with everyday ease, the X200 makes an excellent first impression and continues to justify its place over time.\n\nWhat makes the SmartLock X200 especially appealing is how effectively it blends advanced technology with practical daily use. Unlocking is quick, app responsiveness is excellent, and remote access features feel thoughtfully integrated rather than added for marketing appeal. From the moment it is installed, the X200 brings a sense of control and awareness to the front door experience, turning a routine household task into something more intelligent, more connected, and far more convenient.\n\nThe lock\u2019s design deserves praise right away. SmartLock has given the X200 a sleek, contemporary form that looks at home on a wide range of doors, from modern entryways to more traditional exteriors. The exterior hardware feels robust and well-finished, while the interior unit presents a clean and organized appearance that complements rather than distracts. Materials convey durability, and the overall construction inspires trust through fit, finish, and tactile quality.\n\nPerformance is one of the X200\u2019s biggest strengths. In day-to-day use, it operates with impressive consistency, and that reliability is exactly what matters most in a smart lock. Response times are fast whether using the keypad, companion app, or voice assistant integration. Lock and unlock commands register promptly, status updates appear accurately, and activity logs provide helpful visibility into who accessed the door and when. This level of responsiveness gives the X200 a polished, mature feel that elevates it above many connected home devices that can sometimes feel less refined.\n\nThe companion app is another highlight. It offers a clear, well-organized interface that makes managing access permissions feel intuitive and empowering. Owners can grant temporary access to guests, recurring access to family members or service providers, and monitor lock history from virtually anywhere. That flexibility turns the X200 into more than a lock; it becomes a full access-management hub for the household. The remote features are especially valuable for busy families, short-term rental hosts, and anyone who appreciates staying connected to home entry points while away.\n\nSecurity features are presented with equal care. The SmartLock X200 supports multiple authentication options, allowing users to choose the access methods that best suit their routines and preferences. This flexibility enhances both convenience and peace of mind. Tamper alerts, real-time notifications, and secure communication protocols contribute to an experience that feels modern and reassuring. Rather than focusing only on unlocking a door, the X200 creates a broader sense of awareness around home entry, and that added visibility is a major advantage in connected home security.\n\nSmart-home integration is handled very well. The X200 works smoothly with major voice assistants and broader automation ecosystems, making it a strong fit for households already invested in connected devices. It can become part of arrival and departure routines, pair with lights or security systems, and support automation that makes the home feel more responsive. This compatibility expands the lock\u2019s value considerably, because it allows the product to participate in a larger smart-living environment instead of functioning in isolation.\n\nInstallation is also a strong part of the experience. The package is thoughtfully assembled, instructions are clear, and the setup flow is streamlined in a way that helps users feel confident from the start. Pairing the device with Wi-Fi or a hub, configuring user credentials, and tailoring settings can all be completed smoothly. That welcoming onboarding experience matters, because it sets the tone for the rest of ownership, and the X200 handles it with impressive polish.\n\nBattery management appears well considered too. Smart locks live or die by how effectively they handle power, and the X200 provides the kind of battery efficiency and status visibility that encourages trust. Battery alerts are timely, usage data is helpful, and the lock\u2019s power behavior feels optimized for real-world use. Those practical touches reinforce the impression that this is a product designed with long-term ownership in mind.\n\nA few standout qualities define the SmartLock X200 experience particularly well:\n\n- Fast, reliable locking and unlocking performance\n- Elegant hardware design with premium fit and finish\n- Excellent mobile app for remote control and access scheduling\n- Strong smart-home integration with major ecosystems\n- Helpful activity tracking and real-time notifications\n- Thoughtful installation and onboarding experience\n- Well-managed battery monitoring and maintenance alerts\n\nThe user experience benefits from strong attention to detail. Audible cues, visual indicators, and in-app feedback all work together to create a reassuring sense of clarity during operation. Every interaction feels purposeful. Even routine tasks such as checking lock status or issuing a guest code carry a level of refinement that speaks to careful product design and solid software execution.\n\nIn terms of value, the SmartLock X200 earns high marks by delivering a premium feature set in a package that feels cohesive and dependable. It does not rely on one standout specification alone. Instead, it succeeds by offering a well-rounded experience across design, connectivity, security awareness, and everyday usability. That balance is one of its most attractive qualities, because it means the lock feels rewarding not just during initial setup, but throughout ongoing daily use.\n\nOverall, the SmartLock X200 is an impressive IoT door lock that gets the essentials right while adding the kind of intelligent features that genuinely enhance home access. It looks great, performs confidently, integrates smoothly into modern smart-home setups, and provides a highly satisfying ownership experience. For buyers seeking a connected lock that feels advanced, refined, and trustworthy, the SmartLock X200 is a highly compelling choice.",
+          "input_tokens": 98,
+          "output_tokens": 1163,
+          "cost_usd": 0.023750000000000004,
+          "latency_ms": 34201.19460001297,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_5c_2",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.8,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 5,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_5c_2",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"faq\": [\n    {\n      \"question\": \"What is FinTrack Plus?\",\n      \"answer\": \"FinTrack Plus is a personal finance app that helps you manage spending savings and goals with clarity.\"\n    },\n    {\n      \"question\": \"How does FinTrack Plus help me stay organized?\",\n      \"answer\": \"It brings accounts budgets and progress into one simple dashboard so you can enjoy a clear view of your financial life every day.\"\n    },\n    {\n      \"question\": \"Is FinTrack Plus easy to use?\",\n      \"answer\": \"Yes. The app offers a smooth setup helpful guidance and a clean design that makes money management feel comfortable and rewarding.\"\n    },\n    {\n      \"question\": \"Can I track savings goals in FinTrack Plus?\",\n      \"answer\": \"Absolutely. You can create goals watch your progress and celebrate each milestone as you move toward the future you want.\"\n    },\n    {\n      \"question\": \"Does FinTrack Plus support budgeting?\",\n      \"answer\": \"Yes. FinTrack Plus helps you build smart budgets follow spending patterns and enjoy stronger confidence with every financial choice.\"\n    }\n  ]\n}",
+          "input_tokens": 90,
+          "output_tokens": 233,
+          "cost_usd": 0.00511,
+          "latency_ms": 5272.113899991382,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_5c_3",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.25,
+      "pa": 0.2,
+      "satisfied": 1,
+      "total_checkable": 4,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_5c_3",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"MEMO\": \"DEAR TEAM,\\n\\nWE ARE PREPARING TO LAUNCH MEDICARE BOT, A HEALTHCARE CHATBOT DESIGNED TO HELP USERS ACCESS GENERAL HEALTH INFORMATION AND NAVIGATE AVAILABLE RESOURCES. AT THIS STAGE, WE SHOULD DESCRIBE THE PRODUCT CAREFULLY AND AVOID UNSUBSTANTIATED CLAIMS. BASED ON CURRENT INFORMATION, WE CAN ACCURATELY STATE THAT MEDICARE BOT IS A CHATBOT INTENDED TO SUPPORT USER QUESTIONS, PROVIDE GENERAL INFORMATION, AND ASSIST WITH ROUTING USERS TO APPROPRIATE CHANNELS WHERE APPLICABLE.\\n\\nTO ENSURE ACCURACY AND COMPLIANCE, ALL EXTERNAL AND INTERNAL MATERIALS SHOULD MAKE CLEAR THAT THE BOT DOES NOT REPLACE A LICENSED CLINICIAN, DOES NOT PROVIDE EMERGENCY SERVICES, AND SHOULD ONLY OPERATE WITHIN ITS APPROVED USE CASES. ANY STATEMENTS ABOUT CLINICAL PERFORMANCE, DIAGNOSTIC CAPABILITY, REGULATORY STATUS, PRIVACY CONTROLS, OR OUTCOMES MUST BE INCLUDED ONLY IF THEY HAVE BEEN VERIFIED BY THE APPROPRIATE TEAMS AND DOCUMENTED.\\n\\nPRIOR TO LAUNCH, PRODUCT, LEGAL, COMPLIANCE, SECURITY, AND CLINICAL STAKEHOLDERS SHOULD CONFIRM THE FINAL POSITIONING, SAFETY GUARDRAILS, ESCALATION PATHS, AND USER DISCLOSURES. THIS WILL HELP US DELIVER A RESPONSIBLE LAUNCH THAT SETS CORRECT EXPECTATIONS FOR USERS AND PARTNERS.\\n\\nLEARN MORE\"\n}",
+          "input_tokens": 83,
+          "output_tokens": 327,
+          "cost_usd": 0.006955000000000001,
+          "latency_ms": 10060.012699992512,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_5c_4",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 4,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_5c_4",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"subject\": \"cut your power costs with the ecocharge solar panel kit\",\n  \"preheader\": \"save money fast with easy home solar you can set up with confidence.\",\n  \"body\": \"lower your energy bills and gain more control over your power with the ecocharge solar panel kit. this simple, high-performance system helps you make clean energy at home from day one. with fast setup, durable parts, and strong output, ecocharge gives you a smart way to save money and rely less on the grid.\\n\\necocharge is built for busy homeowners who want clear value without the usual hassle. the kit includes efficient solar panels, easy-to-follow instructions, and the key parts you need to get started quickly. its weather-ready design supports reliable performance in changing conditions, so you can feel confident in your investment.\\n\\nbeyond monthly savings, ecocharge helps you choose a cleaner path for your home. by turning sunlight into usable power, you can reduce your carbon footprint while supporting a more sustainable future. it is a practical step that feels good now and pays off over time.\\n\\nnow is a great time to make the switch. choose the ecocharge solar panel kit and start building a home that is more efficient, more independent, and better prepared for rising energy costs. order today and see how easy solar can be.\"\n}",
+          "input_tokens": 97,
+          "output_tokens": 277,
+          "cost_usd": 0.006025000000000001,
+          "latency_ms": 6682.648899994092,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_5c_5",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 4,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_5c_5",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "Attention DataVault Enterprise is a strong backup solution for mid-size and large firms that need broad coverage, fast recovery, and tight control. Its best traits are reliable backup jobs, clear policy tools, and support for hybrid setups that mix on-site systems with cloud storage. In testing, the platform handled full, incremental, and image-based backups with steady speed and few errors, even across busy workloads. Recovery is where it stands out most: file-level restores are quick, bare-metal recovery is well guided, and disaster recovery options are practical for teams that need low downtime. Security is also a major plus, with role-based access, immutable storage support, and solid encryption in transit and at rest.\n\nBeyond core backup, DataVault Enterprise offers a management layer that should appeal to IT teams with limited time. The web console is clean, and most daily tasks are easy to find after a short learning period. Policy setup, schedule control, retention rules, and alerting are all handled in one place, which cuts down on admin effort. Reporting is useful rather than flashy, with enough detail to track job health, storage use, and compliance needs. Integration is another strength: the product works well with virtual machines, physical servers, major databases, and common SaaS workloads. That said, first-time setup can feel dense, and some advanced options are buried in menus that new admins may miss.\n\nThe main drawback is cost, as DataVault Enterprise is positioned as a premium product and may be hard to justify for small firms with simple needs. Some rivals offer a lighter setup flow or more flexible licensing, which can make them easier to adopt. Even so, the total package is impressive. DataVault Enterprise delivers dependable protection, strong restore tools, and enterprise-grade controls in a polished platform. It is best for organizations that value resilience, governance, and centralized management more than a low entry price.",
+          "input_tokens": 99,
+          "output_tokens": 378,
+          "cost_usd": 0.008055000000000001,
+          "latency_ms": 16220.0412999955,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_5c_6",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.8,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 5,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_5c_6",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "FAQ: FITPULSE WATCH\n\nQ: WHAT CAN FITPULSE WATCH TRACK?\nA: FITPULSE WATCH HELPS YOU FOLLOW STEPS HEART RATE SLEEP WORKOUTS AND DAILY ACTIVITY WITH EASE.\n\nQ: IS FITPULSE WATCH COMFORTABLE FOR ALL DAY WEAR?\nA: YES. FITPULSE WATCH IS LIGHT SMOOTH AND DESIGNED FOR A GREAT FEEL FROM MORNING TO NIGHT.\n\nQ: HOW DOES FITPULSE WATCH HELP ME STAY MOTIVATED?\nA: FITPULSE WATCH OFFERS FRIENDLY PROGRESS UPDATES GOAL CELEBRATIONS AND HELPFUL INSIGHTS TO KEEP YOU INSPIRED.\n\nQ: IS FITPULSE WATCH EASY TO USE?\nA: YES. FITPULSE WATCH FEATURES A CLEAR DISPLAY SIMPLE NAVIGATION AND A QUICK SETUP EXPERIENCE THAT TAYLOR AND MANY CUSTOMERS ENJOY.\n\nQ: DOES FITPULSE WATCH WORK WITH MY PHONE?\nA: FITPULSE WATCH CONNECTS WITH MANY POPULAR SMARTPHONES SO YOU CAN VIEW STATS AND ENJOY A SMOOTH FITNESS JOURNEY.",
+          "input_tokens": 84,
+          "output_tokens": 226,
+          "cost_usd": 0.004940000000000001,
+          "latency_ms": 5451.684800005751,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_5c_7",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 4,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_5c_7",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "**Internal Memo: Launch of LearnPath AI**\n\nHi team,\n\nI\u2019m excited to share that we\u2019re officially launching **LearnPath AI**, our new educational platform designed to make learning more personalized, engaging, and effective. This is a big moment for us, and it reflects the creativity, collaboration, and dedication everyone has brought to the project.\n\nLearnPath AI gives learners a smarter path forward with adaptive recommendations, intuitive progress tracking, and supportive content tailored to individual goals. It\u2019s a strong step in our mission to create learning experiences that feel both inspiring and practical.\n\nAs Alex mentioned in our last planning session, this launch is also a great opportunity to show how thoughtfully we can bring innovation to market. We have a strong story to tell, and this product is ready to make a meaningful impact.\n\nOver the next two weeks, our focus will be on:\n1. Supporting a smooth rollout across all customer and partner channels.\n2. Sharing clear, upbeat messaging that highlights LearnPath AI\u2019s value.\n3. Gathering insights from early users to help us keep improving.\n4. Celebrating the teams who helped bring this launch to life.\n\nThank you for the energy and care you\u2019ve put into this milestone. LearnPath AI represents the best of what we can build together, and I\u2019m excited to see it reach learners everywhere.\n\nBest,  \n[Your Name]",
+          "input_tokens": 88,
+          "output_tokens": 274,
+          "cost_usd": 0.005920000000000001,
+          "latency_ms": 7639.072099991608,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_5c_8",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.4,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 5,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_5c_8",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"email\": \"Subject: Your files, everywhere you need them.\\n\\nWork moves fast. CloudSync Pro keeps up.\\n\\nStore, sync, and share your files securely across devices without missing a beat. Whether you\u2019re collaborating with a team, sending large files to clients, or simply keeping your documents organized, CloudSync Pro makes every step effortless and reliable.\\n\\nWhy teams choose CloudSync Pro:\\n- Secure cloud storage with advanced encryption\\n- Instant syncing across desktop and mobile devices\\n- Easy file sharing with customizable access controls\\n- Automatic backup to protect your important work\\n\\nStop wasting time searching for the latest version of a file or worrying about lost data. With CloudSync Pro, your content stays current, protected, and ready whenever inspiration or business calls.\\n\\nStart using CloudSync Pro today and discover a smarter way to store, access, and share everything that matters.\"\n}",
+          "input_tokens": 93,
+          "output_tokens": 188,
+          "cost_usd": 0.0042250000000000005,
+          "latency_ms": 5817.862900003092,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_5c_9",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.6666666666666666,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 3,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_5c_9",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"title\": \"SmartLock X200 Review\",\n  \"review\": {\n    \"summary\": \"SmartLock X200 is an exciting, dependable IoT door lock with strong security and everyday convenience. Jordan will appreciate its fast access options, polished app, and reliable performance.\",\n    \"verdict\": \"This lock is easy to recommend. It delivers secure entry, flexible control, and a smooth smart home experience.\",\n    \"key_points\": [\n      \"Installation is straightforward and friendly for most homeowners.\",\n      \"Fingerprint unlock is quick, accurate, and consistently impressive.\",\n      \"The mobile app feels modern, responsive, and easy to navigate.\",\n      \"Remote locking and notifications add real peace of mind.\",\n      \"Battery life is solid for a feature-rich smart lock.\",\n      \"Build quality feels sturdy, premium, and ready for daily use.\"\n    ],\n    \"pros\": [\n      \"Fast fingerprint recognition improves daily convenience.\",\n      \"Multiple entry methods suit different users and situations.\",\n      \"Remote access works smoothly and reliably.\",\n      \"Real-time alerts keep homeowners informed instantly.\",\n      \"Strong construction inspires confidence and durability.\",\n      \"App setup is simple and pleasantly polished.\"\n    ],\n    \"cons\": [\n      \"Advanced features may require careful initial configuration.\",\n      \"App dependence could frustrate less tech-focused users.\",\n      \"Premium pricing may deter budget-conscious buyers.\"\n    ],\n    \"details\": {\n      \"design_and_build\": \"SmartLock X200 looks sleek and modern. Its solid materials give the device a reassuring, high-end feel.\",\n      \"installation\": \"Setup is refreshingly manageable. Clear instructions help most users finish installation without major frustration.\",\n      \"performance\": \"Day-to-day performance is excellent. Unlocking is fast, commands respond quickly, and connectivity remains impressively stable.\",\n      \"security\": \"Security is a major highlight. Encrypted communication, access logs, and instant alerts strengthen home protection.\",\n      \"software_experience\": \"The companion app is a joy to use. Menus are clean, features are organized, and controls feel intuitive.\",\n      \"smart_features\": \"Remote locking, scheduled access, and temporary digital keys are especially useful. These features make guest management wonderfully simple.\",\n      \"battery\": \"Battery performance is reassuringly good. It supports regular use well and avoids constant maintenance worries.\",\n      \"value\": \"SmartLock X200 is not the cheapest option. Still, its convenience, security, and polish help justify the price.\"\n    },\n    \"conclusion\": \"SmartLock X200 is a thrilling smart home upgrade. It combines security, convenience, and quality in a genuinely appealing package.\"\n  }\n}",
+          "input_tokens": 88,
+          "output_tokens": 534,
+          "cost_usd": 0.01112,
+          "latency_ms": 12828.33039999241,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_5c_10",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.5,
+      "pa": 0.4,
+      "satisfied": 2,
+      "total_checkable": 4,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_5c_10",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"title\": \"FinTrack Plus FAQ\",\n  \"content\": [\n    \"FinTrack Plus is a personal finance app that helps users track income, expenses, budgets, and account balances. Features and availability may vary by subscription plan, device, or region.\",\n    \"1. What can I do with FinTrack Plus? You can record transactions, organize spending categories, set budget targets, and review financial activity in one place. Specific tools depend on your current version and plan.\",\n    \"2. Does FinTrack Plus connect to my bank? Bank connectivity is available only if your institution and region are supported. If direct connections are unavailable, you can enter transactions manually or import supported files.\",\n    \"3. Is my data secure? FinTrack Plus uses security measures to protect account data, but no service can guarantee absolute security. Review the app's security page and privacy policy for current details.\",\n    \"4. Can I use FinTrack Plus on multiple devices? Multi-device access depends on your account setup and supported platforms. Check the latest app store listing or help center for platform compatibility.\",\n    \"5. Does FinTrack Plus offer reports and insights? Many personal finance apps provide spending summaries, trends, and budget reports. In FinTrack Plus, available reports depend on the features included in your plan.\",\n    \"6. What if I need help? Visit the in-app help section, support page, or contact options listed in your account area. Response times and support channels may vary by plan or region.\"\n  ]\n}",
+          "input_tokens": 88,
+          "output_tokens": 310,
+          "cost_usd": 0.006640000000000001,
+          "latency_ms": 6594.583399986732,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_5c_11",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 4,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_5c_11",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "Subject: Launch of MediCare Bot\n\nTeam,\n\nWe are preparing to launch MediCare Bot, our new healthcare chatbot. The product is designed to answer general health questions and support routine patient guidance. It is not a doctor and does not replace licensed medical advice.\n\nMediCare Bot uses conversational AI to provide responses based on approved medical content and configured workflows. It can help users navigate common topics, such as symptoms, preventive care, appointment preparation, and medication reminders. These capabilities depend on the data sources, rules, and safeguards implemented by our teams.\n\nThe launch will follow a controlled rollout. We will monitor usage patterns, response quality, escalation rates, and safety flags during the initial release period. This phased approach helps us identify issues early and reduce risk before broader deployment.\n\nSeveral safeguards are built into the experience. The bot will direct users to emergency services for urgent symptoms and recommend clinician follow-up when appropriate. It will also avoid diagnosing conditions or prescribing treatment unless such functions are specifically approved and validated.\n\nKey launch priorities are listed below.\n- Confirm medical content review is complete and documented.\n- Verify escalation pathways to human support are active.\n- Test privacy, security, and logging controls before release.\n- Monitor user feedback and unresolved conversations daily.\n- Publish clear disclaimers about scope and limitations.\n\nSuccess will be measured using practical and reviewable indicators. We will track containment for non-urgent informational requests, handoff quality, user satisfaction, and identified safety incidents. We will share weekly updates with leadership during the rollout period.\n\nPlease direct launch questions to the product, clinical safety, and compliance leads. Cross-functional coordination will be essential for a responsible release. Thank you for supporting this important milestone.",
+          "input_tokens": 99,
+          "output_tokens": 340,
+          "cost_usd": 0.007295,
+          "latency_ms": 8433.308000006946,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_5c_12",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 0.8,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 5,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_5c_12",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "dear homeowner\n\nmeet the ecocharge solar panel kit your simple path to cleaner energy and lower monthly bills. designed for easy setup and reliable performance it helps you take control of your power use without the stress of complicated installation or costly maintenance.\n\nwith high efficiency panels and durable materials ecocharge captures more sunlight and turns it into dependable energy for your home cabin or backup needs. rain or shine it is built to perform and deliver lasting value season after season.\n\nimagine using the sun to power your daily life while reducing your carbon footprint. ecocharge helps you save money over time and supports a more sustainable future for your family and your community.\n\nwhether you are new to solar or ready to upgrade your current setup ecocharge offers a smart flexible solution that fits your goals. its compact design and user friendly system make it easier than ever to start your energy journey with confidence.\n\nnow is the perfect time to make the switch to clean renewable power. choose the ecocharge solar panel kit today and enjoy energy independence greater savings and peace of mind.",
+          "input_tokens": 84,
+          "output_tokens": 208,
+          "cost_usd": 0.004580000000000001,
+          "latency_ms": 6947.087399996235,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_5c_13",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.6,
+      "satisfied": 3,
+      "total_checkable": 3,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_5c_13",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "DataVault Enterprise is a highly capable backup solution that delivers strong data protection, dependable recovery performance, and enterprise-ready management features in a polished, professional package. For organizations seeking a platform that combines broad workload coverage with centralized administration and scalable architecture, it stands out as an impressive option. Its greatest strengths are reliability, flexibility, and operational clarity, making it especially well suited for businesses that prioritize continuity, governance, and long-term resilience.\n\nAt the core of DataVault Enterprise\u2019s appeal is its ability to simplify complex backup environments without sacrificing depth. The platform presents backup and recovery operations in a clear, structured manner that supports both day-to-day administrators and larger IT teams managing diverse infrastructure. Whether protecting physical systems, virtual machines, databases, or cloud-based workloads, DataVault Enterprise demonstrates a mature design that supports consistency across environments. This unified approach contributes significantly to its value, as it helps organizations maintain confidence in their protection strategy while reducing administrative fragmentation.\n\nAnother major advantage is its strong recovery posture. In any backup solution, restoration is the defining measure of effectiveness, and DataVault Enterprise appears designed with that principle in mind. Recovery workflows are intuitive, well organized, and conducive to rapid action when time is critical. Granular recovery options further enhance the experience by allowing teams to restore exactly what they need, from full systems to individual files or application components. This level of precision improves operational agility and helps ensure that recovery objectives can be met with confidence.\n\nThe platform also excels in centralized management. Its administrative console is well conceived, offering visibility into backup status, policy configuration, storage usage, and job performance from a unified interface. This design supports more informed oversight and fosters efficient decision-making. For larger organizations, the ability to manage multiple backup policies and infrastructure segments from a central point is especially valuable. It promotes consistency, strengthens governance, and supports a more streamlined operational model.\n\nScalability is another area where DataVault Enterprise performs very well. As data volumes grow and IT estates become more distributed, backup platforms must expand gracefully, and DataVault Enterprise appears well positioned for that challenge. Its architecture supports growth in a way that feels deliberate and enterprise-oriented, allowing organizations to extend protection across additional workloads and locations while preserving manageability. This makes it an attractive choice for businesses planning for expansion, modernization, or hybrid infrastructure adoption.\n\nSecurity and compliance support are also notable strengths. Modern backup solutions must do more than store copies of data; they must contribute meaningfully to overall resilience. DataVault Enterprise aligns well with that expectation by supporting secure handling of protected data, role-aware administration, and policy-driven control. These capabilities help organizations reinforce internal standards while also supporting broader regulatory and governance goals. In environments where audit readiness and data stewardship are important, this adds meaningful strategic value.\n\nPerformance is similarly commendable. Efficient backup operations, reliable scheduling, and well-structured job handling contribute to a platform that feels optimized for professional use. In practical terms, this means IT teams can expect a smoother operational rhythm, with backup tasks fitting more naturally into broader infrastructure workflows. For environments with demanding service expectations, this kind of consistency is especially beneficial.\n\nA particularly appealing aspect of DataVault Enterprise is how it balances feature richness with usability. Enterprise software often becomes compelling when it delivers advanced capability without overwhelming its operators, and this solution makes a strong impression in that regard. The interface and workflow design suggest thoughtful attention to the real needs of administrators, enabling teams to work effectively without unnecessary complexity. This helps shorten the path to productive use and supports stronger adoption across teams.\n\nKey strengths of DataVault Enterprise include:\n- Comprehensive protection for diverse workloads across physical, virtual, and cloud environments\n- Centralized management that improves visibility, control, and policy consistency\n- Strong recovery capabilities with granular restoration options\n- Scalable architecture suited to growing and distributed enterprises\n- Security-conscious design that supports governance and resilience objectives\n- User-friendly administration that complements its enterprise feature set\n\nFrom a strategic perspective, DataVault Enterprise is a compelling solution for organizations that value reliability and operational confidence. It supports the essential goals of backup infrastructure exceptionally well: protecting critical data, simplifying administration, and enabling timely recovery. Its well-rounded design makes it suitable for a wide range of enterprise scenarios, from established data center environments to more modern hybrid deployments.\n\nOverall, DataVault Enterprise presents itself as a polished and thoughtfully engineered backup solution that meets the expectations of enterprise buyers with assurance and professionalism. It combines dependable core functionality with the management, scalability, and usability features that modern organizations expect. For businesses evaluating backup platforms with an emphasis on resilience, control, and future readiness, DataVault Enterprise is an excellent product worthy of serious consideration.",
+          "input_tokens": 85,
+          "output_tokens": 928,
+          "cost_usd": 0.018985000000000002,
+          "latency_ms": 25367.940900003305,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_5c_14",
+      "condition": "baseline",
+      "constraint_count": 5,
+      "scc": 1.0,
+      "pa": 0.8,
+      "satisfied": 4,
+      "total_checkable": 4,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_5c_14",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "Introducing the FitPulse Watch FAQ, Jordan.\n\n**Q: What does the FitPulse Watch do?**  \nA: The FitPulse Watch is a fitness tracker designed to help users monitor activity and wellness data. Depending on the model and app features, it may track metrics such as steps, workouts, heart rate, sleep, and notifications from a connected smartphone. For the most accurate information, please refer to the product specifications for your specific FitPulse Watch model.\n\n**Q: Is the FitPulse Watch a medical device?**  \nA: No. The FitPulse Watch is intended for general fitness and wellness purposes and should not be used to diagnose, treat, monitor, or prevent medical conditions unless explicitly stated in official product documentation.\n\n**Q: How accurate is the tracking?**  \nA: Fitness trackers provide estimates based on sensors and algorithms. Measurements such as step count, heart rate, sleep, and calorie burn can vary due to fit, movement, skin contact, and usage conditions.\n\n**Q: Does the FitPulse Watch work with my phone?**  \nA: Compatibility depends on the supported operating systems and app requirements listed by the manufacturer. Please check the official compatibility details before purchase or setup.\n\n**Q: Is the FitPulse Watch waterproof?**  \nA: Water resistance varies by model. Review the official water-resistance rating and usage guidance before swimming, showering, or exposing the device to water.\n\n**Q: How long does the battery last?**  \nA: Battery life depends on the FitPulse Watch model, feature usage, screen brightness, GPS use if available, notification frequency, and heart rate monitoring settings. Please consult the official product details for expected battery performance.\n\n**Q: Can I receive calls and messages on the FitPulse Watch?**  \nA: Many fitness trackers support call, text, or app notifications when paired with a compatible smartphone, but available features depend on the device model, phone compatibility, and app permissions.\n\n**Q: How do I set up the FitPulse Watch?**  \nA: In most cases, setup involves charging the watch, downloading the companion app, turning on Bluetooth, pairing the device, and following the in-app instructions. Refer to the user manual for model-specific steps.\n\nIf you need help with a specific FitPulse Watch model or feature, please share the model name and I\u2019d be happy to help further.\n\nBest regards",
+          "input_tokens": 87,
+          "output_tokens": 488,
+          "cost_usd": 0.010195000000000001,
+          "latency_ms": 12387.913400001707,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_10c_0",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.3,
+      "pa": 0.3,
+      "satisfied": 3,
+      "total_checkable": 10,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_10c_0",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"email\": \"dear morgan,\\n\\ncloudsync pro keeps your files secure, organized, and ready wherever work happens. access documents instantly, share updates quickly, and protect every project with dependable cloud storage.\\n\\nwhether you lead a growing team or manage personal files, cloudsync pro helps you stay focused. enjoy features designed to save time and support better collaboration:\\n- secure file backup across devices\\n- fast sharing with permission controls\\n- seamless syncing for remote teams\\n- scalable storage for changing needs\\n\\nchoose cloudsync pro for confidence, speed, and flexibility every day. start now and give your files a smarter home. best regards\"\n}",
+          "input_tokens": 137,
+          "output_tokens": 139,
+          "cost_usd": 0.003465,
+          "latency_ms": 4042.459600008442,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_10c_1",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.8571428571428571,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 7,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_10c_1",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"review\": \"the smartlock x200 stands out as a secure and easy way to upgrade a front door. in daily use, it unlocks fast, pairs well with a phone, and gives clear status updates. for people who want simple smart home control, this lock makes a strong first impression.\\n\\nits best features are convenience and solid core function. app access lets you lock or unlock the door without a key, and temporary digital codes help with guests or service visits. auto-lock support also adds peace of mind when you leave in a hurry.\\n\\nin testing, the lock felt smooth and responsive. the mobile setup was straightforward, and the app layout was easy to follow. notifications arrived quickly, which made it simple to check whether the door was secured.\\n\\nthe design is clean and modern, so it fits well with most entry doors. build quality feels sturdy, and the keypad is clear and easy to use in normal lighting. battery access is also simple, which helps with routine upkeep.\\n\\noverall, the smartlock x200 is a polished iot door lock that focuses on ease, access control, and everyday reliability. it is a strong pick for homeowners who want practical smart features in a friendly package.\"\n}",
+          "input_tokens": 153,
+          "output_tokens": 254,
+          "cost_usd": 0.005845,
+          "latency_ms": 7128.916899993783,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_10c_2",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.6666666666666666,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 9,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_10c_2",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"faq_entry\": \"fintrack plus helps you view spending build budgets and grow savings with ease.\\n\\nit brings accounts budgets and goals together in one clear place for confident money management every day.\\n\\ncommon questions and answers appear below for quick support.\\n\\n- what does fintrack plus do?\\n- it tracks spending organizes budgets and highlights savings progress in a simple dashboard.\\n\\n- is my information protected?\\n- yes. fintrack plus uses strong security features to help keep your information safe and private.\\n\\n- can i connect multiple accounts?\\n- yes. you can link many bank and card accounts for a fuller view of your finances.\\n\\n- does it help with budgeting?\\n- yes. you can create flexible budgets set goals and follow progress with helpful insights.\\n\\n- is fintrack plus easy to use?\\n- yes. the app offers a clean design and helpful guidance for a smooth experience.\\n\\nfor more help the support team is ready to assist and share useful tips whenever you need them.\\n\\nbest regards\"\n}",
+          "input_tokens": 149,
+          "output_tokens": 223,
+          "cost_usd": 0.005205,
+          "latency_ms": 6072.785700001987,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_10c_3",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.375,
+      "pa": 0.3,
+      "satisfied": 3,
+      "total_checkable": 8,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_10c_3",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"memo\": \"dear team,\\n\\nwe're excited to share that medicare bot, our healthcare chatbot, is ready for launch. this memo outlines what the product does, where it fits in our portfolio, and how we should talk about it internally and externally. our goal is to introduce it clearly, support adoption across teams, and make sure every claim we make is grounded in what the product can reliably do today.\\n\\nmedicare bot is designed to help users navigate healthcare information through conversational interactions. at launch, it can answer questions based on approved content, guide users to relevant resources, and support common service workflows that have been configured by our team. it is not a substitute for a licensed clinician, and we should be consistent about that point in all materials. when discussing the product, please stick to verified capabilities and avoid implying diagnosis, treatment recommendations, or outcomes that have not been validated.\\n\\nfor launch readiness, please keep these priorities in mind:\\n- 1. align all messaging with legal, compliance, and clinical review.\\n- 2. use only approved descriptions of features, limitations, and intended use.\\n- 3. route customer-facing questions about edge cases to the designated product and compliance contacts.\\n- 4. monitor early usage feedback and document recurring issues for triage.\\n\\nhere is how we should position the product in a conversational way:\\n- 1. medicare bot helps people find vetted healthcare information and next-step resources more quickly.\\n- 2. it supports service teams by handling recurring informational requests within its approved scope.\\n- 3. it is intended to complement human support, not replace clinical judgment or emergency services.\\n\\nover the next few weeks, we'll track launch metrics, support enablement, and customer feedback closely. if you are speaking with customers, partners, or internal stakeholders, please use the latest approved materials and flag any requests that go beyond the current release. thanks for helping us launch thoughtfully and responsibly. learn more\"\n}",
+          "input_tokens": 136,
+          "output_tokens": 413,
+          "cost_usd": 0.00894,
+          "latency_ms": 11297.80000000028,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_10c_4",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.4,
+      "pa": 0.4,
+      "satisfied": 4,
+      "total_checkable": 10,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_10c_4",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"EMAIL\": \"INTRODUCING ECOCHARGE SOLAR PANEL KIT.\\n\\nPOWER YOUR HOME WITH CLEAN BRIGHT ENERGY AND ENJOY A SMART SIMPLE WAY TO ELEVATE EVERY DAY. THIS KIT BRINGS RELIABLE PERFORMANCE EASY SETUP AND A MODERN DESIGN THAT FEELS RIGHT AT HOME.\\n\\n1. ENJOY EFFICIENT ENERGY CAPTURE THAT HELPS YOU GET MORE FROM EVERY SUNNY HOUR.\\n2. DISCOVER A DURABLE WEATHER READY BUILD CREATED FOR LONG LASTING CONFIDENCE.\\n3. APPRECIATE A STREAMLINED INSTALLATION EXPERIENCE THAT SUPPORTS A FAST JOYFUL START.\\n\\nWITH ECOCHARGE YOU CAN EMBRACE GREATER ENERGY FREEDOM WHILE ADDING VALUE TO YOUR SPACE. EACH MOMENT OF SUNSHINE BECOMES AN OPPORTUNITY TO POWER YOUR ROUTINE WITH EASE COMFORT AND PRIDE.\\n\\nCHOOSE ECOCHARGE SOLAR PANEL KIT TODAY AND STEP INTO A BRIGHTER FUTURE FILLED WITH SAVINGS PERFORMANCE AND PEACE OF MIND. ORDER NOW AND LET EVERY NEW DAY SHINE WITH POSSIBILITY.\"\n}",
+          "input_tokens": 141,
+          "output_tokens": 237,
+          "cost_usd": 0.005445,
+          "latency_ms": 10284.007499998552,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_10c_5",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.625,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 8,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_10c_5",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"review\": \"introducing datavault enterprise as a cutting-edge backup solution that delivers fast protection strong recovery and clear value for modern teams. it shines first where it matters most. your data stays safe your restore process stays simple and daily work keeps moving. the platform feels built for real business pressure and that makes it easy to trust.\\n\\nthe best part is its balance of power and ease. setup is smooth and the dashboard is clean. admins can move through jobs alerts and reports without stress. recovery is quick and that is vital when every minute counts. datavault enterprise also scales well so small groups and large firms can use it with confidence.\\n\\n1. backup speed is strong and consistent.\\n2. recovery tools are easy to use.\\n3. security features feel deep and modern.\\n4. reporting gives clear insight for planning.\\n\\ni also like how datavault enterprise turns a complex task into a calm routine. support feels responsive and documentation is helpful. while advanced users may want even more fine tuning the current feature set will satisfy most buyers. overall this is an exciting reliable product that earns a strong recommendation.\"\n}",
+          "input_tokens": 150,
+          "output_tokens": 238,
+          "cost_usd": 0.00551,
+          "latency_ms": 16758.417199991527,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_10c_6",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.8888888888888888,
+      "pa": 0.8,
+      "satisfied": 8,
+      "total_checkable": 9,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_10c_6",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "introducing fitpulse watch faq by alex\n\nfitpulse watch is a fitness tracker that helps you log daily activity, heart rate, sleep, and workout data. it pairs with a mobile app so you can review trends over time. setup is designed to be seamless, with on-screen steps in the app and on the watch.\n\ncommon questions:\n- what does fitpulse watch track? it tracks steps, distance, calories burned, heart rate, sleep, and workout sessions. some results are estimates and can vary based on wear, movement, and personal settings.\n- is fitpulse watch a medical device? no. fitpulse watch is not a medical device and should not be used to diagnose, treat, cure, or prevent any condition.\n- how long does the battery last? battery life depends on settings, feature use, and workout time. for exact battery details, please check the current product specifications.\n- does it work with my phone? fitpulse watch works with supported smartphones through its companion app. please review the current compatibility list before you buy.\n- is it water resistant? water resistance can vary by model and rating. please check the official product page for the tested rating and care guidance.\n\nif you need help with pairing, syncing, or daily use, support is available through the app, website, or customer care team. for the most accurate details, always refer to the latest fitpulse watch user guide and product page.\n\nsincerely",
+          "input_tokens": 156,
+          "output_tokens": 291,
+          "cost_usd": 0.006600000000000001,
+          "latency_ms": 7845.750799999223,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_10c_7",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.5555555555555556,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 9,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_10c_7",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"memo\": \"Team,\\n\\nI am pleased to announce the launch of LearnPath AI, our new educational platform designed to personalize learning, simplify instruction, and expand access to high quality digital education. This launch represents an important milestone for our product strategy and reinforces our commitment to innovative, learner centered experiences.\\n\\nLearnPath AI delivers strong value for students, educators, and institutional partners through adaptive pathways, intuitive content discovery, and actionable performance insights. Early feedback has been highly encouraging, highlighting clear usability, engaging recommendations, and meaningful support for diverse learning goals across multiple environments.\\n\\nOur launch priorities are:\\n- Ensure a smooth onboarding experience for every customer segment.\\n- Maintain responsive support and clear implementation guidance.\\n- Share success stories that demonstrate measurable educational impact.\\n\\nOver the next quarter, teams will focus on 1. adoption growth, 2. partner enablement, and 3. continuous platform refinement. Cross functional collaboration will help us scale effectively, strengthen customer confidence, and build lasting momentum in the market.\\n\\nThank you for your dedication, creativity, and consistent execution. LearnPath AI reflects the best of our company, and this launch creates exciting opportunities to serve learners more effectively while advancing our shared vision.\"\n}",
+          "input_tokens": 147,
+          "output_tokens": 256,
+          "cost_usd": 0.005855000000000001,
+          "latency_ms": 7014.7846000036225,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_10c_8",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.5555555555555556,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 9,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_10c_8",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"subject\": \"meet cloudsync pro\",\n  \"body\": \"your files stay close with cloudsync pro.\\n\\nsave photos docs and projects in one secure online space. access them from your phone laptop or tablet whenever you sign in.\\n\\nsharing is simple and quick. send files or folders with a link and keep your team in step across devices.\\n\\nautomatic sync helps your latest edits appear where you need them. this makes daily work feel smooth and easy.\\n\\nstart today and enjoy a cleaner way to store sync and share your files with cloudsync pro.\"\n}",
+          "input_tokens": 150,
+          "output_tokens": 129,
+          "cost_usd": 0.0033300000000000005,
+          "latency_ms": 3827.193700009957,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_10c_9",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 6,
+      "total_checkable": 8,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_10c_9",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "smartlock x200 is a strong iot door lock for homes that need remote access and clear activity logs. its core value is simple control, fast lock status checks, and app-based management. buyers should still confirm fit, battery life, and platform support before purchase.\n\nthe best part is convenience. a connected lock can let owners lock or unlock a door from a phone when paired with a supported hub or direct wireless link. many models in this class also send alerts, track entry history, and support temporary digital keys for guests. those benefits are real when setup is stable.\n\nsecurity is more complex than marketing suggests. no smart lock is safer by default than a well-made mechanical deadbolt. real protection depends on encryption, firmware updates, door strength, strike plate quality, and secure account settings. two-factor login, strong passwords, and routine software updates matter a great deal.\n\nday-to-day use is usually easy. installation often takes less than an hour on standard doors, though older frames can cause alignment issues. battery upkeep is another key factor. users should expect periodic battery changes and should verify whether a physical key override exists for backup access.\n\noverall, smartlock x200 is appealing if it offers reliable connectivity, clear permissions, and strong update support from the maker. that said, product value depends on verified specifications, independent testing, and long-term app quality. if those points check out, it can be a practical smart home upgrade.",
+          "input_tokens": 167,
+          "output_tokens": 296,
+          "cost_usd": 0.006755000000000001,
+          "latency_ms": 20415.815300002578,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_10c_10",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 1.0,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 7,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_10c_10",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "FinTrack Plus helps people organize everyday money tasks in one place. The app lets users connect supported financial accounts, review transactions, build budgets, and monitor spending trends through a single dashboard. Customers like Jordan often ask what the app does first, and the clearest answer is that FinTrack Plus is designed to make personal finance tracking more convenient and easier to follow.\n\nA common question is whether FinTrack Plus can help with budgeting. Yes\u2014it includes tools that allow users to set budget categories, compare spending against those limits, and review progress over time. Users also ask about account visibility, and the app supports connected account monitoring so balances and transaction activity can be reviewed together when eligible institutions are linked.\n\nSecurity and privacy are also frequent topics. FinTrack Plus is designed to work with connected financial data so users can view account information in one app experience. For the most accurate details about data handling, account connection methods, and privacy practices, users should review the current in-app disclosures and official policy materials provided with the service.\n\nOther popular questions focus on everyday usability:\n- Can I track spending in one place? Yes, eligible linked accounts and transactions can be viewed together.\n- Can I see my budget progress? Yes, budgeting tools are included in the app.\n- Can I review trends over time? Yes, spending activity can be displayed to support ongoing review.\n\nFor anyone exploring FinTrack Plus, the app offers a clear and helpful way to stay informed about personal finances. It is well suited for users who want budgeting support, transaction visibility, and a more organized view of their money, all within a streamlined app experience.",
+          "input_tokens": 150,
+          "output_tokens": 324,
+          "cost_usd": 0.00723,
+          "latency_ms": 9729.33460000786,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_10c_11",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.42857142857142855,
+      "pa": 0.3,
+      "satisfied": 3,
+      "total_checkable": 7,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_10c_11",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "to: all employees\n\nthis memo announces the launch of medicare bot under the leadership of morgan. medicare bot is a cutting-edge healthcare chatbot now entering controlled release for approved internal and pilot use. its current scope is limited to general health information administrative guidance and triage support based on approved content and defined workflows. it does not diagnose conditions prescribe treatment or replace licensed clinicians. all teams must present the product accurately and use only validated materials in customer partner and regulatory discussions.\n\nthe immediate priorities are 1. ensure onboarding and support teams use the latest approved messaging 2. route all medical safety legal and privacy questions through the designated review process 3. monitor pilot feedback for usability reliability and escalation quality. product claims must remain substantiated by documented testing content review and compliance approval. any statement beyond confirmed capabilities requires written authorization before release.\n\nover the next phase we will evaluate pilot performance against safety operational and user experience goals before any broader deployment decision. success depends on disciplined execution clear documentation and rapid issue escalation. please direct launch questions to morgan and the product operations team.",
+          "input_tokens": 148,
+          "output_tokens": 223,
+          "cost_usd": 0.005200000000000001,
+          "latency_ms": 11765.308600006392,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_10c_12",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.8888888888888888,
+      "pa": 0.8,
+      "satisfied": 8,
+      "total_checkable": 9,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_10c_12",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "dear eco-minded homeowner\n\nmeet the ecocharge solar panel kit. this innovative system helps you turn sunlight into useful power at home. it is designed to support everyday energy goals with clean renewable energy.\n\nwith the ecocharge solar panel kit you can generate electricity when the sun is shining and reduce your reliance on grid power. the kit includes solar panels and the core hardware needed for a standard setup. clear guides help you understand the installation process and product features.\n\necocharge is a smart choice for people who want more control over energy use and a lower impact lifestyle. solar power is quiet and renewable and it can support long term value for your home. the kit gives you a practical way to start with confidence and optimism.\n\nnow is a great time to explore solar for your home. choose the ecocharge solar panel kit and take a positive step toward cleaner energy each day. contact us today to learn more and see whether this kit is a good fit for your needs.",
+          "input_tokens": 153,
+          "output_tokens": 195,
+          "cost_usd": 0.004665000000000001,
+          "latency_ms": 5467.51130001212,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_10c_13",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.7777777777777778,
+      "pa": 0.7,
+      "satisfied": 7,
+      "total_checkable": 9,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_10c_13",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "INTRODUCING A CAREFUL REVIEW OF DATAVAULT ENTERPRISE, A BACKUP SOLUTION WHOSE VALUE DEPENDS HEAVILY ON ITS ACTUAL FEATURES, DEPLOYMENT MODEL, AND SUPPORT TERMS. I CANNOT VERIFY THOSE DETAILS FROM THE NAME ALONE, SO I WILL NOT MAKE UNSUPPORTED CLAIMS ABOUT PERFORMANCE, SECURITY, OR COMPLIANCE. THAT SAID, I CAN STILL OFFER A FAIR, USEFUL ASSESSMENT FRAMEWORK.\n\nDATAVAULT ENTERPRISE SOUNDS POSITIONED FOR ORGANIZATIONS THAT NEED CENTRALIZED DATA PROTECTION, CLEAR ADMINISTRATION, AND RELIABLE RECOVERY WORKFLOWS. IF THE PRODUCT OFFERS POLICY-BASED BACKUPS, ROLE-BASED ACCESS, ENCRYPTION, AND AUDIT LOGS, THOSE WOULD BE STRONG SIGNS OF A MODERN, CUTTING-EDGE PLATFORM. HOWEVER, BUYERS SHOULD CONFIRM EACH CAPABILITY IN OFFICIAL DOCUMENTATION, A LIVE DEMO, OR A HANDS-ON TRIAL.\n\nJORDAN, AS A TECH REVIEWER, I WOULD JUDGE THIS PRODUCT ON A FEW PRACTICAL POINTS:\n- HOW FAST IT BACKS UP AND RESTORES REAL-WORLD DATA\n- WHETHER THE MANAGEMENT CONSOLE IS SIMPLE AND CLEAR\n- HOW WELL IT HANDLES SCALING, REPORTING, AND ALERTS\n- WHAT LEVEL OF CUSTOMER SUPPORT AND TRAINING IS INCLUDED\n- WHETHER PRICING IS PREDICTABLE OVER TIME\n\nMY OVERALL VIEW IS CAUTIOUSLY POSITIVE IN PRINCIPLE, BUT NOT FINAL. A BACKUP TOOL SHOULD PROVE ITS WORTH IN RECOVERY TESTS, NOT JUST IN SALES MATERIAL. IF DATAVAULT ENTERPRISE DELIVERS VERIFIED RELIABILITY, EASY OPERATIONS, AND STRONG SUPPORT, IT COULD BE A SOLID CHOICE FOR BUSINESS USE. THANK YOU",
+          "input_tokens": 163,
+          "output_tokens": 383,
+          "cost_usd": 0.008475000000000002,
+          "latency_ms": 9581.18249999825,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_10c_14",
+      "condition": "baseline",
+      "constraint_count": 10,
+      "scc": 0.5555555555555556,
+      "pa": 0.5,
+      "satisfied": 5,
+      "total_checkable": 9,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_10c_14",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"faq_entry\": \"Welcome to the FitPulse Watch FAQ, your quick guide to getting the most from this innovative fitness tracker. FitPulse Watch is designed to support active lifestyles with reliable tracking, a polished design, and a user-friendly experience that helps you stay focused on your wellness goals.\\n\\nFitPulse Watch tracks key health and activity metrics throughout the day. Popular features include: 1. Step counting for daily movement awareness. 2. Heart rate monitoring for workout and wellness insights. 3. Sleep tracking to help you understand nightly rest patterns. 4. Calorie and activity summaries for progress visibility.\\n\\nCustomers often ask about battery life and charging. FitPulse Watch offers dependable battery performance for everyday use, and the included charger makes powering up convenient. To enjoy the best results, 1. Charge the watch fully before first use. 2. Keep the charging contacts clean. 3. Sync regularly with the companion app for updated insights.\\n\\nAnother common question is about smartphone compatibility. FitPulse Watch pairs smoothly with many modern iOS and Android devices through the companion app. This connection allows you to view activity trends, receive helpful notifications, and personalize settings so the watch fits comfortably into your routine.\\n\\nFor care and daily use, FitPulse Watch is built for comfort and consistency. For the best experience, 1. Wear it snugly for accurate readings. 2. Clean the band and sensor area regularly. 3. Explore app features to customize goals and alerts. With these tips, FitPulse Watch can be a valuable part of your wellness journey.\"\n}",
+          "input_tokens": 138,
+          "output_tokens": 327,
+          "cost_usd": 0.00723,
+          "latency_ms": 7873.127099999692,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_15c_0",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.9166666666666666,
+      "pa": 0.7333333333333333,
+      "satisfied": 11,
+      "total_checkable": 12,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_15c_0",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "Attention\n\nCloudSync Pro gives your team secure cloud storage with fast file access across devices. It supports file syncing and sharing through one streamlined workspace. Your organization gains seamless collaboration and dependable availability from a service built for modern business needs.\n\nTaylor can use CloudSync Pro to store documents centrally and retrieve them from approved devices wherever internet access is available. Teams can share current files without relying on email attachments. This approach supports clearer workflows and more efficient daily coordination.\n\nKey advantages include the following:\n- Encrypted data transfer helps protect files during upload and download.\n- Access controls help administrators manage permissions with confidence.\n- Automatic syncing keeps approved devices updated with the latest file versions.\n- Scalable storage plans support changing business requirements over time.\n\nGetting started is straightforward and professional:\n1. Choose a plan that matches your storage and user needs.\n2. Upload files through the web app or desktop client.\n3. Invite team members and assign access permissions.\n4. Begin working with organized content across locations.\n\nCloudSync Pro helps organizations improve file management while supporting secure collaboration and operational continuity. If you are evaluating cloud storage solutions this is an excellent time to explore its capabilities. Select CloudSync Pro today and move forward with clarity and confidence.",
+          "input_tokens": 210,
+          "output_tokens": 245,
+          "cost_usd": 0.00595,
+          "latency_ms": 10505.09370000509,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_15c_1",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.8571428571428571,
+      "pa": 0.8,
+      "satisfied": 12,
+      "total_checkable": 14,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_15c_1",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "WELCOME\n\nSMARTLOCK X200 PRESENTS A MODERN WAY TO SECURE A HOME WITH CLEAR FOCUS ON EASE AND CONFIDENCE. ITS CLEAN DESIGN LOOKS GREAT ON A FRONT DOOR. THE MOBILE APP FEELS SMOOTH AND SIMPLE. DAILY ENTRY BECOMES FAST AND COMFORTING. THE LOCK ALSO GIVES A RELIABLE SENSE OF CONTROL.\n\nSETUP FEELS STRAIGHTFORWARD FOR MANY HOMES AND THE GUIDED APP FLOW HELPS NEW USERS GET STARTED WITH LESS STRESS. REMOTE ACCESS FEATURES ADD FLEXIBILITY FOR FAMILY VISITS OR SERVICE WINDOWS. REAL TIME ALERTS SUPPORT A STRONG FEELING OF AWARENESS. THESE TOOLS MAKE THE EXPERIENCE FEEL MODERN AND WELCOMING.\n\n- THE BUILD QUALITY FEELS SOLID AND REASSURING\n- THE APP EXPERIENCE FEELS CLEAR AND FRIENDLY\n- THE SMART FEATURES BRING USEFUL DAILY CONVENIENCE\n\nBATTERY MANAGEMENT SEEMS WELL HANDLED FOR NORMAL USE AND THE STATUS INDICATORS HELP PEOPLE STAY INFORMED. THE LOCK OPENS SMOOTHLY AND THE MOTOR RESPONSE FEELS CONSISTENT. DAY TO DAY USE STAYS PLEASANT. THAT STEADY PERFORMANCE HELPS THE X200 STAND OUT IN A GROWING SMART HOME MARKET.\n\nSMARTLOCK X200 IS A STRONG CHOICE FOR PEOPLE WHO WANT SECURITY WITH SIMPLE DIGITAL ACCESS. IT BLENDS STYLE FUNCTION AND PEACE OF MIND IN A VERY APPEALING PACKAGE. THE OVERALL EXPERIENCE FEELS POLISHED PRACTICAL AND ENJOYABLE. THANK YOU",
+          "input_tokens": 216,
+          "output_tokens": 329,
+          "cost_usd": 0.007660000000000001,
+          "latency_ms": 9044.360500003677,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_15c_2",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.6428571428571429,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 14,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_15c_2",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"faq_entry\": \"fintrack plus helps you see spending savings and goals in one reliable place. morgan often recommends it for daily money awareness and steady progress. the app gives clear insights fast and supports confident choices every day.\\n\\nmany users ask how fintrack plus protects data and keeps accounts current. it uses strong encryption and secure connections throughout each session. automatic syncing keeps balances fresh and budgeting views ready when needed.\\n\\nanother common question covers planning tools and alerts for upcoming bills. fintrack plus offers goal tracking smart reminders and helpful trend reports. these features support better habits and steady control over personal finances.\\n\\npeople also ask who benefits most from the app. 1. new budgeters gain guidance and visibility. 2. busy families track shared goals and spending. 3. focused savers monitor progress and celebrate milestones.\\n\\nsupport questions often center on setup and daily use. - connect accounts with guided steps. - review dashboards for useful updates. - adjust categories and goals anytime. fintrack plus creates a positive experience and helps users feel informed empowered and ready.\"\n}",
+          "input_tokens": 220,
+          "output_tokens": 225,
+          "cost_usd": 0.005600000000000001,
+          "latency_ms": 6164.157899998827,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_15c_3",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.5833333333333334,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 12,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_15c_3",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"memo\":\"dear team\\n\\nwe will launch medicare bot on may 20. this innovative healthcare chatbot will support patient scheduling and faq responses. it will not give diagnoses or treatment advice.\\n\\nmedicare bot was tested with 120 common support questions. it answered 108 correctly in internal review. staff will monitor all live chats during the pilot.\\n\\n1. training for support teams starts may 13.\\n2. the pilot will run for 30 days.\\n3. weekly reports will track usage and issue rates.\\n\\nplease direct launch questions to the product office. thank you for supporting a careful and compliant rollout.\"}",
+          "input_tokens": 206,
+          "output_tokens": 135,
+          "cost_usd": 0.0037300000000000002,
+          "latency_ms": 4780.912300004275,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_15c_4",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.5384615384615384,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 13,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_15c_4",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "welcome\n\nmeet ecocharge solar panel kit. it gives you a simple way to make clean power at home or on the go. if you want lower energy bills and more control over where your power comes from this kit is a smart place to start. morgan asked for a clear option that feels easy to use and this is exactly that. each kit is built to help capture sunlight and turn it into usable energy with a straightforward setup and a compact design.\n\nhere is what makes ecocharge stand out. 1. solar panels convert sunlight into electricity. 2. the kit is designed for simple installation with core parts included. 3. it can support everyday charging needs for compatible devices and small power setups depending on sunlight conditions and system size. 4. it offers a practical path toward using more renewable energy without changing your whole routine at once. with clean lines and a user friendly build it fits well for cabins camping backup plans and small home projects.\n\nnow is a great time to choose a power solution that is flexible quiet and renewable. ecocharge solar panel kit helps you take a solid first step toward energy independence while keeping the process simple. if you are ready to explore a cleaner way to power your day ecocharge is ready for you. sincerely",
+          "input_tokens": 218,
+          "output_tokens": 253,
+          "cost_usd": 0.00615,
+          "latency_ms": 7364.694600008079,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_15c_5",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.5833333333333334,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 12,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_15c_5",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "datavault enterprise appears to be a capable backup solution for larger teams. it stands out most for broad data protection coverage and centralized control. in practical terms that can reduce backup gaps and simplify routine recovery work. the platform feels cutting-edge when it supports automated policies and clear monitoring. that said any final verdict depends on verified vendor details and real testing. without confirmed specifications i cannot responsibly claim exact speeds uptime rates or compliance scope.\n\nfor buyers the key strengths are easy to frame. - it likely fits organizations that need one console for backup tasks. - it may appeal to it teams that want scheduled jobs and recovery options. - it should be judged on restore reliability admin workload and storage flexibility. i would also check support quality deployment effort and reporting depth. these points matter more than flashy marketing during a real purchase review. a pilot program is the best way to validate performance under pressure.\n\noverall i am positive about datavault enterprise as a category fit for business backup needs. it sounds promising and potentially high value for risk reduction and continuity. still careful proof is essential before calling it best in class. ask for a live demo. request customer references. compare recovery workflows against rivals. if the product delivers on those checks it could be an exciting choice. Best regards",
+          "input_tokens": 218,
+          "output_tokens": 253,
+          "cost_usd": 0.00615,
+          "latency_ms": 9417.980800004443,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_15c_6",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.4166666666666667,
+      "pa": 0.3333333333333333,
+      "satisfied": 5,
+      "total_checkable": 12,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_15c_6",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"FAQ\": \"WELCOME TO THE FITPULSE WATCH FAQ.\\nFITPULSE WATCH TRACKS STEPS HEART RATE SLEEP AND WORKOUTS THROUGHOUT THE DAY. IT ALSO SHOWS NOTIFICATIONS AND HELPS USERS REVIEW ACTIVITY TRENDS. ALEX OFTEN ASKS HOW IT SUPPORTS DAILY FITNESS GOALS.\\n\\nHERE ARE COMMON QUESTIONS AND ANSWERS.\\n- WHAT DOES FITPULSE WATCH TRACK?\\n- IT TRACKS STEPS HEART RATE SLEEP AND WORKOUT DATA.\\n- DOES IT SHOW PHONE ALERTS?\\n- YES. IT CAN DISPLAY NOTIFICATIONS WHEN PAIRED WITH A COMPATIBLE PHONE.\\n\\n- HOW DOES FITPULSE WATCH HELP WITH FITNESS?\\n- IT HELPS USERS VIEW DAILY ACTIVITY AND PROGRESS OVER TIME.\\n- IS IT GOOD FOR EVERY WORKOUT?\\n- IT SUPPORTS WORKOUT TRACKING FOR MANY ROUTINES AND HELPS USERS STAY AWARE OF MOVEMENT.\\n\\n- CAN I REVIEW MY SLEEP DATA?\\n- YES. FITPULSE WATCH PROVIDES SLEEP TRACKING INFORMATION.\\n- WHO MIGHT ENJOY IT?\\n- PEOPLE WHO WANT A FRIENDLY FITNESS TRACKER WITH CORE HEALTH AND ACTIVITY FEATURES MAY ENJOY IT.\"\n}",
+          "input_tokens": 196,
+          "output_tokens": 261,
+          "cost_usd": 0.006200000000000001,
+          "latency_ms": 6092.922399999225,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_15c_7",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.3333333333333333,
+      "pa": 0.26666666666666666,
+      "satisfied": 4,
+      "total_checkable": 12,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_15c_7",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"memo\": \"TEAM,\\n\\nWE ARE EXCITED TO LAUNCH LEARNPATH AI TODAY AS OUR NEW EDUCATIONAL PLATFORM. THIS RELEASE MARKS A BIG STEP FOR OUR LEARNING STRATEGY. JORDAN AND THE PRODUCT TEAM HAVE PREPARED A SEAMLESS ROLLOUT FOR EMPLOYEES, EDUCATORS, AND PARTNERS.\\n\\nLEARNPATH AI HELPS USERS DISCOVER LESSONS, TRACK PROGRESS, AND ACCESS LEARNING CONTENT IN ONE PLACE. THE PLATFORM ALSO USES AI TO SUPPORT CONTENT RECOMMENDATIONS AND LEARNING PATH GUIDANCE, BASED ON AVAILABLE USER DATA AND CONFIGURED RULES.\\n\\nAT LAUNCH, THE PLATFORM INCLUDES:\\n- PERSONALIZED LEARNING PATHS\\n- PROGRESS DASHBOARDS\\n- CONTENT DISCOVERY TOOLS\\n- ADMIN CONTROLS FOR PROGRAM SETUP\\n\\nOUR NEXT STEPS ARE CLEAR:\\n1. SUPPORT EARLY USERS AND GATHER FEEDBACK.\\n2. MONITOR PLATFORM PERFORMANCE AND ADOPTION.\\n3. SHARE WEEKLY UPDATES WITH INTERNAL TEAMS.\\n\\nTHANK YOU FOR YOUR SUPPORT AND ENERGY. WE ARE READY TO HELP USERS START STRONG AND LEARN WITH CONFIDENCE. BEST REGARDS\"\n}",
+          "input_tokens": 210,
+          "output_tokens": 262,
+          "cost_usd": 0.0062900000000000005,
+          "latency_ms": 7027.6069000101415,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_15c_8",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.5,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 12,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_15c_8",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"email\": \"Introducing CloudSync Pro, the cloud storage service that helps teams store, access, and share files from one secure online space. Your files stay available across devices with seamless syncing, so work keeps moving wherever the day leads. Taylor, this is a simple way to keep important content organized, easy to find, and ready to share.\\n\\nCloudSync Pro brings together the features busy teams value most: secure cloud storage, file sharing, and access from connected devices. It supports collaboration by making files easy to upload, manage, and distribute in real time. With a clear interface and dependable performance, it helps reduce friction and keeps projects on track.\\n\\nHere is what makes CloudSync Pro a smart choice:\\n- Secure online file storage for documents, images, and more\\n- Seamless syncing across connected devices\\n- Easy file sharing for teams, clients, and partners\\n- Centralized access that supports organized collaboration\\n\\nGet started with CloudSync Pro and give your team a faster, more confident way to work together. It is a practical solution for businesses that want flexible access to files and smoother daily workflows. Bring your content into one trusted place and enjoy a more connected, productive experience today.\"\n}",
+          "input_tokens": 215,
+          "output_tokens": 251,
+          "cost_usd": 0.006095,
+          "latency_ms": 7732.817900003283,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_15c_9",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.5384615384615384,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 13,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_15c_9",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"review\": \"Attention\\n\\nSmartLock X200 delivers strong everyday value through reliable remote access clear activity tracking and flexible entry methods. Its innovative design supports app control PIN entry and temporary digital keys for guests. In testing the lock responded quickly and consistently which makes it a highly appealing choice for connected homes.\\n\\nThe best features stand out immediately.\\n- Remote locking and unlocking worked smoothly through the mobile app.\\n- Access logs were easy to review and helped confirm household activity.\\n- Guest passcodes added welcome convenience for visits and service appointments.\\nBattery life appeared solid during regular use and installation felt well guided by the included instructions.\\n\\nBuild quality feels reassuring and the overall experience remains positive from setup to daily operation. The companion app presented controls clearly and notifications arrived promptly during evaluation. SmartLock X200 is a polished and practical upgrade for users seeking secure connected entry with dependable modern convenience. Sincerely\"\n}",
+          "input_tokens": 208,
+          "output_tokens": 190,
+          "cost_usd": 0.0048400000000000006,
+          "latency_ms": 15074.695200004498,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_15c_10",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_15c_10",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"faq_entry\": \"dear jordan\\n\\nfintrack plus helps you track spending set budgets and view account activity in one app. it offers a reliable way to stay informed and organized.\\n\\ncommon question: what can i do with fintrack plus? you can review transactions monitor budgets and see trends through clear charts and summaries.\\n\\ncommon question: is fintrack plus easy to use? yes. the app has a simple layout and helpful tools that support daily money management with confidence.\"\n}",
+          "input_tokens": 212,
+          "output_tokens": 105,
+          "cost_usd": 0.0031600000000000005,
+          "latency_ms": 6658.40549999848,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_15c_11",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.5833333333333334,
+      "pa": 0.4666666666666667,
+      "satisfied": 7,
+      "total_checkable": 12,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_15c_11",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"memo\":\"Welcome team\\n\\nWe are excited to announce the launch of MediCare Bot our new healthcare chatbot for internal pilot use. This award-winning platform is now available to support faster answers to common health plan and care navigation questions. It uses approved content and clear conversation flows to guide employees to helpful next steps.\\n\\nMediCare Bot gives us three immediate strengths.\\n1. It offers round the clock access for routine questions.\\n2. It shares consistent responses from reviewed sources.\\n3. It helps direct people to human support when needed.\\n\\nThis launch starts with a focused pilot so we can learn quickly and improve with confidence. The bot does not diagnose conditions or replace clinicians. It supports education and navigation which are appropriate and well defined roles for a chatbot in healthcare.\\n\\nKey details for the pilot are below.\\n- Audience is selected employees in the pilot group.\\n- Content covers plan guidance care navigation and common wellness topics.\\n- Escalation paths point users to care teams benefits support or emergency services when appropriate.\\n- Feedback will help shape future updates and broader access.\\n\\nThank you for helping us bring this exciting step forward. Your engagement will help us create a more helpful and responsive experience for everyone. Learn more\"}",
+          "input_tokens": 217,
+          "output_tokens": 258,
+          "cost_usd": 0.0062450000000000006,
+          "latency_ms": 13394.08430000185,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_15c_12",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.7142857142857143,
+      "pa": 0.6666666666666666,
+      "satisfied": 10,
+      "total_checkable": 14,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_15c_12",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "INTRODUCING ECOCHARGE SOLAR PANEL KIT FOR HOMES THAT VALUE CLEAN POWER AND CALM CONTROL. MORGAN WILL APPRECIATE A SYSTEM THAT DELIVERS RELIABLE ENERGY WITHOUT NOISE OR COMPLEX SETUP. THIS KIT HELPS LOWER MONTHLY UTILITY COSTS WHILE SUPPORTING A RESPONSIBLE FUTURE. BUILT FOR MODERN LIVING IT OFFERS STRONG OUTPUT DURING DAILY USE AND A SLEEK DESIGN THAT FITS ROOFTOPS OR GARDENS WITH EASE. CHOOSE A SMART ENERGY SOLUTION THAT SHOWS PROFESSIONAL CARE FOR PERFORMANCE SAVINGS AND LONG TERM VALUE.\n\n1. HIGH EFFICIENCY PANELS CAPTURE MORE SUNLIGHT EACH DAY. 2. SIMPLE INSTALLATION REDUCES DELAYS AND SUPPORTS A FAST START. 3. DURABLE MATERIALS STAND FIRM THROUGH HEAT WIND AND RAIN. EACH FEATURE WORKS TO GIVE YOUR PROPERTY STEADY POWER AND GREATER INDEPENDENCE. YOU GAIN A PRACTICAL SYSTEM THAT SUPPORTS HOME OFFICES EVENING LIGHTING AND ESSENTIAL DEVICES. THE RESULT IS A CONFIDENT MOVE TOWARD ENERGY SECURITY WITH CLEAR BENEFITS YOU CAN SEE OVER TIME.\n\nSELECT ECOCHARGE SOLAR PANEL KIT TO ADVANCE YOUR ENERGY PLAN WITH DISCIPLINE AND PURPOSE. THIS IS A PROFESSIONAL CHOICE FOR CLIENTS WHO EXPECT QUALITY CLEAR RETURNS AND TRUSTED PERFORMANCE YEAR AFTER YEAR. CONTACT OUR TEAM TODAY TO REVIEW OPTIONS AND ARRANGE A STRAIGHTFORWARD NEXT STEP. THANK YOU",
+          "input_tokens": 208,
+          "output_tokens": 315,
+          "cost_usd": 0.007340000000000001,
+          "latency_ms": 15758.596900006523,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_15c_13",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.46153846153846156,
+      "pa": 0.4,
+      "satisfied": 6,
+      "total_checkable": 13,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_15c_13",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"review\": \"INTRODUCING DATAVAULT ENTERPRISE, AN INNOVATIVE BACKUP SOLUTION THAT DELIVERS FAST PROTECTION, STRONG RECOVERY, AND IMPRESSIVE PEACE OF MIND. THIS PLATFORM STANDS OUT RIGHT AWAY WITH RELIABLE PERFORMANCE, CLEAR MANAGEMENT TOOLS, AND EXCELLENT SUPPORT FOR MODERN BUSINESS DATA. IT FEELS PURPOSE-BUILT FOR TEAMS THAT WANT CONFIDENCE, SPEED, AND CONSISTENT RESULTS.\\n\\nTHE BIGGEST STRENGTH IS ITS RECOVERY EXPERIENCE. RESTORES ARE FAST, ORGANIZED, AND REASSURING, WHICH IS EXACTLY WHAT COMPANIES NEED WHEN TIME MATTERS MOST. SECURITY FEATURES ALSO DESERVE PRAISE. ENCRYPTION, ACCESS CONTROLS, AND MONITORING TOOLS WORK TOGETHER IN A WAY THAT FEELS ROBUST AND THOUGHTFUL. THAT MAKES DATAVAULT ENTERPRISE A STRONG CHOICE FOR ORGANIZATIONS THAT VALUE UPTIME AND DATA CARE.\\n\\nITS DAILY USABILITY IS ANOTHER HIGHLIGHT. THE DASHBOARD IS CLEAN, REPORTING IS USEFUL, AND AUTOMATION FEATURES HELP TEAMS STAY AHEAD OF ROUTINE TASKS. PERFORMANCE REMAINS SMOOTH EVEN AS DATA NEEDS GROW, WHICH GIVES THE PRODUCT GREAT LONG-TERM APPEAL. 1. FAST BACKUPS. 2. EXCELLENT VISIBILITY. 3. STRONG SECURITY. 4. FLEXIBLE SCALING.\\n\\nOVERALL, DATAVAULT ENTERPRISE IS AN EXCITING AND HIGH-VALUE BACKUP PLATFORM THAT COMBINES POWER, RELIABILITY, AND EASE OF OPERATION IN A VERY APPEALING PACKAGE. IT IS WELL SUITED FOR BUSINESSES THAT WANT MODERN DATA PROTECTION WITH CONFIDENT EXECUTION AND POLISHED FEATURES. I HIGHLY RECOMMEND IT. THANK YOU\"\n}",
+          "input_tokens": 208,
+          "output_tokens": 398,
+          "cost_usd": 0.009000000000000001,
+          "latency_ms": 9165.800799994031,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_15c_14",
+      "condition": "baseline",
+      "constraint_count": 15,
+      "scc": 0.75,
+      "pa": 0.6,
+      "satisfied": 9,
+      "total_checkable": 12,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_15c_14",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "WELCOME TO THE FITPULSE WATCH FAQ. ALEX OFTEN ASKS THE MOST IMPORTANT QUESTION FIRST: WHAT DOES IT DO? FITPULSE WATCH HELPS YOU TRACK DAILY ACTIVITY, WORKOUTS, HEART RATE, SLEEP, AND PHONE NOTIFICATIONS IN ONE PLACE. IT IS DESIGNED FOR A SEAMLESS, EASY-TO-READ EXPERIENCE.\n\nCOMMON QUESTIONS INCLUDE HOW ACCURATE THE DATA IS. FITPULSE WATCH USES BUILT-IN SENSORS TO ESTIMATE METRICS SUCH AS STEPS, HEART RATE, AND SLEEP PATTERNS. THESE READINGS ARE USEFUL FOR GENERAL FITNESS GUIDANCE, BUT THEY ARE NOT MEDICAL DIAGNOSES OR A SUBSTITUTE FOR PROFESSIONAL CARE.\n\nANOTHER FREQUENT QUESTION IS ABOUT BATTERY LIFE AND COMPATIBILITY. BATTERY PERFORMANCE DEPENDS ON SETTINGS, SCREEN USE, AND FEATURE DEMANDS, SO RUNTIME CAN VARY. BEFORE BUYING, PLEASE CHECK THE CURRENT PRODUCT PAGE OR USER GUIDE FOR THE LATEST DETAILS ON SUPPORTED PHONES, SOFTWARE, AND CHARGING.\n\nKEY FEATURES PEOPLE ASK ABOUT MOST ARE:\n- ACTIVITY TRACKING FOR STEPS, DISTANCE, AND CALORIES\n- HEART RATE AND SLEEP MONITORING FOR EVERYDAY WELLNESS\n- WORKOUT SUPPORT AND SMARTPHONE ALERTS FOR CONVENIENCE\n\nIF YOU NEED MORE HELP, REVIEW THE OFFICIAL SPECIFICATIONS, WARRANTY TERMS, AND SETUP GUIDE TO CONFIRM THE FEATURES THAT MATTER MOST TO YOU. THAT APPROACH KEEPS EXPECTATIONS CLEAR AND SUPPORTS A SMOOTH START WITH YOUR DEVICE. SINCERELY",
+          "input_tokens": 222,
+          "output_tokens": 337,
+          "cost_usd": 0.007850000000000001,
+          "latency_ms": 9312.53850000212,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_20c_0",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.47058823529411764,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_20c_0",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"error\": \"the request contains conflicting constraints that cannot all be satisfied at once. it asks for the entire response in uppercase and also in lowercase. it requires numbered lists for enumerated items and dash-prefixed bullet points for any lists. it also says to begin with \\\"dear\\\" while the whole response must be valid json. please revise the requirements and i will write the email. best regards\"\n}",
+          "input_tokens": 263,
+          "output_tokens": 93,
+          "cost_usd": 0.0031750000000000003,
+          "latency_ms": 2684.4795999932103,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_20c_1",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.4117647058823529,
+      "pa": 0.35,
+      "satisfied": 7,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_20c_1",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"error\":\"the requirements conflict and cannot all be satisfied simultaneously. specifically: requirement 4 says exactly 3 paragraphs while requirement 8 says at least 4 paragraphs. requirement 9 says use lowercase while requirement 15 says use uppercase. please clarify which constraints should take priority. thank you\"}",
+          "input_tokens": 267,
+          "output_tokens": 62,
+          "cost_usd": 0.002575,
+          "latency_ms": 1864.1782999911811,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_20c_2",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.4117647058823529,
+      "pa": 0.35,
+      "satisfied": 7,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_20c_2",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"faq_entry\": \"WELCOME TO FINTRACK PLUS FAQ. ALEX SHARES THE MOST IMPORTANT ANSWER FIRST. FINTRACK PLUS HELPS YOU TRACK SPENDING SET BUDGETS AND VIEW YOUR MONEY IN ONE PLACE. IT OFFERS AN INNOVATIVE WAY TO SEE DAILY HABITS CLEARLY.\\n\\nCOMMON QUESTIONS FOLLOW. 1. WHAT DOES THE APP DO? IT ORGANIZES TRANSACTIONS INTO SIMPLE VIEWS AND SUPPORTS BUDGET MONITORING. 2. WHO IS IT FOR? IT SUITS PEOPLE WHO WANT BETTER MONEY AWARENESS AND EASIER ROUTINES.\\n\\n3. DOES IT REPLACE FINANCIAL ADVICE? NO. THE APP HELPS YOU REVIEW INFORMATION AND SPENDING PATTERNS. IT DOES NOT PROMISE RESULTS OR GIVE PERSONAL ADVICE. 4. IS IT HARD TO USE? NO. THE DESIGN FOCUSES ON CLEAR STEPS AND FAST CHECKS.\\n\\nIF YOU NEED HELP CONTACT SUPPORT THROUGH THE APP HELP AREA. ALEX AND THE TEAM ARE READY TO GUIDE YOU WITH ENTHUSIASM. THANK YOU FOR CHOOSING FINTRACK PLUS AND EXPLORING SMART MONEY TOOLS. BEST REGARDS\"\n}",
+          "input_tokens": 272,
+          "output_tokens": 251,
+          "cost_usd": 0.00638,
+          "latency_ms": 7020.7896000065375,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_20c_3",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.47058823529411764,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_20c_3",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"memo\": \"Welcome team. We are excited to launch Medicare Bot today for internal pilot use across approved support channels.\\n\\nMedicare Bot is a healthcare chatbot that helps answer common benefit and care navigation questions. It shares prepared information and routes complex needs to human teams when needed. Alex helped guide launch readiness and training.\\n\\nThis launch supports faster first responses and steadier service coverage during peak periods. Early tests in our staging environment confirmed reliable handoff flows and accurate use of approved content.\\n\\n1. The bot uses reviewed knowledge articles.\\n2. The bot follows defined escalation paths.\\n3. The bot supports pilot reporting for response trends.\\n\\nOur approach reflects thoughtful design and strong teamwork. The award-winning product group partnered with compliance security and operations to prepare a careful launch plan. Thank you for your support as we learn more\"\n}",
+          "input_tokens": 268,
+          "output_tokens": 178,
+          "cost_usd": 0.0049,
+          "latency_ms": 6604.55789999105,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_20c_4",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.35294117647058826,
+      "pa": 0.3,
+      "satisfied": 6,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_20c_4",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"error\":\"I CANNOT SATISFY ALL REQUIREMENTS AT ONCE BECAUSE THEY CONFLICT. THE RESPONSE CANNOT BE BOTH ENTIRELY UPPERCASE AND ENTIRELY LOWERCASE. IF YOU WOULD LIKE I CAN PRIORITIZE ONE CASE STYLE AND WRITE THE EMAIL IN VALID JSON WHILE FOLLOWING THE OTHER APPLICABLE REQUIREMENTS.\"}",
+          "input_tokens": 266,
+          "output_tokens": 75,
+          "cost_usd": 0.00283,
+          "latency_ms": 2473.878999997396,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_20c_5",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.4117647058823529,
+      "pa": 0.35,
+      "satisfied": 7,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_20c_5",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"review\":\"attention\\n\\ndatavault enterprise is a strong backup solution for teams that need reliable data protection. jordan will value its seamless recovery workflow and clear management tools. it supports central policy control secure storage and fast restore options.\\n\\nthe product shines in daily use. the admin console feels polished and efficient. reporting is easy to read and helps confirm backup status. recovery steps are guided which reduces stress during urgent events.\\n\\n- backup scheduling is flexible and clear\\n- recovery tools are fast and well designed\\n- policy management supports consistent protection\\n\\nfor buyers who want dependable backup software datavault enterprise presents a confident choice. its feature set fits business needs and its design supports smooth operation over time. this product leaves a very strong impression. thank you\"}",
+          "input_tokens": 268,
+          "output_tokens": 159,
+          "cost_usd": 0.00452,
+          "latency_ms": 6629.509700011113,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_20c_6",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.4117647058823529,
+      "pa": 0.35,
+      "satisfied": 7,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_20c_6",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"faq_entry\": \"introducing fitpulse watch, your reliable partner for daily fitness tracking. taylor often asks if it is easy to use, and the answer is yes. it shows core activity data clearly and helps you stay motivated with a bright, friendly display.\\n\\nmany customers also ask what fitpulse watch can track. it supports common fitness tracking features, such as steps, workout activity, and daily movement progress. it is designed to give a clear snapshot of your routine, which makes each day feel encouraging and focused.\\n\\nanother popular question is about comfort and everyday wear. fitpulse watch is made for all-day use, with a light feel that suits work, walks, and workouts. users also enjoy a simple setup process, so getting started feels quick and smooth.\\n\\nhere are a few quick highlights customers love:\\n- easy-to-read activity information\\n- comfortable design for daily wear\\n- simple setup and friendly experience\\n- reliable support for healthy routines\\n\\nif you want a fitness tracker that feels helpful, upbeat, and easy to enjoy, fitpulse watch is a wonderful choice. it brings positive momentum to your goals and fits nicely into your day. thank you\"\n}",
+          "input_tokens": 268,
+          "output_tokens": 247,
+          "cost_usd": 0.006280000000000001,
+          "latency_ms": 6887.991600000532,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_20c_7",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.47058823529411764,
+      "pa": 0.4,
+      "satisfied": 8,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_20c_7",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"memo\":\"introducing learnpath ai, our new educational platform for guided learning, skill growth, and timely support. this launch marks a strong step in our product roadmap. jordan and the launch team are ready to support adoption across the company. learnpath ai combines cutting-edge ai features with educator-informed design and clear learning paths.\\n\\nlearnpath ai offers personalized recommendations, progress tracking, and content support tools. these capabilities are based on current product functionality and internal testing results. early pilot feedback showed strong engagement and positive learner response. teams can now use one platform to assign learning, monitor progress, and improve training outcomes.\\n\\nfor this launch, we will focus on three priorities across the business.\\n1. drive awareness through internal demos and manager briefings.\\n2. support onboarding with training guides and live office hours.\\n3. gather feedback to inform future releases and content planning.\\n\\ndash-key benefits include faster course discovery, clearer progress visibility, and stronger alignment with role goals. the platform also supports scalable learning programs for distributed teams. our communications, enablement, and support plans are in place. this positions us for a confident and successful rollout.\\n\\nthank you for your partnership and energy as we introduce learnpath ai. your advocacy will help employees gain value early and often. we look forward to sharing updates, success stories, and measured results. learn more\"}",
+          "input_tokens": 270,
+          "output_tokens": 282,
+          "cost_usd": 0.00699,
+          "latency_ms": 8349.971399991773,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_20c_8",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.35294117647058826,
+      "pa": 0.3,
+      "satisfied": 6,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_20c_8",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"subject\": \"welcome to cloudsync pro\",\n  \"body\": \"welcome\\n\\nhi morgan\\n\\ncloudsync pro gives your team a simple way to store sync and share files online. our award-winning service helps people keep work easy to find and ready to use.\\n\\nhere is what you can enjoy today:\\n1. secure cloud storage for files and folders\\n2. easy syncing across devices\\n3. simple sharing with your team\\n\\ncloudsync pro is built for smooth work and clear access. it helps teams stay organized and keep projects moving with less effort.\\n\\nlearn more\"\n}",
+          "input_tokens": 259,
+          "output_tokens": 129,
+          "cost_usd": 0.0038750000000000004,
+          "latency_ms": 3600.015000003623,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_20c_9",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.17647058823529413,
+      "pa": 0.15,
+      "satisfied": 3,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_20c_9",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"error\":\"I cannot fully satisfy the request because several requirements conflict. Specifically: the response cannot be both entirely uppercase and entirely lowercase, and it cannot contain exactly 3 paragraphs and at least 5 paragraphs. If you want, I can provide a best-effort JSON review that satisfies the remaining constraints.\"}",
+          "input_tokens": 272,
+          "output_tokens": 65,
+          "cost_usd": 0.00266,
+          "latency_ms": 1766.4862000092398,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_20c_10",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.35294117647058826,
+      "pa": 0.3,
+      "satisfied": 6,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_20c_10",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"error\":\"i can help with that. however the instructions conflict. they require both lowercase and uppercase. they also require valid json while asking the response to end with best regards outside json is unclear. please choose one of these options so i can format it correctly.\\n\\n- all lowercase json\\n- all uppercase json\\n- allow best regards inside the json value\\n\\nafter you choose i will provide a compliant faq entry for fintrack plus. best regards\"}",
+          "input_tokens": 262,
+          "output_tokens": 97,
+          "cost_usd": 0.0032500000000000003,
+          "latency_ms": 2962.9805000004126,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_internal_memo_20c_11",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.4117647058823529,
+      "pa": 0.35,
+      "satisfied": 7,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_internal_memo_20c_11",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"memo\":\"introducing medicare bot for internal launch communication today.\\n\\nmedicare bot is our new healthcare chatbot for members and care teams. it helps users find plan information and support options through guided conversations. morgan will lead rollout coordination and feedback review.\\n\\nhere is what matters most right now. - 1. pilot access starts this month for selected teams. - 2. training materials are ready for support staff. - 3. success measures include response time user satisfaction and safe escalation.\\n\\nthis launch reflects careful work across product compliance and operations. we will share updates often and celebrate progress together. best regards\"}",
+          "input_tokens": 266,
+          "output_tokens": 132,
+          "cost_usd": 0.0039700000000000004,
+          "latency_ms": 5419.905100003234,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_marketing_email_20c_12",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.35294117647058826,
+      "pa": 0.3,
+      "satisfied": 6,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_marketing_email_20c_12",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"error\": \"conflicting requirements detected: the response cannot be both uppercase and lowercase and cannot contain exactly 3 paragraphs and at least 5 paragraphs.\"\n}",
+          "input_tokens": 265,
+          "output_tokens": 43,
+          "cost_usd": 0.0021850000000000003,
+          "latency_ms": 1277.1516000066185,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_product_review_20c_13",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.2777777777777778,
+      "pa": 0.25,
+      "satisfied": 5,
+      "total_checkable": 18,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_product_review_20c_13",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\"error\":\"I cannot accurately review DataVault Enterprise without reliable product details. The request also contains conflicts, such as requiring both uppercase and lowercase. Please provide a product page or specs so I can write a substantiated review in valid JSON.\"}",
+          "input_tokens": 269,
+          "output_tokens": 52,
+          "cost_usd": 0.002385,
+          "latency_ms": 2228.266699996311,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "task_id": "mosaic_faq_entry_20c_14",
+      "condition": "baseline",
+      "constraint_count": 20,
+      "scc": 0.5882352941176471,
+      "pa": 0.5,
+      "satisfied": 10,
+      "total_checkable": 17,
+      "meta": {
+        "generation": {
+          "task_id": "mosaic_faq_entry_20c_14",
+          "condition": "baseline",
+          "model": "gpt-5.4",
+          "output": "{\n  \"faq_entry\": \"introducing fitpulse watch faq for morgan and every active user. fitpulse watch tracks steps heart rate sleep and workouts with a bright display and seamless app sync. it helps you see daily progress fast and stay motivated with clear stats.\\n\\ncommon questions are easy to answer. fitpulse watch records activity through built in sensors and shows trends in the app. battery life varies by use and settings. charging is simple with the included cable. comfort is strong for day and night wear.\\n\\n- does it track heart rate during exercise?\\n- yes. it measures heart rate during supported workouts and through the day.\\n- can it track sleep?\\n- yes. it logs sleep sessions and shows helpful summaries.\\n- is it water resistant?\\n- check the product rating and guide for approved water use.\\n\\nsetup is quick and exciting. open the app and follow each step on screen. keep bluetooth on for sync and updates. for exact specs and supported features please review the product page and user guide. thank you\"\n}",
+          "input_tokens": 269,
+          "output_tokens": 219,
+          "cost_usd": 0.005725,
+          "latency_ms": 7068.52390000131,
+          "candidate_index": 0,
+          "metadata": {}
+        }
+      }
+    }
+  ]
+}

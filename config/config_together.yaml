@@ -1,7 +1,7 @@
 # Together AI — Llama 3.3 70B (open-weight replication)
 # Get API key: https://api.together.xyz/
 openai:
-  api_key: ${OPENAI_API_KEY}
+  api_key: ${TOGETHER_API_KEY}
   model: meta-llama/Llama-3.3-70B-Instruct-Turbo
   base_url: https://api.together.xyz/v1
 

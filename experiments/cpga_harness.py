@@ -26,6 +26,8 @@ PRICING = {
     "gpt-4o": {"input": 2.50 / 1e6, "output": 10.00 / 1e6},
     "gpt-4o-mini": {"input": 0.15 / 1e6, "output": 0.60 / 1e6},
     "gpt-5.2": {"input": 5.00 / 1e6, "output": 20.00 / 1e6},
+    "gpt-5.4": {"input": 5.00 / 1e6, "output": 20.00 / 1e6},
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {"input": 0.88 / 1e6, "output": 0.88 / 1e6},
 }
 
 
@@ -65,13 +67,14 @@ def load_config(config_path: str | Path | None = None) -> dict:
     with open(config_path) as f:
         raw = f.read()
 
-    for key in ("ANTHROPIC_API_KEY", "OPENAI_API_KEY"):
+    for key in ("ANTHROPIC_API_KEY", "OPENAI_API_KEY", "TOGETHER_API_KEY"):
         env_val = os.environ.get(key, "")
         raw = raw.replace(f"${{{key}}}", env_val)
 
     cfg = yaml.safe_load(raw)
 
     # Fall back to project-level config/config.yaml for API keys
+    project_config = None
     if not cfg.get("anthropic", {}).get("api_key") or not cfg.get("openai", {}).get("api_key"):
         project_config = _try_load_project_config()
         if project_config:
@@ -80,16 +83,26 @@ def load_config(config_path: str | Path | None = None) -> dict:
             if not cfg.get("openai", {}).get("api_key") and project_config.get("openai_key"):
                 cfg.setdefault("openai", {})["api_key"] = project_config["openai_key"]
 
+    # For Together AI configs, if api_key is still empty, try OPENAI_API_KEY from project
+    if cfg.get("openai", {}).get("base_url") and not cfg.get("openai", {}).get("api_key"):
+        if project_config is None:
+            project_config = _try_load_project_config()
+        together_key = os.environ.get("TOGETHER_API_KEY", "")
+        if together_key:
+            cfg["openai"]["api_key"] = together_key
+
     return cfg
 
 
 def _try_load_project_config() -> dict | None:
     """Try to load API keys from the Mocho project config/config.yaml."""
     try:
-        # Walk up from experiments dir to find the Mocho project root
         candidates = [
-            Path(__file__).resolve().parents[4] / "config" / "config.yaml",  # .cursor/skills/article-generator-v3/paper -> Mocho root
+            Path(__file__).resolve().parents[2] / "config" / "config.yaml",
+            Path(__file__).resolve().parents[3] / "config" / "config.yaml",
+            Path(__file__).resolve().parents[4] / "config" / "config.yaml",
             Path(__file__).resolve().parents[5] / "config" / "config.yaml",
+            Path("c:/Cursor/Mocho/config/config.yaml"),
         ]
         for candidate in candidates:
             if candidate.exists():
@@ -137,8 +150,13 @@ class LLMClient:
     def openai(self):
         if self._openai_client is None:
             import openai as oai
-            api_key = self.config.get("openai", {}).get("api_key", "")
-            self._openai_client = oai.OpenAI(api_key=api_key)
+            oai_cfg = self.config.get("openai", {})
+            api_key = oai_cfg.get("api_key", "")
+            base_url = oai_cfg.get("base_url")
+            kwargs = {"api_key": api_key}
+            if base_url:
+                kwargs["base_url"] = base_url
+            self._openai_client = oai.OpenAI(**kwargs)
         return self._openai_client
 
     def _check_budget(self):
@@ -197,12 +215,16 @@ class LLMClient:
 
         if not prompt or not prompt.strip():
             return "(empty prompt — skipped)", 0, 0
-        resp = self.openai.chat.completions.create(
+        create_kw: dict[str, Any] = dict(
             model=model,
             messages=messages,
-            max_tokens=max_tokens,
             temperature=temperature,
         )
+        if any(tag in model for tag in ("gpt-5", "o1", "o3", "o4")):
+            create_kw["max_completion_tokens"] = max_tokens
+        else:
+            create_kw["max_tokens"] = max_tokens
+        resp = self.openai.chat.completions.create(**create_kw)
         text = resp.choices[0].message.content or ""
         usage = resp.usage
         inp = usage.prompt_tokens if usage else 0
