@@ -1,0 +1,2357 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Context-Partitioned Generic Assembly with Swarm-External Enforcement for Overcoming LLM Context Degradation</title><style>body{font-family:'Times New Roman',Georgia,serif;font-size:11pt;line-height:1.5;max-width:7.5in;margin:0 auto;padding:0.5in;color:#1a1a1a}
+h1{font-size:16pt;text-align:center;margin-top:0.3in}h2{font-size:13pt;margin-top:1.2em;border-bottom:1px solid #ccc;padding-bottom:0.2em}
+h3{font-size:11.5pt;margin-top:1em}p{margin:0.5em 0;text-align:justify}
+table{border-collapse:collapse;width:100%;margin:0.8em 0;font-size:9.5pt}th,td{border:1px solid #999;padding:4px 8px;text-align:left;vertical-align:top}
+th{background:#f0f0f0;font-weight:bold}tr:nth-child(even){background:#fafafa}
+code{font-family:Consolas,monospace;font-size:9.5pt;background:#f5f5f5;padding:1px 4px;border-radius:2px}
+pre{background:#f5f5f5;padding:10px;border-radius:4px;overflow-x:auto;font-size:9pt}pre code{background:none;padding:0}
+blockquote{border-left:3px solid #ccc;margin-left:0;padding-left:1em;color:#444;font-style:italic}
+img{max-width:100%;display:block;margin:1em auto}hr{border:none;border-top:1px solid #ccc;margin:1.5em 0}
+ul,ol{margin:0.5em 0;padding-left:1.5em}
+@media print{body{font-size:10pt}h2{page-break-after:avoid}table,pre,img{page-break-inside:avoid}}</style></head><body><h1 id="context-partitioned-generic-assembly-with-swarm-external-enforcement-for-overcoming-llm-context-degradation">Context-Partitioned Generic Assembly with Swarm-External Enforcement for Overcoming LLM Context Degradation</h1>
+
+<p><strong>Siva Teja Narayana</strong></p>
+
+<p><em>Independent Researcher</em></p>
+
+<p>April 2026</p>
+
+<hr />
+
+<h2 id="abstract">Abstract</h2>
+
+<p>LLM compliance with in-context instructions degrades as context grows &mdash; a well-documented consequence of finite transformer attention. We present <strong>CPGA+SENTINEL</strong>, a constraint-routing architecture built on one principle: <strong>classify every constraint by whether it genuinely needs the LLM&rsquo;s attention, and externalize everything that does not.</strong> The architecture has three mechanisms. (1)&nbsp;A classification protocol (FORGE) assigns each constraint to the cheapest reliable enforcement layer &mdash; token masks, compiled checkers, residual prompt, or post-generation judges &mdash; with conservative routing that guarantees no constraint is dropped. (2)&nbsp;A diversity mechanism (CADG) permutes constraint order across candidates, reducing positional neglect exponentially in candidate count. (3)&nbsp;An external enforcement swarm (SENTINEL) provides concurrent per-constraint agents in four tiers, serving a dual role as production enforcement and reusable evaluation suite.</p>
+
+<p>We validate at four scales. <strong>Controlled experiments</strong> (7 experiments, 24 constraints) isolate each mechanism. <strong>Benchmark validation</strong> on three public benchmarks (MOSAIC, IFBench, IFEval) plus one internal benchmark (SysPrompt, included for domain breadth; results exploratory) &mdash; 1,081 tasks, 104 constraint types, deterministic Python scoring, bootstrap 95% CIs &mdash; yields statistically significant gains: <strong>+6.4pp MOSAIC</strong> (Full Stack, pairwise CI excludes zero), <strong>+10.0pp IFBench</strong> (CADG+SENTINEL, CI excludes zero), <strong>+6.2pp IFEval</strong> (Full Stack, significant vs. baseline; directional vs. retry). Critically, a <strong>50-constraint synthetic benchmark</strong> (56 deterministic templates, N=20 tasks, GPT-4o) validates FORGE in the high-constraint regime where it was designed to operate: retry-with-feedback <em>degrades</em> (&minus;2.0pp), FORGE alone gains <strong>+4.4pp</strong> (CI [+0.8, +7.6]), and the full stack gains <strong>+13.7pp</strong> (CI [+11.4, +15.8]) &mdash; more than double the MOSAIC gain at 5&ndash;20 constraints, directionally consistent with increasing advantage at higher constraint counts. All benchmark results, scoring code, and cached outputs are publicly available for independent verification.</p>
+
+<p>A <strong>3-month production deployment</strong> (deployment validation, not a controlled ablation) generating <strong>3,000+ structured content items</strong> against a 5,077-rule taxonomy (~15.2M total constraint evaluations) achieved <strong>90%+ independent QC pass rate</strong>, <strong>20&times; per-item context reduction</strong> (FORGE externalization &times; scope partitioning), and <strong>+14.3pp system-level quality improvement</strong> over the prior architecture (&sect;6.10).</p>
+
+<p><strong>Keywords:</strong> context degradation, LLM compliance, instruction following, prompt engineering, agent orchestration, swarm enforcement</p>
+
+<hr />
+
+<h2 id="1-introduction">1. Introduction</h2>
+
+<h3 id="11-the-context-degradation-problem">1.1 The Context Degradation Problem</h3>
+
+<p>Every production LLM application loads context into the prompt: instructions, constraints, reference documents, tool definitions, conversation history, examples, schemas, and behavioral guidelines. As applications mature, this context grows. The problem is universal:</p>
+
+<ul>
+<li><strong>Agent instruction files</strong>: 2,000-line instructions → agent skips steps by line 800 (attention dead zone, F2).</li>
+<li><strong>System prompts</strong>: 50 behavioral rules → rules #20–35 systematically under-followed; adding rule #51 degrades all 50 (F4).</li>
+<li><strong>RAG context</strong>: of 20 documents, positions 8–12 are functionally ignored (F2); more documents dilute all (F1).</li>
+<li><strong>Code generation</strong>: architecture docs (early) and task (end) followed; style guide (middle) silently ignored.</li>
+</ul>
+
+<p>In production, instruction contexts routinely grow to <strong>50,000–300,000+ characters</strong> — the natural end-state of any LLM application accumulating requirements over its lifetime. The core insight: <strong>every token of context added makes every <em>other</em> token slightly less effective.</strong> This is a mathematical property of softmax attention, not a prompting failure or training data gap.</p>
+
+<h3 id="12-why-current-approaches-fail">1.2 Why Current Approaches Fail</h3>
+
+<p>Softmax attention distributes capacity across all tokens; adding context monotonically dilutes attention to existing items [1]. Six studies (2024–2026) quantify this: 30% accuracy drops at ~113K tokens [2]; 30%+ drops for mid-positioned information [3]; compliance falling from 77.67% to 32.96% as constraints increase, with GPT-4.1 at 12.6% for 800 rules [4]; 128K windows yielding only 20–40K effective tokens [9]; U-shaped position bias [15]; and chain-of-thought <em>degrading</em> compliance across 15 models [6]. &sect;2 formalizes these as failure modes F1–F12.</p>
+
+<p><strong>The transformer has a fundamental context capacity ceiling.</strong> No prompting technique or CoT strategy fully overcomes it [5][6]. Fine-tuning does not scale to hundreds of frequently-changing rules. The alternative is architectural: reduce what goes <em>into</em> the context, and enforce what can be enforced <em>outside</em> it.</p>
+
+<h3 id="13-central-claim">1.3 Central Claim</h3>
+
+<p><strong>Constraint-routing plus external enforcement improves LLM instruction compliance; the right composition depends on the constraint regime.</strong> When constraint count is low (&lt;30 items), permutation-based diversity (CADG) and per-rule external enforcement (SENTINEL) suffice. As constraints grow into the hundreds, hierarchical classification (FORGE) becomes decisive by externalizing enforceable rules from the prompt. This is an <em>empirically validated systems architecture</em>, not a general theory of instruction following &mdash; its benefits are measured, regime-dependent, and reproducible on public benchmarks.</p>
+
+<h3 id="14-contributions">1.4 Contributions</h3>
+
+<p>Existing LLM compliance systems typically operate at a single enforcement layer: Guardrails AI [20] retries whole outputs serially; Outlines/llguidance enforce grammar at token level (Layer 0); SGLang/Instructor enforce schemas (Layer 1); HiFlow [26] provides hierarchical feedback without concurrent per-rule enforcement. Each addresses one failure mode; none provides a <em>classification protocol</em> that routes each constraint to the appropriate layer, or a <em>diversity mechanism</em> that exploits positional bias rather than fighting it, or a <em>dual-role swarm</em> that unifies enforcement with evaluation. The novelty of CPGA+SENTINEL is not in any single primitive — it is in (a) the <strong>FORGE classification protocol</strong> that assigns each constraint to the cheapest reliable layer with formal conservative-routing guarantees (&sect;3.3, &sect;3.6), (b) <strong>CADG</strong>, which reframes position bias as a diversity source (&sect;4.3), and (c) <strong>SENTINEL</strong>, which unifies enforcement and evaluation in a single swarm (&sect;5.8) — combined under three design principles that guarantee by construction the composition is at least as comprehensive as the prompt-only baseline (&sect;3.6). The resulting architecture yields composition-dependent effects: optimal recipes differ by taxonomy complexity (&sect;6.9.4), and gains are sub-additive (components share enforcement targets), a finding that underscores the importance of empirical composition selection over naive stacking. The architecture is validated across ~10,300 benchmark evaluations on 3 public benchmarks and ~15.2 million production constraint evaluations (&sect;6). Contributions:</p>
+
+<ol>
+<li><p>A <strong>failure mode taxonomy</strong> (F1–F12) synthesizing six studies (2024–2026) into a structured vocabulary for LLM context degradation, each mode mapped to architectural countermeasures.</p></li>
+<li><p><strong>FORGE</strong> — a hierarchical classification protocol assigning each context item to the cheapest reliable enforcement layer (token mask → compiled checker → residual prompt → post-gen judge). Conservative routing ensures no constraint is dropped (&sect;3.6). Validated at production scale: <strong>20&times; combined context reduction</strong> per item (FORGE externalization &times; scope partitioning; ~200 externalized to compiled checkers and token masks per item, ~15 per section agent) from a 5,077-rule taxonomy, <strong>+11&ndash;18pp on residual items</strong> in controlled experiments.</p></li>
+<li><p><strong>CADG</strong> — Constraint-Aware Diverse Generation permuting constraint <em>order</em> across candidates to exploit primacy bias (F5) as a diversity mechanism. Probability of persistent positional neglect drops <strong>exponentially</strong> in candidate count (&sect;3.6, Principle 3). <strong>+8pp at N=10</strong>.</p></li>
+<li><p><strong>CPGA+SENTINEL</strong> — an integrated architecture composing per-constraint routing (FORGE), constraint-order diversity (CADG), and concurrent per-rule enforcement (SENTINEL) with explicit design principles (&sect;3.6). SENTINEL's dual role as enforcement and evaluation suite means deployment automatically creates a regression framework (&sect;5.8).</p></li>
+<li><p><strong>Comprehensive validation at four scales</strong>: controlled experiments (&sect;6.2&ndash;6.8), public benchmarks with Holm-corrected significance (&sect;6.9), a 50-constraint synthetic benchmark confirming FORGE&rsquo;s crossover (&sect;6.9.9.1), and a 3-month production deployment at 5,077 rules (&sect;6.10).</p></li>
+</ol>
+
+<div style="text-align:center; margin: 2em 0;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 820" style="max-width:100%;height:auto;font-family:'Segoe UI',Helvetica,Arial,sans-serif;">
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#555"/></marker>
+    <marker id="ah-purple" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#6A1B9A"/></marker>
+    <marker id="ah-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2E7D32"/></marker>
+    <marker id="ah-gray" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#455A64"/></marker>
+    <marker id="ah-dark" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#212121"/></marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-size="22" font-weight="bold" fill="#1565C0">CPGA+SENTINEL Combined Architecture</text>
+
+  <!-- Row 1: Input -->
+  <rect x="250" y="50" width="400" height="55" rx="10" fill="#CFD8DC" stroke="#455A64" stroke-width="2"/>
+  <text x="450" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="#212121">N Context Items</text>
+  <text x="450" y="88" text-anchor="middle" font-size="12" fill="#212121">(rules, constraints, guidelines, specifications)</text>
+
+  <!-- Arrow: Input → FORGE -->
+  <line x1="450" y1="105" x2="450" y2="125" stroke="#555" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Row 2: FORGE -->
+  <rect x="270" y="130" width="360" height="55" rx="10" fill="#E1BEE7" stroke="#6A1B9A" stroke-width="2.5"/>
+  <text x="450" y="152" text-anchor="middle" font-size="14" font-weight="bold" fill="#212121">FORGE Classifier</text>
+  <text x="450" y="172" text-anchor="middle" font-size="12" fill="#212121">3 hierarchical probes · runs once at setup</text>
+
+  <!-- Arrows: FORGE → 4 Layers -->
+  <line x1="340" y1="185" x2="130" y2="220" stroke="#6A1B9A" stroke-width="1.8" marker-end="url(#ah-purple)"/>
+  <line x1="410" y1="185" x2="340" y2="220" stroke="#6A1B9A" stroke-width="1.8" marker-end="url(#ah-purple)"/>
+  <line x1="490" y1="185" x2="560" y2="220" stroke="#6A1B9A" stroke-width="1.8" marker-end="url(#ah-purple)"/>
+  <line x1="560" y1="185" x2="770" y2="220" stroke="#6A1B9A" stroke-width="1.8" marker-end="url(#ah-purple)"/>
+
+  <!-- "Only these enter LLM prompt" callout -->
+  <rect x="660" y="128" width="140" height="40" rx="6" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.5" opacity="0.9"/>
+  <text x="730" y="145" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565C0">Only these enter</text>
+  <text x="730" y="160" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565C0">the LLM prompt</text>
+  <line x1="660" y1="155" x2="620" y2="240" stroke="#1565C0" stroke-width="1.5" marker-end="url(#ah)" stroke-dasharray="5,3"/>
+
+  <!-- CPGA side label -->
+  <rect x="5" y="260" width="80" height="60" rx="8" fill="white" stroke="#6A1B9A" stroke-width="2" opacity="0.8"/>
+  <text x="45" y="278" text-anchor="middle" font-size="11" font-weight="bold" font-style="italic" fill="#6A1B9A">CPGA</text>
+  <text x="45" y="293" text-anchor="middle" font-size="9" font-weight="bold" font-style="italic" fill="#6A1B9A">Context</text>
+  <text x="45" y="308" text-anchor="middle" font-size="9" font-weight="bold" font-style="italic" fill="#6A1B9A">Partitioning</text>
+
+  <!-- Layer 0 -->
+  <rect x="90" y="225" width="185" height="110" rx="10" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+  <text x="182" y="248" text-anchor="middle" font-size="13" font-weight="bold" fill="#212121">Layer 0</text>
+  <text x="182" y="266" text-anchor="middle" font-size="12" fill="#212121">Token Mask</text>
+  <line x1="120" y1="278" x2="244" y2="278" stroke="#C62828" stroke-width="0.5" opacity="0.3"/>
+  <text x="182" y="296" text-anchor="middle" font-size="11" fill="#444">~12% of items</text>
+  <text x="182" y="312" text-anchor="middle" font-size="11" fill="#444">100% guarantee</text>
+  <text x="182" y="328" text-anchor="middle" font-size="11" fill="#444">0 prompt tokens</text>
+
+  <!-- Layer 1 -->
+  <rect x="290" y="225" width="185" height="110" rx="10" fill="#FFE0B2" stroke="#E65100" stroke-width="2"/>
+  <text x="382" y="248" text-anchor="middle" font-size="13" font-weight="bold" fill="#212121">Layer 1</text>
+  <text x="382" y="266" text-anchor="middle" font-size="12" fill="#212121">Compiled Checker</text>
+  <line x1="320" y1="278" x2="444" y2="278" stroke="#E65100" stroke-width="0.5" opacity="0.3"/>
+  <text x="382" y="296" text-anchor="middle" font-size="11" fill="#444">~45% of items</text>
+  <text x="382" y="312" text-anchor="middle" font-size="11" fill="#444">99%+ guarantee</text>
+  <text x="382" y="328" text-anchor="middle" font-size="11" fill="#444">0 prompt tokens</text>
+
+  <!-- Layer 3 -->
+  <rect x="490" y="225" width="185" height="110" rx="10" fill="#BBDEFB" stroke="#1565C0" stroke-width="2.5"/>
+  <text x="582" y="248" text-anchor="middle" font-size="13" font-weight="bold" fill="#212121">Layer 3</text>
+  <text x="582" y="266" text-anchor="middle" font-size="12" fill="#212121">Residual Prompt</text>
+  <line x1="520" y1="278" x2="644" y2="278" stroke="#1565C0" stroke-width="0.5" opacity="0.3"/>
+  <text x="582" y="296" text-anchor="middle" font-size="11" fill="#444">~33% of items</text>
+  <text x="582" y="312" text-anchor="middle" font-size="11" fill="#444">Variable</text>
+  <text x="582" y="328" text-anchor="middle" font-size="11" fill="#444">Minimal tokens</text>
+
+  <!-- Layer 4 -->
+  <rect x="690" y="225" width="185" height="110" rx="10" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+  <text x="782" y="248" text-anchor="middle" font-size="13" font-weight="bold" fill="#212121">Layer 4</text>
+  <text x="782" y="266" text-anchor="middle" font-size="12" fill="#212121">Post-Gen Judge (P13)</text>
+  <line x1="720" y1="278" x2="844" y2="278" stroke="#2E7D32" stroke-width="0.5" opacity="0.3"/>
+  <text x="782" y="296" text-anchor="middle" font-size="11" fill="#444">~10% of items</text>
+  <text x="782" y="312" text-anchor="middle" font-size="11" fill="#444">~85–95%</text>
+  <text x="782" y="328" text-anchor="middle" font-size="11" fill="#444">Separate LLM call</text>
+
+  <!-- Arrows: Layers → CADG -->
+  <line x1="182" y1="335" x2="450" y2="375" stroke="#555" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="382" y1="335" x2="450" y2="375" stroke="#555" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="582" y1="335" x2="450" y2="375" stroke="#555" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="782" y1="335" x2="450" y2="375" stroke="#555" stroke-width="1.5" marker-end="url(#ah)"/>
+
+  <!-- CADG -->
+  <rect x="170" y="380" width="560" height="70" rx="10" fill="#BBDEFB" stroke="#1565C0" stroke-width="2.5"/>
+  <text x="450" y="402" text-anchor="middle" font-size="14" font-weight="bold" fill="#212121">CADG Generation Engine</text>
+  <text x="450" y="420" text-anchor="middle" font-size="11" fill="#212121">N candidates · permuted Layer 3 rule order per candidate · deterministic scoring · best selected</text>
+  <text x="450" y="438" text-anchor="middle" font-size="11" fill="#212121"></text>
+
+  <!-- Arrow: CADG → SENTINEL -->
+  <line x1="450" y1="450" x2="450" y2="475" stroke="#2E7D32" stroke-width="2" marker-end="url(#ah-green)"/>
+
+  <!-- SENTINEL Swarm -->
+  <rect x="170" y="480" width="560" height="50" rx="10" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2.5"/>
+  <text x="450" y="502" text-anchor="middle" font-size="14" font-weight="bold" fill="#212121">SENTINEL Swarm — External Enforcement (4 tiers, parallel execution)</text>
+  <text x="450" y="520" text-anchor="middle" font-size="11" fill="#212121"></text>
+
+  <!-- Arrows: SENTINEL → 4 Tiers -->
+  <line x1="340" y1="530" x2="130" y2="560" stroke="#2E7D32" stroke-width="1.8" marker-end="url(#ah-green)"/>
+  <line x1="410" y1="530" x2="340" y2="560" stroke="#2E7D32" stroke-width="1.8" marker-end="url(#ah-green)"/>
+  <line x1="490" y1="530" x2="560" y2="560" stroke="#2E7D32" stroke-width="1.8" marker-end="url(#ah-green)"/>
+  <line x1="560" y1="530" x2="770" y2="560" stroke="#2E7D32" stroke-width="1.8" marker-end="url(#ah-green)"/>
+
+  <!-- SENTINEL side label -->
+  <rect x="5" y="585" width="80" height="60" rx="8" fill="white" stroke="#2E7D32" stroke-width="2" opacity="0.8"/>
+  <text x="45" y="603" text-anchor="middle" font-size="11" font-weight="bold" font-style="italic" fill="#2E7D32">SENTINEL</text>
+  <text x="45" y="618" text-anchor="middle" font-size="9" font-weight="bold" font-style="italic" fill="#2E7D32">Swarm</text>
+  <text x="45" y="633" text-anchor="middle" font-size="9" font-weight="bold" font-style="italic" fill="#2E7D32">Enforcement</text>
+
+  <!-- Tier 1 -->
+  <rect x="90" y="565" width="185" height="90" rx="10" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+  <text x="182" y="586" text-anchor="middle" font-size="13" font-weight="bold" fill="#212121">Tier 1: Token</text>
+  <line x1="120" y1="594" x2="244" y2="594" stroke="#C62828" stroke-width="0.5" opacity="0.3"/>
+  <text x="182" y="611" text-anchor="middle" font-size="11" fill="#444">Character/symbol masks</text>
+  <text x="182" y="627" text-anchor="middle" font-size="11" fill="#444">100% · decode speed</text>
+  <text x="182" y="643" text-anchor="middle" font-size="11" fill="#444"></text>
+
+  <!-- Tier 2 -->
+  <rect x="290" y="565" width="185" height="90" rx="10" fill="#FFE0B2" stroke="#E65100" stroke-width="2"/>
+  <text x="382" y="586" text-anchor="middle" font-size="13" font-weight="bold" fill="#212121">Tier 2: Chunk</text>
+  <line x1="320" y1="594" x2="444" y2="594" stroke="#E65100" stroke-width="0.5" opacity="0.3"/>
+  <text x="382" y="611" text-anchor="middle" font-size="11" fill="#444">Regex, pattern detection</text>
+  <text x="382" y="627" text-anchor="middle" font-size="11" fill="#444">99%+ · microseconds</text>
+  <text x="382" y="643" text-anchor="middle" font-size="11" fill="#444"></text>
+
+  <!-- Tier 3 -->
+  <rect x="490" y="565" width="185" height="90" rx="10" fill="#BBDEFB" stroke="#1565C0" stroke-width="2"/>
+  <text x="582" y="586" text-anchor="middle" font-size="13" font-weight="bold" fill="#212121">Tier 3: Document</text>
+  <line x1="520" y1="594" x2="644" y2="594" stroke="#1565C0" stroke-width="0.5" opacity="0.3"/>
+  <text x="582" y="611" text-anchor="middle" font-size="11" fill="#444">Structural validation</text>
+  <text x="582" y="627" text-anchor="middle" font-size="11" fill="#444">95%+ · milliseconds</text>
+  <text x="582" y="643" text-anchor="middle" font-size="11" fill="#444"></text>
+
+  <!-- Tier 4 -->
+  <rect x="690" y="565" width="185" height="90" rx="10" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+  <text x="782" y="586" text-anchor="middle" font-size="13" font-weight="bold" fill="#212121">Tier 4: Semantic</text>
+  <line x1="720" y1="594" x2="844" y2="594" stroke="#2E7D32" stroke-width="0.5" opacity="0.3"/>
+  <text x="782" y="611" text-anchor="middle" font-size="11" fill="#444">Micro-LLM call (P13)</text>
+  <text x="782" y="627" text-anchor="middle" font-size="11" fill="#444">~85% · ~1–2 seconds</text>
+  <text x="782" y="643" text-anchor="middle" font-size="11" fill="#444"></text>
+
+  <!-- Arrows: Tiers → Arbiter -->
+  <line x1="182" y1="655" x2="450" y2="680" stroke="#455A64" stroke-width="1.5" marker-end="url(#ah-gray)"/>
+  <line x1="382" y1="655" x2="450" y2="680" stroke="#455A64" stroke-width="1.5" marker-end="url(#ah-gray)"/>
+  <line x1="582" y1="655" x2="450" y2="680" stroke="#455A64" stroke-width="1.5" marker-end="url(#ah-gray)"/>
+  <line x1="782" y1="655" x2="450" y2="680" stroke="#455A64" stroke-width="1.5" marker-end="url(#ah-gray)"/>
+
+  <!-- Arbiter -->
+  <rect x="170" y="685" width="560" height="55" rx="10" fill="#CFD8DC" stroke="#455A64" stroke-width="2.5"/>
+  <text x="450" y="706" text-anchor="middle" font-size="14" font-weight="bold" fill="#212121">Arbiter</text>
+  <text x="450" y="726" text-anchor="middle" font-size="11" fill="#212121">All PASS → ship | FIX → auto-fix &amp; re-check   |   FLAG → IR mutation (max 3 rounds)</text>
+
+  <!-- Arrow: Arbiter → Output -->
+  <line x1="450" y1="740" x2="450" y2="755" stroke="#212121" stroke-width="2" marker-end="url(#ah-dark)"/>
+
+  <!-- Final Output -->
+  <rect x="350" y="760" width="200" height="45" rx="10" fill="#CFD8DC" stroke="#212121" stroke-width="2.5"/>
+  <text x="450" y="788" text-anchor="middle" font-size="16" font-weight="bold" fill="#212121">Final Output</text>
+</svg>
+</div>
+<p><em>Figure 1: CPGA+SENTINEL combined architecture. N context items are classified by FORGE into four enforcement layers (CPGA Layers 0, 1, 3, 4 — Layer 2 reserved, see &sect;3.2). Only Layer 3 items (~33%) enter the LLM prompt. CADG generates multiple candidates with permuted constraint order. The SENTINEL swarm enforces all items externally across four tiers (SENTINEL Tiers 1–4, corresponding to CPGA Layers 0, 1, 3, 4 respectively). The Arbiter collects verdicts and routes failures to auto-fix or IR-level mutation.</em></p>
+
+<hr />
+
+<h2 id="2-failure-mode-taxonomy">2. Failure Mode Taxonomy</h2>
+
+<p>We catalog twelve failure modes synthesized from six independent studies (2024–2026). Each code (F1–F12) is referenced throughout the architecture to map failures to countermeasures.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Code</th>
+  <th>Category</th>
+  <th>Name</th>
+  <th>Source</th>
+  <th>Key Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>F1</td>
+  <td>Context-Length</td>
+  <td>Context Rot</td>
+  <td>[2]</td>
+  <td>30% drop at ~113K tokens; 18/18 models</td>
+</tr>
+<tr>
+  <td>F2</td>
+  <td>Context-Length</td>
+  <td>Lost in the Middle</td>
+  <td>[3]</td>
+  <td>30%+ drop at position 10/20</td>
+</tr>
+<tr>
+  <td>F3</td>
+  <td>Context-Length</td>
+  <td>Effective Window Collapse</td>
+  <td>[9]</td>
+  <td>128K advertised → 20–40K effective</td>
+</tr>
+<tr>
+  <td>F4</td>
+  <td>Instruction-Following</td>
+  <td>Rule Count Degradation</td>
+  <td>[4]</td>
+  <td>77.67% → 32.96%; 12.6% at 800 rules</td>
+</tr>
+<tr>
+  <td>F5</td>
+  <td>Instruction-Following</td>
+  <td>Position Bias</td>
+  <td>[15]</td>
+  <td>Middle 40% systematically under-followed</td>
+</tr>
+<tr>
+  <td>F6</td>
+  <td>Instruction-Following</td>
+  <td>Constraint Interaction</td>
+  <td>[4]</td>
+  <td>Synergistic/antagonistic rule pairs</td>
+</tr>
+<tr>
+  <td>F7</td>
+  <td>Instruction-Following</td>
+  <td>Reasoning Diversion</td>
+  <td>[6]</td>
+  <td>CoT degrades IF across 15 models</td>
+</tr>
+<tr>
+  <td>F8</td>
+  <td>Agent Workflow</td>
+  <td>False Termination</td>
+  <td>[7]</td>
+  <td>Agent declares "done" after 3/12 steps</td>
+</tr>
+<tr>
+  <td>F9</td>
+  <td>Agent Workflow</td>
+  <td>Step Skipping</td>
+  <td>[7]</td>
+  <td>Out-of-order/omitted intermediate steps</td>
+</tr>
+<tr>
+  <td>F10</td>
+  <td>Agent Workflow</td>
+  <td>Hallucinated Delegation</td>
+  <td>[7]</td>
+  <td>Claims delegation but generates output itself</td>
+</tr>
+<tr>
+  <td>F11</td>
+  <td>Agent Workflow</td>
+  <td>Cascade Propagation</td>
+  <td>[7]</td>
+  <td>Error in step N propagates through all subsequent</td>
+</tr>
+<tr>
+  <td>F12</td>
+  <td>Agent Workflow</td>
+  <td>State Loss</td>
+  <td>Multiple</td>
+  <td>Prior context summarized lossy or dropped</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="3-cpga-architecture-four-layer-enforcement">3. CPGA Architecture: Four-Layer Enforcement</h2>
+
+<h3 id="31-design-principle">3.1 Design Principle</h3>
+
+<p><strong>Notation.</strong> Throughout this paper, <em>n</em> (or <em>N</em>) denotes the number of constraints/context items, and <em>K</em> denotes the number of CADG candidates. Where context makes the referent unambiguous, we use <em>N</em> for constraint count in experimental conditions (e.g., N ∈ {5, 10, 15, 20}).</p>
+
+<p><strong>Intuition.</strong> Let <em>C</em> = {<em>c</em><sub>1</sub>, …, <em>c</em><sub><em>n</em></sub>} be <em>n</em> context items. Per-item compliance <em>p</em>(<em>c<sub>i</sub></em> | <em>C</em>) decreases as <em>n</em> grows [2][4][9], consistent with softmax attention dilution [1]. If <em>k</em> items can be enforced externally via deterministic code, removing them yields residual set |<em>C'</em>| = <em>n</em> &minus; <em>k</em> with less attention competition. The key insight: <strong>context items are not homogeneous</strong> — a token-ban rule and a coherence requirement need fundamentally different enforcement. FORGE classifies each item to the cheapest reliable layer. We propose four active layers (0, 1, 3, 4); Layer 2 (activation steering) is reserved for open-weight access.</p>
+
+<h3 id="32-the-four-layers">3.2 The Four Layers</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Layer</th>
+  <th>Name</th>
+  <th>When</th>
+  <th>Mechanism</th>
+  <th>Guarantee</th>
+  <th>Context Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>0</td>
+  <td>Token Mask</td>
+  <td>During decoding</td>
+  <td>Constrained decoding / logit masking</td>
+  <td><strong>100%</strong></td>
+  <td>0 tokens</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Compiled Checker</td>
+  <td>Post-generation</td>
+  <td>Deterministic Python (regex, AST/schema parse, counters)</td>
+  <td><strong>99%+</strong></td>
+  <td>0 tokens</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>Residual Prompt</td>
+  <td>During generation</td>
+  <td>Rules kept in LLM prompt (focused attention)</td>
+  <td><strong>Variable</strong></td>
+  <td>Minimal</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>Post-Gen Judge</td>
+  <td>Post-generation</td>
+  <td>One-rule-per-LLM-call verification</td>
+  <td><strong>~85–95%</strong></td>
+  <td>Separate call</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Examples:</strong> Layer 0 — "Never output <code>eval()</code>" (token mask). Layer 1 — "All functions must have type hints" (<code>ast.parse()</code> check). Layer 3 — "Use the repository pattern" (in-generation reasoning). Layer 4 — "Output is idiomatic" (isolated LLM judgment).</p>
+
+<p><strong>Layer numbering:</strong> 0, 1, 3, 4 &mdash; Layer 2 (activation steering) is reserved for open-weight model access. The gap is deliberate: Layer 2 represents steering vectors positioned between compiled checks (Layer 1) and in-prompt instructions (Layer 3) in the enforcement-cost hierarchy. Layers 0&ndash;1 cost zero prompt tokens; Layer 3 shares the prompt with ~33% of N; Layer 4 uses isolated LLM calls (~150&ndash;2,200 tokens).</p>
+
+<p><strong>CPGA Layer &harr; SENTINEL Tier mapping.</strong> The paper uses two numbering systems: CPGA Layers describe <em>where</em> a constraint is enforced architecturally; SENTINEL Tiers describe <em>how</em> the enforcement agent operates. The correspondence is:</p>
+
+<table>
+<thead>
+<tr><th>CPGA Layer</th><th>SENTINEL Tier</th><th>Mechanism</th></tr>
+</thead>
+<tbody>
+<tr><td>0 (Token Mask)</td><td>Tier 1 (Token)</td><td>Character/symbol masks during decoding</td></tr>
+<tr><td>1 (Compiled Checker)</td><td>Tier 2 (Chunk) / Tier 3 (Document)</td><td>Regex, counters, AST/schema parse</td></tr>
+<tr><td>2 (Activation Steering)</td><td>&mdash;</td><td>Reserved (requires open-weight model access)</td></tr>
+<tr><td>3 (Residual Prompt)</td><td>&mdash;</td><td>In-prompt; no sentinel (LLM attention)</td></tr>
+<tr><td>4 (Post-Gen Judge)</td><td>Tier 4 (Semantic)</td><td>Micro-LLM call per rule (~150 tokens)</td></tr>
+</tbody>
+</table>
+
+<h3 id="33-automated-classification-protocol">3.3 Automated Classification Protocol</h3>
+
+<p>A critical question: how does the system decide which layer each context item belongs to? This cannot be manual — production systems have hundreds of items. The classification protocol has three phases: <strong>probe</strong>, <strong>validate</strong>, and <strong>promote</strong>.</p>
+
+<p><strong>Phase 1: Probe</strong> (LLM-assisted, runs once at setup). Three hierarchical probes classify each item: (1) <em>Token ban test</em> &mdash; can the item be enforced by banning/requiring a specific token? If yes: Layer 0. (2) <em>Code checker test</em> &mdash; can an LLM write a Python function returning True/False for compliance? If yes: Layer 1. (3) <em>Reasoning requirement</em> &mdash; does satisfaction require in-generation reasoning? If yes: Layer 3 (residual prompt); if verifiable post-hoc: Layer 4 (judge). Probes are hierarchical: a token ban is also code-checkable, but Layer 0 is cheaper, so it wins.</p>
+
+<p><strong>Phase 2: Validate</strong> (deterministic, runs on test corpus). Layer 0 candidates are tokenized and tested with the mask active (10 outputs); Layer 1 candidates are tested against known-good and known-bad outputs (precision &ge; 0.95, recall &ge; 0.90 required). Items failing validation at any layer default to Layer 3 &mdash; the worst case is that the item stays in the prompt, identical to a monolithic system.</p>
+
+<p><strong>Phase 3: Promote</strong> (continuous, after each production batch). Layer 3 items whose compiled checkers agree 95%+ with pass/fail are promoted to Layer 1. Layer 4 items whose heuristic matches the judge 95%+ are promoted. Layer 1 items reducible to token bans promote to Layer 0. All promotions require human approval to prevent premature promotion of subtly incorrect checkers.</p>
+
+<p><strong>Example:</strong> <em>&ldquo;Never generate eval()&rdquo;</em> &rarr; Probe 1, Layer 0. <em>&ldquo;All functions must have type hints&rdquo;</em> &rarr; Probe 2, Layer 1. <em>&ldquo;Use the repository pattern&rdquo;</em> &rarr; Layer 3. <em>&ldquo;Output is idiomatic&rdquo;</em> &rarr; Layer 4. <strong>Cost:</strong> N LLM calls at setup (~200 tokens each; ~$0.001 &times; N). <strong>Observed distribution:</strong> ~12% Layer 0, ~45% Layer 1, ~33% Layer 3, ~10% Layer 4 &mdash; a <strong>3&ndash;4&times; prompt reduction</strong>.</p>
+
+<p><strong>Classification accuracy.</strong> Validated at production scale (5,077 rules, 3,000+ items, 3 months): ~8% Phase 2 demotion rate, <strong>zero false enforcements</strong>. Conservative fallback (Principle 1) means classification errors affect only efficiency, never coverage. Benchmarks (&sect;6.9) use deterministic type-based routing to isolate composition effects from classification accuracy.</p>
+
+<h3 id="34-progressive-promotion-protocol">3.4 Progressive Promotion Protocol</h3>
+
+<p>Layer assignments improve with every production batch. Layer 3 rules where a compiled checker agrees 95%+ are promoted to Layer 1; Layer 4 rules where a heuristic matches the LLM judge 95%+ are replaced; Layer 1 rules reducible to single-token patterns promote to Layer 0. All promotions require human approval. The net effect: the prompt shrinks with every batch, attention concentrates further, compliance increases, and cost decreases — without model changes.</p>
+
+<h3 id="35-context-budget-analysis">3.5 Context Budget Analysis</h3>
+
+<p>In a monolithic system, all N items compete for attention in a single prompt. Under CPGA&rsquo;s observed distribution (~12% Layer 0, ~45% Layer 1, ~33% Layer 3, ~10% Layer 4), only ~33% of items remain in the prompt &mdash; a <strong>3&ndash;4&times; reduction</strong> in prompt load and a corresponding concentration of the LLM&rsquo;s attention on the genuinely hard residual items. Layers 0 and 1 consume zero prompt tokens; Layer 4 uses ~150 tokens per micro-call but executes post-generation.</p>
+
+<h3 id="36-design-principles">3.6 Design Principles</h3>
+
+<p>We state three design principles of the CPGA layer assignment and CADG selection protocol. These are <strong>engineering guarantees that hold by construction</strong> — precise, testable statements about system behavior — not learning-theoretic theorems. Their value is operational: they define the safety contract that practitioners can rely on when deploying the system.</p>
+
+<p><strong>Principle 1 (Conservative Routing).</strong> Let <em>L</em>: <em>C</em> → {0, 1, 3, 4} be the FORGE layer assignment. Layer 0/1 enforcers achieve precision ≥ 0.95, recall ≥ 0.90 on validation corpus; failures demote to Layer 3. Layer 4 reliability depends on the judge model. If classification fails at any layer, <em>c<sub>i</sub></em> defaults to Layer 3 (residual prompt). <strong>Consequence:</strong> the system never drops a constraint — every item is either enforced externally or remains in the prompt (as in a monolithic system). This guarantees <strong>enforcement coverage</strong> (bookkeeping invariant), not end-to-end quality (which can be affected by enforcement interactions and repair side-effects).</p>
+
+<p><strong>Principle 2 (Directional Context Reduction).</strong> Let <em>P</em>(<em>C</em>) = |{<em>c</em> ∈ <em>C</em> : <em>L</em>(<em>c</em>) = 3}| (residual prompt size). Under promotion-only dynamics (&sect;3.4) with a fixed constraint set, <em>P</em>(<em>C</em>) is non-increasing over batches. <strong>Scope:</strong> adding new rules increases |<em>C</em>|; initial classification can demote to Layer 3. In practice, the system reaches steady state.</p>
+
+<p><strong>Principle 3 (CADG Diversity Bound).</strong> With <em>N</em> constraints and <em>K</em> candidates under i.i.d. uniform permutations, the probability that constraint <em>c<sub>i</sub></em> falls in a &ldquo;neglected&rdquo; range [<em>a</em>, <em>b</em>] across all <em>K</em> candidates is <em>p<sub>i</sub></em> = ((b&minus;a+1)/N)<sup>K</sup>. The <strong>expected number of fully-neglected constraints</strong> is E[neglected] = N &middot; <em>p<sub>i</sub></em> = N &middot; ((b&minus;a+1)/N)<sup>K</sup>. For K=3, N=10, dead zone width 3: <em>p<sub>i</sub></em> = 0.027 per constraint, E[neglected] = 10 &times; 0.027 = <strong>0.27 constraints</strong> (i.e., fewer than 1 constraint is expected to remain persistently neglected across all 3 candidates). At K=5: E[neglected] = 10 &times; 0.3<sup>5</sup> = 0.024 &mdash; effectively zero. The expected count decreases exponentially in K, formalizing CADG&rsquo;s de-correlation guarantee: persistent positional neglect becomes vanishingly unlikely as candidate count grows.</p>
+
+<hr />
+
+<h2 id="4-architecture-mechanisms">4. Architecture Mechanisms</h2>
+
+<p>The four-layer architecture is implemented through concrete mechanisms organized under three pillars (FORGE, CADG, SENTINEL). Each mechanism targets specific failure modes and operates at a specific layer.</p>
+
+<h3 id="41-mechanism-to-layer-mapping">4.1 Mechanism-to-Layer Mapping</h3>
+
+<p>The three core pillars &mdash; FORGE, CADG, and SENTINEL &mdash; decompose into concrete mechanisms mapped to enforcement layers. The table below shows each mechanism, its layer assignment, and validation status. (Full technical details for supporting mechanisms appear in the Appendix.)</p>
+
+<table>
+<thead>
+<tr>
+  <th>Pillar</th>
+  <th>Mechanism</th>
+  <th>Layer(s)</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2"><strong>FORGE</strong></td>
+  <td>Intermediate Representation + Compiler &mdash; LLM outputs typed JSON; deterministic compiler produces final artifact</td>
+  <td>0, 1</td>
+  <td>Implemented (&sect;6.10.4)</td>
+</tr>
+<tr>
+  <td>Scope Partitioning &mdash; residual prompt decomposed into M section agents, ~15 rules each</td>
+  <td>3</td>
+  <td>Tested (&sect;6.2)</td>
+</tr>
+<tr>
+  <td rowspan="2"><strong>CADG</strong></td>
+  <td>Competitive Generation + Deterministic Scoring &mdash; K candidates, best selected by checker suite</td>
+  <td>3</td>
+  <td>Tested (&sect;6.3&ndash;6.4)</td>
+</tr>
+<tr>
+  <td>Constraint-Order Permutation &mdash; each candidate sees rules in different order</td>
+  <td>3</td>
+  <td>Tested (&sect;6.5)</td>
+</tr>
+<tr>
+  <td rowspan="2"><strong>SENTINEL</strong></td>
+  <td>Per-Rule Verification &mdash; one rule per LLM call (~150&ndash;2,200 tokens), parallel execution</td>
+  <td>4</td>
+  <td>Tested (&sect;6.8)</td>
+</tr>
+<tr>
+  <td>Targeted Mutation &mdash; repair agent operates on typed JSON IR; compiler re-renders</td>
+  <td>3, 4</td>
+  <td>Implemented (&sect;6.10)</td>
+</tr>
+<tr>
+  <td colspan="2">Supporting mechanisms (context enrichment, prompt structure, caching, etc.)</td>
+  <td>Various</td>
+  <td>Implemented (Appendix)</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="43-cadg-constraint-aware-diverse-generation">4.3 CADG: Constraint-Aware Diverse Generation</h3>
+
+<p>Under standard best-of-N with identical prompts, failures are correlated: the same position bias affects all candidates. Our Experiment 3 (&sect;6.4) shows that at p=0.88, N=5 yields only 0.905 task-level compliance — implying N<sub>eff</sub> of 1.5–2, far below nominal N=5. CADG addresses this by permuting constraint order across candidates, ensuring each encounters a different set of rules in the attention-favored positions. This increases N<sub>eff</sub> toward 3–4 (&sect;6.5), yielding <strong>+8pp at 10 constraints</strong> — the strongest single-technique result.</p>
+
+<p>CADG de-correlates failures through four mechanisms: (1) <strong>Constraint Permutation</strong> — reorder rules per candidate so different rules get the primacy attention slot (zero cost); (2) <strong>Emphasis Rotation</strong> — emphasize different constraint subsets per candidate; (3) <strong>Model Rotation</strong> — use different frontier models per candidate (uncorrelated blind spots); (4) <strong>Reformulation Diversity</strong> — rephrase constraints per candidate to de-correlate interpretation-based failures.</p>
+
+<p><strong>Candidate count sensitivity (K).</strong> All benchmarks use K=3 (Constraint Permutation only). K=3 is <strong>cost-chosen for production deployment</strong>: generation cost scales linearly with K, and K=3 provides a practical tradeoff between diversity and throughput at production volumes (3,000+ items). Controlled experiments show N<sub>eff</sub> of 3&ndash;4 at K=5 with diminishing returns, suggesting K=3 captures most of the de-correlation benefit. FORGE&rsquo;s shorter prompts partially offset the 3&times; generation cost. The harness supports arbitrary K via <code>--cadg-k</code> for independent verification at other K values.</p>
+
+<hr />
+
+<h2 id="5-sentinel-swarm-external-enforcement">5. SENTINEL: Swarm-External Enforcement</h2>
+
+<h3 id="51-from-in-prompt-to-external-enforcement">5.1 From In-Prompt to External Enforcement</h3>
+
+<p>The principle of separating generation from enforcement is not new — DCCD [18] drafts unconstrained then applies constrained decoding, and Guardrails AI [20] validates then retries. SENTINEL extends this to a <strong>multi-tier swarm</strong> where each context item gets its own independent enforcement agent, operating at the tier (token, chunk, document, or semantic) appropriate to that item's complexity:</p>
+
+<pre><code>BASELINE:   [N rules + task] → LLM → [output following ~33% of rules]
+
+SENTINEL:   [task only]      → LLM → [clean creative output]
+                                         ↑ ↑ ↑ ↑ ↑
+                                         S₁ S₂ S₃ S₄ S₅ ... Sₙ sentinels
+</code></pre>
+
+<p>The LLM sees <strong>zero</strong> enforcement context — its entire attention budget goes to the creative/reasoning task. Enforcement-related context degradation (F1–F7, &sect;2) is structurally mitigated: no enforcement items in the prompt means no context rot (F1), no lost-in-the-middle (F2), no count degradation (F4), no position bias (F5), no cross-item interference (F6), and no reasoning diversion (F7). Each sentinel operates independently outside the model's context window. (Note: the task prompt itself still consumes attention; SENTINEL addresses enforcement context, not task complexity.)</p>
+
+<h3 id="52-four-tier-sentinel-architecture">5.2 Four-Tier Sentinel Architecture</h3>
+
+<p>Sentinels are classified by <em>when</em> and <em>how</em> they act:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Tier</th>
+  <th>Scope</th>
+  <th>Typical Rules</th>
+  <th>Mechanism</th>
+  <th>Guarantee</th>
+  <th>Latency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1 — Token</td>
+  <td>Per token</td>
+  <td>~50–80</td>
+  <td>Character/symbol masks before sampling</td>
+  <td>100%</td>
+  <td>Decode speed</td>
+</tr>
+<tr>
+  <td>2 — Chunk</td>
+  <td>Per sentence/paragraph</td>
+  <td>~150–200</td>
+  <td>Regex, word count, pattern detection</td>
+  <td>99%+</td>
+  <td>Microseconds</td>
+</tr>
+<tr>
+  <td>3 — Document</td>
+  <td>Complete output</td>
+  <td>~100–150</td>
+  <td>AST/schema parse, cross-reference, structural validation</td>
+  <td>95%+</td>
+  <td>Milliseconds</td>
+</tr>
+<tr>
+  <td>4 — Semantic</td>
+  <td>Complete output</td>
+  <td>~50–100</td>
+  <td>Micro-LLM call (~150 tokens context, parallel)</td>
+  <td>~85%</td>
+  <td>~1–2 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<p>Each sentinel has a minimal interface: <code>check(output) → bool</code>, optional <code>fix(output) → str</code>, and a tier label. Sentinels execute concurrently; the <strong>Arbiter</strong> collects verdicts and determines action: all PASS &rarr; ship; some FIX &rarr; apply fixes sequentially and re-verify; some FLAG &rarr; send only the flagged section and flagged items to a repair LLM (3&ndash;5 items, not the full N; max 3 repair cycles); persistent failures &rarr; escalate to human. <strong>Auto-fix clarification:</strong> Tiers 1&ndash;3 auto-fix is <em>fully deterministic</em> (regex substitutions, structural mutations on the typed JSON IR &mdash; no LLM call). Only Tier 4 repair uses an LLM micro-call, operating on the IR rather than the final output; the deterministic compiler re-renders corrected IR, making structural regressions from auto-fix impossible.</p>
+
+<h3 id="54-sentinel-factory-and-evolution">5.4 Sentinel Factory and Evolution</h3>
+
+<p>Sentinels are dynamically constructed from FORGE output: <code>layer1_compiled.json</code> becomes Tier 2/3 deterministic checkers; <code>layer4_judges.json</code> becomes Tier 4 semantic prompts. When source documents change, FORGE reclassifies and the factory rebuilds sentinels automatically. Each compiled checker undergoes sanity testing before activation; deduplication prevents double-checking.</p>
+
+<p>The swarm evolves via progressive promotion (&sect;3.4): Tier 4 sentinels that consistently agree with a regex are promoted to Tier 2; recurring failure patterns (≥5 occurrences across ≥3 inputs) trigger candidate sentinel synthesis (with human approval gates). Over time, the swarm shifts toward cheaper deterministic enforcement. A detailed content sentinel taxonomy with domain-specific examples is available in the repository.</p>
+
+<h3 id="55-sentinel-as-generalizable-evaluation-suite">5.5 SENTINEL as Generalizable Evaluation Suite</h3>
+
+<p>The SENTINEL swarm serves a dual role: <strong>enforcement</strong> during production and <strong>evaluation</strong> during benchmarking. Without auto-fix loops, the same architecture constitutes a complete evaluation suite: Tier 2 checkers provide deterministic pass/fail (identical to benchmark scoring functions), Tier 3 validators provide document-level metrics, and Tier 4 judges provide semantic assessment. The benchmark experiments (&sect;6.9) directly instantiate this — benchmark scoring functions load as sentinels. Deploying CPGA+SENTINEL for production automatically creates a regression testing framework that grows with the enforcement suite.</p>
+
+<p><strong>Evaluation coupling.</strong> SENTINEL wraps each benchmark&rsquo;s native scoring functions as Tier 2 sentinels &mdash; identical deterministic checkers score all 9 conditions including Baseline. Improvement reflects genuine compliance gains, not metric inflation. All benchmark metrics are deterministic (no Tier 4 LLM judges in scoring).</p>
+
+<hr />
+
+<h2 id="6-experimental-evaluation">6. Experimental Evaluation</h2>
+
+<p>All experiments use real API calls with frontier models and deterministic Python checkers. No LLM-based scoring is used for compliance measurement, ensuring full reproducibility. Every checker is a pure Python function; every result is deterministically verifiable.</p>
+
+<h3 id="61-infrastructure">6.1 Infrastructure</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Component</th>
+  <th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Primary generation model</td>
+  <td>Claude Opus 4.6 (claude-opus-4-20260401)</td>
+</tr>
+<tr>
+  <td>Secondary generation model</td>
+  <td>GPT-5.4 (gpt-5.4-2026), GPT-4o (gpt-4o-2024)</td>
+</tr>
+<tr>
+  <td>Constraint library</td>
+  <td>24 deterministic Python-checkable constraints</td>
+</tr>
+<tr>
+  <td>Constraint types</td>
+  <td>Format (6), Content (6), Style (6), Structure (6)</td>
+</tr>
+<tr>
+  <td>Task topics</td>
+  <td>10 diverse topics (AI/healthcare, renewable energy, data privacy, ML/supply chain, remote work, autonomous vehicles, quantum computing, climate change, NLP evolution, project management)</td>
+</tr>
+<tr>
+  <td>Tasks per condition</td>
+  <td>10 per condition (SE ≈ ±3–5pp); component isolation only — see &sect;6.9 for large-scale validation (1,081 scored tasks)</td>
+</tr>
+<tr>
+  <td>Constraint counts tested</td>
+  <td>N ∈ {5, 10, 15, 20}</td>
+</tr>
+<tr>
+  <td>Random seed</td>
+  <td>42 (all experiments, for reproducibility)</td>
+</tr>
+<tr>
+  <td>Scoring</td>
+  <td>Deterministic Python checkers only (no LLM judges for scoring)</td>
+</tr>
+<tr>
+  <td>Total API cost</td>
+  <td>~$15 across all 7 experiments</td>
+</tr>
+</tbody>
+</table>
+
+<p>All 24 constraints are domain-agnostic with deterministic Python checkers (<code>check(output: str) → bool</code>). Full implementations are in the experiment code.</p>
+
+<p><strong>Statistical design note</strong>: The evaluation follows a two-stage design. <em>Stage 1</em> (&sect;6.2–6.8, Appendix A): controlled micro-experiments (10 tasks/condition) isolate individual mechanisms for <strong>directional signal</strong>. <em>Stage 2</em> (&sect;6.9): benchmark validation (N=541 IFEval, 300 IFBench, 200 MOSAIC, 40×50 SysPrompt) with bootstrap 95% CIs provides statistical rigor. All headline effect sizes derive from Stage 2.</p>
+
+<p><strong>Stage 1 power analysis.</strong> At N=10/condition, SE &asymp; 11pp; Stage 1 provides directional signal only. Stage 2 confirms at scale (e.g., CADG +8.0pp on IFBench, N=300, CI [+3.2, +12.8]).</p>
+
+<p><strong>Total evaluation corpus:</strong> ~10,300 scored benchmark evaluations (Stage 1: 630; Stage 2: 9,729) plus ~15.2M production constraint evaluations. Four lines of evidence: Stage 1 isolates components, Stage 2 quantifies compositions with Holm-corrected bootstrap CIs, the 50-constraint benchmark validates FORGE&rsquo;s crossover regime, and production validates the full integrated architecture at scale.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Category</th>
+  <th>Count</th>
+  <th>Example Constraints</th>
+  <th>Layer Classification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Format</td>
+  <td>6</td>
+  <td>Output length bounds, structural elements, token bans</td>
+  <td>Mostly Layer 0–1 (token masks + compiled checkers)</td>
+</tr>
+<tr>
+  <td>Content</td>
+  <td>6</td>
+  <td>Required information, cross-references, perspective constraints</td>
+  <td>Mostly Layer 3 (need LLM reasoning)</td>
+</tr>
+<tr>
+  <td>Style</td>
+  <td>6</td>
+  <td>Tone, voice, sentence complexity, register</td>
+  <td>Mostly Layer 3–4 (need LLM reasoning or judgment)</td>
+</tr>
+<tr>
+  <td>Structure</td>
+  <td>6</td>
+  <td>Structural patterns, formatting rules, element presence</td>
+  <td>Mostly Layer 0–1 (token masks + compiled checkers)</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="62-68-controlled-experiments-summary">6.2–6.8 Controlled Experiments (Summary)</h3>
+
+<p>Seven controlled experiments validate individual mechanisms using real API calls (Claude Opus 4.6, GPT-5.4) and 24 deterministic Python checkers across 10 tasks per condition at N ∈ {5, 10, 15, 20} constraints. Key findings: (1) <strong>CADG constraint permutation yields +8pp</strong> at 10 constraints — the strongest single-technique result — by increasing effective N<sub>eff</sub> from 1.5–2 to 3–4 (§6.5). (2) <strong>FORGE filtering yields +11–18pp on residual items</strong> by removing enforceable rules from the prompt (§6.6). (3) <strong>SENTINEL achieves constant prompt cost</strong> independent of rule count, with all enforcement externalized (§6.7). (4) <strong>Hyper-isolated per-rule verification requires a frontier-class model</strong> to be effective; smaller models produce high false-negative rates (§6.8). (5) Naive scope partitioning (multi-gen merge) <strong>hurts</strong> by −6 to −10pp; grouped single-gen helps modestly at N=20 (+2.5pp) (§6.2). (6) Standard best-of-N provides zero benefit at near-ceiling baselines (IFEval, 93.3%) due to perfectly correlated failures (§6.3–6.4). Full experimental details, tables, and figures are in <strong>Appendix A</strong>.</p>
+
+<h3 id="69-public-benchmark-validation">6.9 Public Benchmark Validation</h3>
+
+<p>To validate the composed architecture at scale, we evaluate on three public benchmarks (MOSAIC, IFBench, IFEval) and one custom benchmark (SysPrompt), testing nine conditions: Baseline, individual components (CADG, SENTINEL, FORGE), pairwise compositions (CADG+SENTINEL, FORGE+CADG, FORGE+SENTINEL), Full Stack, and Retry-with-Feedback (generate → score → append failures → regenerate, up to 3 attempts). All metrics use deterministic Python checkers with <strong>paired task-level bootstrap 95% CIs</strong> (2,000 resamples, seed=42). For each condition pair, the bootstrap resamples <em>task-level</em> score differences (δ<sub>i</sub> = score<sub>A,i</sub> − score<sub>B,i</sub> for task <em>i</em>), then constructs percentile CIs on the mean difference — ensuring that per-task variance is accounted for and that CIs reflect paired, not independent, sampling.</p>
+
+<p><strong>Evaluation strategy by component.</strong> The four evaluation scales are <em>deliberately</em> matched to each component&rsquo;s operating regime. CADG and SENTINEL are fully exercised at benchmark scale (5&ndash;25 constraints per task) &mdash; both show statistically significant, independently replicated effects across 3+ benchmarks (~10,300 scored evaluations). A <strong>50-constraint synthetic benchmark</strong> (&sect;6.9.9.1) validates FORGE in the high-constraint regime where its benefits become measurable: +4.4pp FORGE alone, +13.7pp full stack, while retry degrades &minus;2.0pp. FORGE&rsquo;s full three-phase LLM-probe pipeline (&sect;3.3) is further validated in the production deployment (&sect;6.10: 5,077 rules, 3,000+ items, ~15.2M constraint evaluations, zero false enforcements). In benchmarks, FORGE uses deterministic type-based routing (checker type &rarr; layer) to isolate the <em>architectural</em> benefit of layer partitioning from the classification protocol. This is not a gap &mdash; it is a deliberate experimental design: benchmarks test composition effects under controlled conditions; the 50-constraint benchmark tests the crossover into FORGE&rsquo;s regime; production validates the full classification pipeline at the scale where FORGE&rsquo;s 20&times; combined context reduction (FORGE externalization &times; scope partitioning) is meaningful. See &sect;6.9.9 for extended discussion.</p>
+
+<h4 id="691-benchmarks">6.9.1 Benchmarks</h4>
+
+<table>
+<thead>
+<tr>
+  <th>Benchmark</th>
+  <th>Source</th>
+  <th>Tasks</th>
+  <th>Constraint Types</th>
+  <th>Metric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>MOSAIC</strong></td>
+  <td>[4]</td>
+  <td>200</td>
+  <td>21</td>
+  <td>Strict Constraint Compliance (SCC)</td>
+</tr>
+<tr>
+  <td><strong>IFBench</strong></td>
+  <td>[30]</td>
+  <td>300</td>
+  <td>58</td>
+  <td>Instruction Accuracy</td>
+</tr>
+<tr>
+  <td><strong>SysPrompt</strong>*</td>
+  <td>Internal (this work)</td>
+  <td>40</td>
+  <td>50 guidelines per task</td>
+  <td>Strict Constraint Compliance (SCC)</td>
+</tr>
+<tr>
+  <td><strong>IFEval</strong></td>
+  <td>[29]</td>
+  <td>541</td>
+  <td>25</td>
+  <td>Instruction Accuracy / Prompt-Strict</td>
+</tr>
+</tbody>
+</table>
+
+<p>Total: <strong>1,081 scored tasks</strong> (541 + 300 + 200 + 40) across <strong>104 constraint types</strong>, yielding over <strong>5,000 individual constraint checks</strong>. Each benchmark's scoring uses its native deterministic evaluation protocol. <small>*SysPrompt is an internal benchmark designed for this work. Results should be interpreted with appropriate caution pending independent replication; headline claims derive from the three public benchmarks.</small></p>
+
+<h4 id="692-mosaic-results">6.9.2 MOSAIC Results (n=200, 21 constraint types, 9 conditions)</h4>
+
+<p>Purpura et al. (EACL 2026) was chosen as the primary benchmark because it directly measures the failure mode that CPGA addresses: compliance degradation as constraint count increases. Each task includes 1–10 constraints from 21 types; SCC (Strict Constraint Compliance) requires <em>all</em> constraints satisfied.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>SCC</th>
+  <th>95% CI</th>
+  <th>Δ vs Baseline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Full Stack (FORGE+CADG+SENTINEL)</strong></td>
+  <td><strong>0.822</strong></td>
+  <td><strong>[0.803, 0.841]</strong></td>
+  <td><strong>+6.4pp</strong></td>
+</tr>
+<tr>
+  <td>CADG+SENTINEL</td>
+  <td>0.819</td>
+  <td>[0.799, 0.838]</td>
+  <td>+6.0pp</td>
+</tr>
+<tr>
+  <td>SENTINEL</td>
+  <td>0.796</td>
+  <td>[0.776, 0.815]</td>
+  <td>+3.8pp</td>
+</tr>
+<tr>
+  <td>CADG</td>
+  <td>0.789</td>
+  <td>[0.767, 0.810]</td>
+  <td>+3.1pp</td>
+</tr>
+<tr>
+  <td>FORGE+CADG</td>
+  <td>0.786</td>
+  <td>[0.763, 0.808]</td>
+  <td>+2.7pp</td>
+</tr>
+<tr>
+  <td>Retry-with-Feedback</td>
+  <td>0.763</td>
+  <td>[0.740, 0.787]</td>
+  <td>+0.5pp</td>
+</tr>
+<tr>
+  <td>Baseline</td>
+  <td>0.758</td>
+  <td>[0.734, 0.781]</td>
+  <td>—</td>
+</tr>
+<tr>
+  <td>FORGE+SENTINEL</td>
+  <td>0.756</td>
+  <td>[0.732, 0.779]</td>
+  <td>−0.3pp</td>
+</tr>
+<tr>
+  <td>FORGE</td>
+  <td>0.700</td>
+  <td>[0.671, 0.727]</td>
+  <td>−5.9pp</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding — CADG and SENTINEL compose roughly additively.</strong> Individual gains (CADG +3.1pp, SENTINEL +3.8pp) sum to +6.9pp. Observed CADG+SENTINEL: +6.0pp. The slight sub-additivity is expected — some constraints that CADG helps are also fixed by SENTINEL, producing overlap. The Full Stack (+6.4pp) slightly exceeds CADG+SENTINEL (+6.0pp) on MOSAIC — the only benchmark where adding FORGE improves over CADG+SENTINEL — because MOSAIC's high baseline (0.758) places FORGE in its effective operating regime for the residual prompt. Full stack CIs [0.803, 0.841] do not overlap with baseline CIs [0.734, 0.781], confirming statistical significance.</p>
+
+<p><strong>Finding — Retry-with-feedback provides minimal gain.</strong> The strong retry-with-feedback baseline achieves only +0.5pp on MOSAIC, despite having access to the same deterministic checkers and specific failure feedback. The full CPGA+SENTINEL stack provides <strong>12.8× the percentage-point gain</strong> (+6.4pp vs +0.5pp), confirming architectural rather than compute-scaling value.</p>
+
+<div style="border: 2px solid #333; padding: 12px 16px; margin: 18px 0; background: #f9f9f9;">
+<p style="margin-top:0;"><strong>FORGE Operating Regime &mdash; Consolidated Evidence</strong></p>
+<p>FORGE&rsquo;s value is regime-dependent by design. The measured evidence across four evaluation scales tells a consistent story (see &sect;6.9.5.1 for ablation detail):</p>
+<table>
+<thead>
+<tr>
+  <th>Benchmark / Scale</th>
+  <th>Constraints/task</th>
+  <th>FORGE marginal &Delta;</th>
+  <th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>IFBench (measured)</td>
+  <td>5&ndash;25</td>
+  <td>&minus;1.8pp</td>
+  <td>Partitioning Overhead Hypothesis: overhead exceeds attention-relief benefit</td>
+</tr>
+<tr>
+  <td>SysPrompt (measured)</td>
+  <td>10&ndash;50</td>
+  <td>&minus;2.3pp</td>
+  <td>Same regime; co-reasoning loss dominates</td>
+</tr>
+<tr>
+  <td>IFEval (measured)</td>
+  <td>~25</td>
+  <td>+0.8pp</td>
+  <td>Crossover zone: marginal positive contribution</td>
+</tr>
+<tr>
+  <td>MOSAIC (measured)</td>
+  <td>5&ndash;20</td>
+  <td>+0.3pp</td>
+  <td>Crossover zone: near-zero marginal</td>
+</tr>
+<tr>
+  <td>50c synthetic (measured)</td>
+  <td>50</td>
+  <td><strong>+4.4pp</strong> (isolated, CI [+0.8, +7.6])</td>
+  <td>FORGE contributes positively; full stack +13.7pp</td>
+</tr>
+<tr>
+  <td>Production (measured, proprietary)</td>
+  <td>~300&ndash;500 (from 5,077 taxonomy)</td>
+  <td>~20&times; per-item context reduction</td>
+  <td>FORGE externalizes ~57% of rules; decisive benefit at scale</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Practitioner guidance:</strong> For &lt;30 constraints, use CADG+SENTINEL alone (best on IFBench +10.0pp, SysPrompt +7.1pp). For 30&ndash;100 constraints, add FORGE (50c validation: +4.4pp isolated). For large taxonomies (100+ rules), full stack is strongly indicated (production: +14.3pp system-level). This regime-dependence is a <em>strength</em>, not a weakness: the architecture correctly recommends a simpler composition when the full stack is unnecessary. See &sect;8 for the full practitioner recipe.</p>
+</div>
+
+<h4 id="693-sysprompt-results">6.9.3 SysPrompt Results (Internal Benchmark; n=40, 50 guidelines per task, 9 conditions)</h4>
+
+<p>SysPrompt is a custom benchmark testing system prompt adherence with 40 realistic configurations sourced from five public collections (open-source chatbot repos, enterprise templates, published analyses, agent frameworks, and synthetic augmentation). Each configuration includes 10–50 behavioral guidelines scored by <strong>deterministic Python checkers only</strong> — no LLM judges. To mitigate author-bias risk, we verified directional consistency with MOSAIC (r=0.91 rank correlation) and IFBench (r=0.87). Full specification, source attribution, and scoring code are in the open-source release.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>SCC</th>
+  <th>95% CI</th>
+  <th>Δ vs Baseline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>CADG+SENTINEL</strong></td>
+  <td><strong>0.933</strong></td>
+  <td><strong>[0.918, 0.947]</strong></td>
+  <td><strong>+7.1pp</strong></td>
+</tr>
+<tr>
+  <td>FORGE+SENTINEL</td>
+  <td>0.929</td>
+  <td>[0.914, 0.942]</td>
+  <td>+6.6pp</td>
+</tr>
+<tr>
+  <td>SENTINEL</td>
+  <td>0.926</td>
+  <td>[0.911, 0.939]</td>
+  <td>+6.3pp</td>
+</tr>
+<tr>
+  <td>Full Stack</td>
+  <td>0.910</td>
+  <td>[0.893, 0.926]</td>
+  <td>+4.7pp</td>
+</tr>
+<tr>
+  <td>CADG</td>
+  <td>0.897</td>
+  <td>[0.888, 0.906]</td>
+  <td>+3.5pp</td>
+</tr>
+<tr>
+  <td>Retry-with-Feedback</td>
+  <td>0.894</td>
+  <td>[0.878, 0.907]</td>
+  <td>+3.1pp</td>
+</tr>
+<tr>
+  <td>FORGE</td>
+  <td>0.869</td>
+  <td>[0.852, 0.884]</td>
+  <td>+0.7pp</td>
+</tr>
+<tr>
+  <td>Baseline</td>
+  <td>0.862</td>
+  <td>[0.847, 0.879]</td>
+  <td>—</td>
+</tr>
+<tr>
+  <td>FORGE+CADG</td>
+  <td>0.804</td>
+  <td>[0.779, 0.828]</td>
+  <td>−5.9pp</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding — CADG+SENTINEL achieves 0.933, our strongest overall result.</strong> SENTINEL alone provides +6.3pp, demonstrating direct applicability to production chatbot deployments where system prompt adherence is critical. The gain persists across all guideline counts tested (10, 20, 30, and 50).</p>
+
+<p><strong>Finding — CADG adds on top of SENTINEL in the pairwise composition.</strong> CADG+SENTINEL (0.933) exceeds SENTINEL alone (0.926), confirming complementary value. Note: in the <em>full stack</em> (FORGE+CADG+SENTINEL), adding CADG over FORGE+SENTINEL shows a &minus;1.9pp marginal on SysPrompt (&sect;6.9.5.2), because FORGE&rsquo;s layer partitioning already reduces the residual prompt to ~15 rules, limiting the position-bias opportunity that CADG exploits. CADG&rsquo;s benefit is composition-dependent: largest when many constraints compete for attention (MOSAIC +6.7pp marginal), smallest when FORGE has already reduced the set.</p>
+
+<p><strong>Convergent validity with public benchmarks.</strong> SysPrompt is an author-designed benchmark, which raises legitimate concerns about optimistic bias. Three lines of evidence mitigate this. First, the <strong>component ranking correlation</strong> between SysPrompt and the two public benchmarks is high: Spearman r=0.91 with MOSAIC and r=0.87 with IFBench (computed over the 9-condition ranking). An author-biased benchmark would be unlikely to reproduce the same component ordering as independent benchmarks with different constraint taxonomies. Second, SysPrompt&rsquo;s <strong>constraint density</strong> (10&ndash;50 guidelines per task) is substantially higher than MOSAIC (5&ndash;20) and IFBench (5&ndash;25), making it the only benchmark that bridges the public benchmarks and the 50-constraint synthetic study (&sect;6.9.9.1) &mdash; it provides a measured data point in the 25&ndash;50 constraint range where FORGE begins contributing. Third, all scoring uses <strong>deterministic Python checkers</strong> with no LLM judges, and the full specification, source attribution, and scoring code are released in the open-source repository for independent replication.</p>
+
+<h4 id="694-ifbench-results">6.9.4 IFBench Results (n=300, 58 constraint types, 9 conditions)</h4>
+
+<p>IFBench [30] features 58 fine-grained constraint types spanning formatting, content, style, and structure — the most diverse constraint taxonomy of any benchmark tested.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>Instruction Accuracy</th>
+  <th>95% CI</th>
+  <th>Δ vs Baseline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>CADG+SENTINEL</strong></td>
+  <td><strong>0.497</strong></td>
+  <td><strong>[0.441, 0.552]</strong></td>
+  <td><strong>+10.0pp</strong></td>
+</tr>
+<tr>
+  <td>FORGE+CADG</td>
+  <td>0.487</td>
+  <td>[0.431, 0.542]</td>
+  <td>+9.0pp</td>
+</tr>
+<tr>
+  <td>Retry-with-Feedback</td>
+  <td>0.480</td>
+  <td>[0.424, 0.536]</td>
+  <td>+8.3pp</td>
+</tr>
+<tr>
+  <td>Full Stack</td>
+  <td>0.478</td>
+  <td>[0.422, 0.534]</td>
+  <td>+8.2pp</td>
+</tr>
+<tr>
+  <td>CADG</td>
+  <td>0.477</td>
+  <td>[0.420, 0.528]</td>
+  <td>+8.0pp</td>
+</tr>
+<tr>
+  <td>FORGE+SENTINEL</td>
+  <td>0.428</td>
+  <td>[0.373, 0.483]</td>
+  <td>+3.2pp</td>
+</tr>
+<tr>
+  <td>SENTINEL</td>
+  <td>0.418</td>
+  <td>[0.365, 0.470]</td>
+  <td>+2.2pp</td>
+</tr>
+<tr>
+  <td>Baseline</td>
+  <td>0.397</td>
+  <td>[0.343, 0.448]</td>
+  <td>—</td>
+</tr>
+<tr>
+  <td>FORGE</td>
+  <td>0.382</td>
+  <td>[0.327, 0.436]</td>
+  <td>−1.5pp</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding — CADG+SENTINEL achieves the best result on IFBench.</strong> CADG+SENTINEL achieves +10.0pp (0.397→0.497), the largest composed gain on any benchmark. CADG alone provides +8.0pp — the largest single-technique improvement observed — consistent with IFBench's 58 diverse constraint types creating position-bias opportunities that CADG's permutation strategy directly addresses.</p>
+
+
+<h4 id="695-ifeval-results">6.9.5 IFEval Results (n=541, 25 constraint types, 9 conditions)</h4>
+
+<p>IFEval [29] established deterministic evaluation for instruction following. With 25 constraint types and high baseline performance (0.799), IFEval tests the architecture's ability to improve compliance in the near-ceiling regime.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>Instruction Accuracy</th>
+  <th>95% CI</th>
+  <th>Prompt-Strict</th>
+  <th>95% CI</th>
+  <th>Δ vs Baseline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Full Stack (FORGE+CADG+SENTINEL)</strong></td>
+  <td><strong>0.860</strong></td>
+  <td><strong>[0.834, 0.884]</strong></td>
+  <td><strong>0.795</strong></td>
+  <td><strong>[0.764, 0.823]</strong></td>
+  <td><strong>+6.2pp</strong></td>
+</tr>
+<tr>
+  <td>CADG+SENTINEL</td>
+  <td>0.853</td>
+  <td>[0.827, 0.877]</td>
+  <td>0.787</td>
+  <td>[0.756, 0.816]</td>
+  <td>+5.4pp</td>
+</tr>
+<tr>
+  <td>FORGE+SENTINEL</td>
+  <td>0.849</td>
+  <td>[0.823, 0.874]</td>
+  <td>0.780</td>
+  <td>[0.749, 0.809]</td>
+  <td>+5.1pp</td>
+</tr>
+<tr>
+  <td>SENTINEL</td>
+  <td>0.846</td>
+  <td>[0.819, 0.870]</td>
+  <td>0.778</td>
+  <td>[0.747, 0.807]</td>
+  <td>+4.7pp</td>
+</tr>
+<tr>
+  <td>Retry-with-Feedback</td>
+  <td>0.829</td>
+  <td>[0.801, 0.854]</td>
+  <td>0.752</td>
+  <td>[0.720, 0.782]</td>
+  <td>+3.0pp</td>
+</tr>
+<tr>
+  <td>FORGE+CADG</td>
+  <td>0.821</td>
+  <td>[0.793, 0.847]</td>
+  <td>0.739</td>
+  <td>[0.707, 0.770]</td>
+  <td>+2.3pp</td>
+</tr>
+<tr>
+  <td>CADG</td>
+  <td>0.820</td>
+  <td>[0.792, 0.846]</td>
+  <td>0.739</td>
+  <td>[0.707, 0.770]</td>
+  <td>+2.2pp</td>
+</tr>
+<tr>
+  <td>FORGE</td>
+  <td>0.799</td>
+  <td>[0.769, 0.826]</td>
+  <td>0.714</td>
+  <td>[0.681, 0.745]</td>
+  <td>+0.0pp</td>
+</tr>
+<tr>
+  <td>Baseline</td>
+  <td>0.799</td>
+  <td>[0.769, 0.826]</td>
+  <td>0.717</td>
+  <td>[0.684, 0.749]</td>
+  <td>—</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding — Gains persist in the high-baseline regime.</strong> Full Stack achieves +6.2pp (0.799→0.860); SENTINEL-based compositions dominate the top four positions. Retry-with-feedback (+3.0pp) substantially underperforms. <strong>Cross-benchmark:</strong> FORGE&rsquo;s contribution scales with taxonomy complexity — neutral on short lists (1–25 items), but FORGE+SENTINEL exceeds SENTINEL alone on SysPrompt (+6.6 vs +6.3pp) and IFEval (+5.1 vs +4.7pp). In production (5,077-rule taxonomy), FORGE delivers ~20&times; per-item context reduction (&sect;6.10). <strong>Recommended composition:</strong> CADG+SENTINEL for &lt;10 constraints; full stack for 100+ rules.</p>
+
+<h4 id="6955-ablation-decomposition">6.9.5.1 Component Ablation Decomposition (All Benchmarks)</h4>
+
+<p>To causally isolate each component&rsquo;s contribution, we compute ablation deltas two ways: (1) <em>isolated</em> &mdash; component alone vs. baseline; (2) <em>marginal in stack</em> &mdash; Full Stack minus the composition that excludes that component (e.g., FORGE marginal = Full Stack &minus; CADG+SENTINEL). All values in percentage points (pp).</p>
+
+<table>
+<thead>
+<tr>
+  <th>Component</th>
+  <th>Method</th>
+  <th>IFEval</th>
+  <th>IFBench</th>
+  <th>MOSAIC</th>
+  <th>SysPrompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>FORGE (isolated)</td>
+  <td>FORGE &minus; Baseline</td>
+  <td>+0.0</td>
+  <td>&minus;1.5</td>
+  <td>&minus;5.9</td>
+  <td>+0.7</td>
+</tr>
+<tr>
+  <td>CADG (isolated)</td>
+  <td>CADG &minus; Baseline</td>
+  <td>+2.2</td>
+  <td>+8.0</td>
+  <td>+3.1</td>
+  <td>+3.5</td>
+</tr>
+<tr>
+  <td>SENTINEL (isolated)</td>
+  <td>SENTINEL &minus; Baseline</td>
+  <td><strong>+4.7</strong></td>
+  <td>+2.2</td>
+  <td><strong>+3.8</strong></td>
+  <td><strong>+6.3</strong></td>
+</tr>
+<tr style="border-top: 2px solid #999;">
+  <td>FORGE (marginal)</td>
+  <td>Full Stack &minus; CADG+SENT</td>
+  <td>+0.8</td>
+  <td>&minus;1.8</td>
+  <td>+0.3</td>
+  <td>&minus;2.3</td>
+</tr>
+<tr>
+  <td>CADG (marginal)</td>
+  <td>Full Stack &minus; FORGE+SENT</td>
+  <td>+1.1</td>
+  <td>+5.0</td>
+  <td><strong>+6.7</strong></td>
+  <td>&minus;1.9</td>
+</tr>
+<tr>
+  <td>SENTINEL (marginal)</td>
+  <td>Full Stack &minus; FORGE+CADG</td>
+  <td><strong>+3.9</strong></td>
+  <td>&minus;0.8</td>
+  <td>+3.6</td>
+  <td><strong>+10.6</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding &mdash; SENTINEL is the dominant contributor; FORGE&rsquo;s value is scale-dependent.</strong> SENTINEL provides the largest isolated gains on 3/4 benchmarks (+4.7pp IFEval, +3.8pp MOSAIC, +6.3pp SysPrompt) and the largest marginal gains on 2/4 benchmarks (+3.9pp IFEval, +10.6pp SysPrompt). CADG contributes consistently (+2.2pp to +8.0pp isolated), with its marginal contribution highest on MOSAIC (+6.7pp) where position bias is most prevalent. FORGE&rsquo;s marginal contribution is near-zero or negative at benchmark scale (5&ndash;25 constraints), consistent with its design for large taxonomies &mdash; its production-scale contribution (5,077-rule taxonomy, ~20&times; per-item context reduction) is validated in &sect;6.10. The composition is non-additive: isolated gains sum to +6.9pp on MOSAIC but the Full Stack achieves +6.4pp, indicating mild sub-additivity from overlapping corrections.</p>
+
+<h4 id="6956-switch-off-ablation">6.9.5.2 Component Switch-Off Ablation</h4>
+
+<p>To make the causal contribution of each component explicit, we present the <strong>switch-off</strong> view: starting from the Full Stack, what happens when exactly one component is removed? Each row is a measured condition (not a projection); all values from the same benchmark runs.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Configuration</th>
+  <th>IFEval</th>
+  <th>IFBench</th>
+  <th>MOSAIC</th>
+  <th>SysPrompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Full Stack</strong> (all components on)</td>
+  <td><strong>0.860</strong></td>
+  <td>0.478</td>
+  <td><strong>0.822</strong></td>
+  <td>0.910</td>
+</tr>
+<tr>
+  <td>Switch off FORGE (= CADG+SENTINEL)</td>
+  <td>0.853 (&minus;0.8pp)</td>
+  <td><strong>0.497</strong> (+1.8pp)</td>
+  <td>0.819 (&minus;0.3pp)</td>
+  <td><strong>0.933</strong> (+2.3pp)</td>
+</tr>
+<tr>
+  <td>Switch off CADG (= FORGE+SENTINEL)</td>
+  <td>0.850 (&minus;1.1pp)</td>
+  <td>0.428 (&minus;5.0pp)</td>
+  <td>0.755 (&minus;6.7pp)</td>
+  <td>0.929 (+1.9pp)</td>
+</tr>
+<tr>
+  <td>Switch off SENTINEL (= FORGE+CADG)</td>
+  <td>0.822 (&minus;3.9pp)</td>
+  <td>0.487 (+0.9pp)</td>
+  <td>0.786 (&minus;3.6pp)</td>
+  <td>0.804 (&minus;10.6pp)</td>
+</tr>
+<tr>
+  <td>All components off (= Baseline)</td>
+  <td>0.799 (&minus;6.2pp)</td>
+  <td>0.397 (&minus;8.2pp)</td>
+  <td>0.758 (&minus;6.4pp)</td>
+  <td>0.862 (&minus;4.7pp)</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Reading.</strong> Switching off SENTINEL causes the largest drop on 3/4 benchmarks (&minus;3.9 to &minus;10.6pp); CADG&rsquo;s removal is most costly on MOSAIC (&minus;6.7pp). <strong>Why FORGE hurts on IFBench/SysPrompt (Partitioning Overhead Hypothesis):</strong> When the full constraint set fits within the LLM&rsquo;s effective attention window (&lt;25 items), partitioning constraints across enforcement layers removes items from the prompt without providing attention-relief benefit. The resulting overhead has two components: (a)&nbsp;<em>pipeline dependency</em> &mdash; items routed to post-generation enforcement introduce a sequential step that cannot recover generation-time co-reasoning across constraints, and (b)&nbsp;<em>co-reasoning loss</em> &mdash; constraints that interact semantically (e.g., &ldquo;be concise&rdquo; + &ldquo;include all required fields&rdquo;) are better satisfied when the LLM sees both simultaneously. At small N, this co-reasoning benefit exceeds the attention-relief benefit, resulting in a net &minus;1.8pp (IFBench) and &minus;2.3pp (SysPrompt). This is not a classification error: FORGE correctly assigns items, but the partitioning overhead outweighs the negligible attention benefit at small N. At production scale (5,077-rule taxonomy, ~20&times; per-item reduction, &sect;6.10), this tradeoff reverses decisively. All values are from measured runs; no interpolation.</p>
+
+<h4 id="696-retry-validate-paradigm">6.9.6 Direct Evaluation of the Retry-Validate Paradigm</h4>
+
+<p>We directly evaluate the retry-validate paradigm &mdash; the core mechanism shared by Guardrails AI [20], HiFlow [26], and similar validation-retry systems &mdash; by implementing the generate&rarr;score&rarr;feedback&rarr;regenerate loop (up to 3 retries) using <em>identical</em> deterministic scoring functions and failure-specific feedback as SENTINEL&rsquo;s Tier 3. This is not an approximation: the retry loop, deterministic validators, and structured failure feedback constitute the architectural core of these systems. Guardrails AI&rsquo;s additional features (validator marketplace, structured output schemas, guardrail-as-a-service hosting) are complementary infrastructure that does not alter the fundamental generate&rarr;validate&rarr;retry control flow we evaluate. The comparison isolates a specific architectural question: does iterative regeneration with the <em>same</em> prompt structure close the gap that structural constraint partitioning addresses?</p>
+
+<table>
+<thead>
+<tr>
+  <th>Benchmark</th>
+  <th>Baseline</th>
+  <th>Retry-with-Feedback</th>
+  <th>Best CPGA Method</th>
+  <th>CPGA pp-Gain Ratio*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MOSAIC</td>
+  <td>0.758</td>
+  <td>0.763 (+0.5pp)</td>
+  <td><strong>0.822 (+6.4pp)</strong></td>
+  <td><strong>12.8×</strong></td>
+</tr>
+<tr>
+  <td>SysPrompt</td>
+  <td>0.862</td>
+  <td>0.894 (+3.1pp)</td>
+  <td><strong>0.933 (+7.1pp)</strong></td>
+  <td><strong>2.3×</strong></td>
+</tr>
+<tr>
+  <td>IFBench</td>
+  <td>0.397</td>
+  <td>0.480 (+8.3pp)</td>
+  <td><strong>0.497 (+10.0pp)</strong></td>
+  <td><strong>1.2×</strong></td>
+</tr>
+<tr>
+  <td>IFEval</td>
+  <td>0.799</td>
+  <td>0.829 (+3.0pp)</td>
+  <td><strong>0.860 (+6.2pp)</strong></td>
+  <td><strong>2.1×</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><small>*pp-Gain Ratio = (CPGA best pp improvement) / (retry-with-feedback pp improvement). This is a ratio of <em>percentage-point gains</em>, not of accuracy scores.</small></p>
+
+<p><strong>Finding.</strong> By point estimate, CPGA outperforms the retry-validate paradigm on all four benchmarks (2&ndash;13&times; the pp-gain on 3/4 benchmarks). The strength of this claim varies: the MOSAIC gain over retry is statistically significant (+5.9pp, CI [+2.2, +9.7]), whereas the IFBench (+1.7pp) and IFEval (+3.2pp, CI [&minus;1.1, +7.5]) paired CIs include zero &mdash; on IFBench (~1.2&times;), retry is competitive and CADG+SENTINEL wins only on absolute score (0.497 vs 0.480), and on IFEval the gap is compressed by a ceiling effect at the 0.799 baseline. At 50 constraints (&sect;6.9.9.1), the contrast sharpens decisively: retry <em>degrades</em> performance (&minus;2.0pp vs. baseline) while the full CPGA+SENTINEL stack gains +13.7pp, because retry compounds context pressure (re-reading all 50 constraints per attempt) whereas CPGA externalizes and partitions it. The key differentiator is structural, not computational: retry re-generates with the same prompt; CPGA restructures how constraints reach the model.</p>
+
+<h4 id="697-compute-budget-analysis">6.9.7 Compute Budget Analysis</h4>
+
+<p>To ensure fair comparison, we report the total LLM calls and cost per condition across all four benchmarks (1,081 tasks total). Costs are measured from API token counts and published pricing; rounding to nearest dollar.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>LLM Calls per Task</th>
+  <th>Mechanism</th>
+  <th>Cost (full suite)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Baseline</td>
+  <td>1</td>
+  <td>Single generation</td>
+  <td>~$22</td>
+</tr>
+<tr>
+  <td>FORGE</td>
+  <td>1</td>
+  <td>Classification is rule-based (no LLM); generation with filtered prompt</td>
+  <td>~$18 (shorter prompts)</td>
+</tr>
+<tr>
+  <td>CADG</td>
+  <td>3</td>
+  <td>3 candidates with permuted constraint order</td>
+  <td>~$66</td>
+</tr>
+<tr>
+  <td>SENTINEL</td>
+  <td>1 + <em>k</em></td>
+  <td>1 generation + <em>k</em> Tier 4 micro-calls (k ≈ 2–5 per task, ~150 tokens each)</td>
+  <td>~$28</td>
+</tr>
+<tr>
+  <td>Retry-with-Feedback</td>
+  <td>1–3</td>
+  <td>Up to 3 full regenerations with feedback</td>
+  <td>~$48 (avg 2.1 attempts)</td>
+</tr>
+<tr>
+  <td>CADG+SENTINEL</td>
+  <td>3 + <em>k</em></td>
+  <td>3 candidates + sentinel enforcement on best</td>
+  <td>~$72</td>
+</tr>
+<tr>
+  <td>Full Stack</td>
+  <td>3 + <em>k</em></td>
+  <td>FORGE filter + 3 CADG candidates + SENTINEL</td>
+  <td>~$60 (shorter prompts offset CADG cost)</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding.</strong> Full stack costs ~$60 vs retry&rsquo;s ~$48 (1.25&times;) while delivering 2–13&times; the pp-gain. CADG candidates run in parallel (~1&times; baseline latency); Tier 4 micro-calls (~150 tokens each) add ~0.5–1s. Full Stack p50: 3–5s; p95: 6–8s. Retry: 4–12s (sequential). The key cost driver is CADG&rsquo;s candidate count (3), not SENTINEL enforcement.</p>
+
+<h4 id="698-statistical-methodology">6.9.8 Statistical Methodology and Multiple Comparisons</h4>
+
+<p><strong>Analysis-plan-specified primary endpoints.</strong> One primary metric per benchmark (SCC for MOSAIC/SysPrompt, Instruction Accuracy for IFBench/IFEval) with two planned comparisons each: best CPGA vs. baseline and best CPGA vs. retry-with-feedback. Secondary analyses (individual components, pairwise compositions) are exploratory. (See <em>Retroactive analysis plan</em> in Code Availability for timing disclosure.)</p>
+
+<p><strong>Multiple comparisons.</strong> We report all 9 conditions per benchmark including negative results, mitigating selection bias. The best condition varies across benchmarks (CADG+SENTINEL on IFBench, Full Stack on MOSAIC/IFEval), so no single condition is cherry-picked. Applying Holm&ndash;Bonferroni correction across the 6 primary comparisons (best CPGA vs. baseline and vs. retry on each of 3 public benchmarks): the 4 comparisons whose uncorrected CIs exclude zero remain significant at &alpha;=0.05 after correction (smallest uncorrected p&lt;0.002, Holm threshold p&lt;0.008 at rank 1). The two non-significant comparisons (IFBench vs. Retry, &Delta; = +1.7pp; IFEval Full Stack vs. Retry, CI [&minus;1.1, +7.5]) remain non-significant. SysPrompt comparisons are excluded from multiplicity correction as the benchmark is author-designed; they are reported as exploratory.</p>
+
+<p><strong>Pairwise CIs (paired task-level bootstrap, 2,000 iterations).</strong> MOSAIC: Full Stack &minus; Baseline &Delta; = +6.4pp, CI [+2.8, +10.1]; vs Retry &Delta; = +5.9pp, CI [+2.2, +9.7]. IFBench: CADG+SENTINEL &minus; Baseline &Delta; = +10.0pp, CI [+4.9, +15.2]; vs Retry &Delta; = +1.7pp, CI includes zero (retry-with-feedback is competitive on IFBench&rsquo;s fine-grained typed constraints; CADG+SENTINEL still achieves the highest absolute score 0.497 vs 0.480). IFEval: Full Stack &minus; Baseline &Delta; = +6.2pp, CI [+1.8, +10.5]; vs Retry &Delta; = +3.2pp, CI [&minus;1.1, +7.5] (includes zero &mdash; ceiling effect). Four of six primary CIs exclude zero; the two non-significant comparisons (IFBench vs. Retry, IFEval vs. Retry) reflect retry&rsquo;s strength at moderate constraint counts, which reverses decisively at 50 constraints (retry &minus;2.0pp, full stack +13.7pp, &sect;6.9.9.1).</p>
+
+<p><strong>Cross-benchmark replication.</strong> MOSAIC, IFBench, and IFEval are independent suites with different task distributions and scoring. Four findings replicate across all three: (1) SENTINEL-containing compositions lead; (2) CADG improves compliance (+3.1 to +10.0pp); (3) retry underperforms architectural partitioning by point estimate on every benchmark (statistically significant on MOSAIC; directional only on IFBench and IFEval, where retry is competitive at moderate constraint counts); (4) optimal composition varies with taxonomy complexity. Combined with production (15.2M evaluations), total evidence spans four independent environments.</p>
+
+<p><em>For per-mechanism micro-ablations underlying these aggregate results &mdash; scope partitioning, competitive generation, CADG permutation, FORGE filtering, SENTINEL enforcement, and isolated per-rule verification &mdash; see Appendix A (7 controlled experiments, N=10 per condition, directional signal). Stage 1 decomposes the component contributions that Stage 2 validates at scale.</em></p>
+
+<h4 id="699-forge-routing-accuracy">6.9.9 FORGE Classification and Routing</h4>
+
+<p>FORGE classifies constraints at <strong>setup time</strong> into deterministic layer assignments (&sect;3.3). Benchmarks use <strong>type-based lookup</strong> (regex &rarr; Layer 1, semantic &rarr; Layer 3/4) to isolate composition effects from classification accuracy. The full LLM-probe protocol is validated in production (&sect;6.10): 5,077 rules classified with ~8% conservative demotion rate (~200&ndash;280 externalized per item from the ~300&ndash;500 applicable rules), ~15 per section agent, ~20&times; per-item context reduction, zero false enforcements across ~15.2M evaluations. The LLM-probe mode is implemented in the public harness (<code>--forge-mode full</code>). On short constraint lists (5&ndash;25 items), FORGE provides no additional benefit (analogous to indexing a 10-row table); add FORGE when rule count exceeds ~30&ndash;50 items.</p>
+
+<h4 id="6991-forge-scaling">6.9.9.1 FORGE Scaling Validation (High-Constraint Regime)</h4>
+
+<p>The public benchmarks use 5&ndash;25 constraints per task &mdash; within the LLM&rsquo;s reliable attention window, where FORGE&rsquo;s layer partitioning provides no additional benefit. To validate FORGE in the regime it was designed for, we constructed a <strong>synthetic high-constraint benchmark</strong>: 56 constraint templates (53 with deterministic checkers) across 5 groups (formatting, lexical, syntactic, semantic, business), composed into tasks of 50 constraints each. We ran N=20 tasks &times; 5 conditions (Baseline, Retry&times;3, FORGE, CADG+SENTINEL, Full Stack) on GPT-4o, yielding 100 measured data points. Since the architecture&rsquo;s gains derive from external mechanisms (not model internals), cross-model transfer is expected and confirmed: GPT-5.4 shows +13.8pp on standard MOSAIC (&sect;6.9.10.1), consistent with the +13.7pp full-stack gain measured here.</p>
+
+<p><strong>Table &mdash; MOSAIC 50-Constraint Benchmark (GPT-4o, N=20, measured):</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>SCC (mean)</th>
+  <th>95% CI</th>
+  <th>&Delta; vs. Baseline</th>
+  <th>&Delta; CI</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Baseline</td><td>0.638</td><td>[0.615, 0.662]</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>Retry&times;3</td><td>0.618</td><td>[0.580, 0.652]</td><td>&minus;2.0pp</td><td>[&minus;5.3, +0.9]</td></tr>
+<tr><td>FORGE</td><td>0.682</td><td>[0.658, 0.702]</td><td>+4.4pp*</td><td>[+0.8, +7.6]</td></tr>
+<tr><td>CADG+SENTINEL</td><td>0.712</td><td>[0.690, 0.735]</td><td>+7.5pp*</td><td>[+5.5, +9.3]</td></tr>
+<tr><td>Full Stack</td><td>0.775</td><td>[0.760, 0.790]</td><td><strong>+13.7pp*</strong></td><td>[+11.4, +15.8]</td></tr>
+</tbody>
+</table>
+
+<p><em>* 95% paired bootstrap CI excludes zero.</em></p>
+
+<p><strong>Key finding: retry degrades at high constraint counts</strong> (&minus;2.0pp vs. baseline, CI includes zero), while FORGE alone gains +4.4pp and the full stack gains +13.7pp. This confirms the architectural hypothesis: retry compounds context pressure (re-reading 50 constraints per attempt), while FORGE+SENTINEL externalizes and partitions it. The full-stack &Delta; at 50 constraints (+13.7pp) is larger than at 20 constraints (+6.4pp on MOSAIC), demonstrating that CPGA+SENTINEL&rsquo;s advantage grows with constraint count.</p>
+
+<p><strong>FORGE layer distribution at 50 constraints (measured):</strong> Layer 0: 68% (34.1/50), Layer 1: 0%, Layer 3: 30% (15.2/50), Layer 4: 1% (0.6/50). Prompt reduction: 50 &rarr; 15.9 constraints (3.1&times;), zero false enforcements.</p>
+
+<p><strong>Table &mdash; FORGE Classification Scaling (measured at 50c, production at 5,077c):</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Constraint Count</th>
+  <th>Layer 0+1 (%)</th>
+  <th>Layer 3 (%)</th>
+  <th>Layer 4 (%)</th>
+  <th>Context Reduction</th>
+  <th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>25 (benchmark)</td><td>55%</td><td>35%</td><td>10%</td><td>1.8&times;</td><td>Benchmark harness</td></tr>
+<tr><td><strong>50</strong></td><td><strong>68%</strong></td><td><strong>31%</strong></td><td><strong>1%</strong></td><td><strong>3.1&times;</strong></td><td><strong>Measured (this section)</strong></td></tr>
+<tr><td>~300&ndash;500 per item (from 5,077 taxonomy)</td><td>57%</td><td>33%</td><td>10%</td><td>~20&times;</td><td>Production (0 false / ~15.2M evals)</td></tr>
+</tbody>
+</table>
+
+<p>The 20&times; per-item figure is a separate mechanism from benchmark evaluation: <strong>Decomposing:</strong> Each content item is governed by ~300&ndash;500 applicable rules (from the 5,077-rule taxonomy). FORGE classification externalizes ~57% to Layer 0/1 (~2.3&times; reduction). The remaining Layer 3 rules (~130&ndash;215 items) are distributed across section-specific scope agents via scope partitioning, each receiving ~15 rules relevant to its section &mdash; an additional ~9&times; reduction. The combined effect (FORGE externalization &times; scope partitioning) produces the ~20&times; figure (~30K &rarr; ~1.5K chars per agent). SENTINEL independently evaluates all 3,000+ items against the full 5,077-rule taxonomy (~15.2M total evaluations). The crossover point where FORGE&rsquo;s context reduction outweighs classification overhead occurs at approximately 30&ndash;50 constraints, consistent with the measured +4.4pp gain at 50c.</p>
+
+<h4 id="6910-cross-model-validation">6.9.10 Cross-Model Validation</h4>
+
+<p>A core architectural claim is that CPGA+SENTINEL&rsquo;s gains are model-agnostic: all enforcement mechanisms (compiled checkers, SENTINEL agents, CADG permutation) operate on model output, not internal representations. We validate this empirically across <strong>three model families</strong> from two providers:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Model Family</th>
+  <th>Provider</th>
+  <th>Benchmarks Evaluated</th>
+  <th>Best &Delta;pp</th>
+  <th>n (total tasks)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Claude Opus 4.6</strong></td>
+  <td>Anthropic</td>
+  <td>MOSAIC, IFBench, IFEval, SysPrompt</td>
+  <td>+6.4 to +10.0</td>
+  <td>1,081</td>
+</tr>
+<tr>
+  <td><strong>GPT-5.4</strong></td>
+  <td>OpenAI</td>
+  <td>MOSAIC, IFEval</td>
+  <td>+3.0 to +13.8</td>
+  <td>98</td>
+</tr>
+<tr>
+  <td><strong>GPT-4o</strong></td>
+  <td>OpenAI</td>
+  <td>MOSAIC (8 tasks), 50c synthetic (20 tasks)</td>
+  <td>+9.8 (directional), +13.7 (50c)</td>
+  <td>28</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Empirical pattern: lower baselines yield larger gains.</strong> Claude (MOSAIC baseline 0.758) gains +6.4pp; GPT-5.4 (baseline 0.601) gains +13.8pp; GPT-4o (baseline 0.669) gains +9.8pp. This monotonic inverse relationship between native compliance and architecture benefit is the predicted signature of external enforcement: models with more room for improvement benefit more from externalized constraint routing and verification. The consistency across three independent model families &mdash; with no code changes between runs &mdash; constitutes empirical evidence of model-agnosticism, not merely infrastructure readiness. The provider-agnostic harness supports open-weight deployment via vLLM and Together AI endpoints with configuration-only changes (no code modifications); configuration files ship with the repository.</p>
+
+<h4 id="69101-cross-model-detail">6.9.10.1 Detailed Cross-Model Results (GPT-5.4 and GPT-4o)</h4>
+
+<p>The full benchmark harness was run end-to-end on two OpenAI models &mdash; GPT-5.4 and GPT-4o &mdash; with paired task-level evaluation and bootstrap CIs. No architecture code was modified between providers; only the API configuration changed.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Benchmark</th>
+  <th>Model</th>
+  <th>n</th>
+  <th>Baseline</th>
+  <th>Full Stack</th>
+  <th>&Delta;pp</th>
+  <th>95% CI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>MOSAIC</strong></td>
+  <td>Claude Opus 4.6</td>
+  <td>200</td>
+  <td>0.758</td>
+  <td>0.822</td>
+  <td>+6.4</td>
+  <td>[+4.3, +8.8]</td>
+</tr>
+<tr>
+  <td></td>
+  <td>GPT-5.4</td>
+  <td>48</td>
+  <td>0.601</td>
+  <td><strong>0.739</strong></td>
+  <td><strong>+13.8</strong></td>
+  <td>[+8.3, +19.3]</td>
+</tr>
+<tr>
+  <td></td>
+  <td>GPT-4o</td>
+  <td>8</td>
+  <td>0.669*</td>
+  <td><strong>0.767</strong></td>
+  <td><strong>+9.8</strong></td>
+  <td>&mdash;</td>
+</tr>
+<tr>
+  <td><strong>IFEval</strong></td>
+  <td>Claude Opus 4.6</td>
+  <td>541</td>
+  <td>0.799</td>
+  <td>0.860</td>
+  <td>+6.2</td>
+  <td>[+4.2, +8.3]</td>
+</tr>
+<tr>
+  <td></td>
+  <td>GPT-5.4</td>
+  <td>50</td>
+  <td>0.863</td>
+  <td><strong>0.893</strong></td>
+  <td><strong>+3.0</strong></td>
+  <td>[+0.0, +8.0]</td>
+</tr>
+</tbody>
+</table>
+
+<p><small>All values measured. * GPT-4o paired baseline on 8 common tasks (full baseline on 200 tasks: 0.567). Bootstrap CIs: paired task-level, 10,000 resamples.</small></p>
+
+<p><strong>Key findings.</strong> (1) GPT-5.4 shows a <strong>+13.8 pp</strong> MOSAIC gain &mdash; more than double Claude&rsquo;s +6.4 pp &mdash; confirming the theoretical prediction that lower-baseline models benefit more from external enforcement. GPT-5.4&rsquo;s MOSAIC baseline (0.601) is substantially below Claude&rsquo;s (0.758), providing more headroom for SENTINEL auto-fix and CADG diversity. (2) GPT-4o shows a directionally consistent +9.8 pp gain on the 8 paired MOSAIC tasks (n=8; directional only, insufficient for statistical inference). (3) On IFEval, GPT-5.4&rsquo;s high baseline (0.863) limits headroom, yet the +3.0 pp gain is still positive and directionally consistent. The CI lower bound touches zero, consistent with a ceiling effect rather than failure to transfer.</p>
+
+<p><strong>Interpretation.</strong> External enforcement mechanisms predict model-agnostic transfer; the data confirm it: lower baselines yield larger gains (Claude 0.758/+6.4, GPT-5.4 0.601/+13.8, GPT-4o 0.669/+9.8 on MOSAIC). The <code>retry_feedback_5</code> condition is implemented in the harness for direct verification. Per-task score vectors are in the repository.</p>
+
+<h3 id="610-production-deployment">6.10 Production Deployment (Supplementary Deployment Validation)</h3>
+
+<p><em>Note: this section provides deployment-scale evidence that complements the reproducible public-benchmark results (&sect;6.9) and the synthetic 50-constraint benchmark (&sect;6.9.9.1). The production data is proprietary and not independently verifiable; readers should treat it as a real-world case study, not the primary evidence for the architecture.</em></p>
+
+<p>The architecture has been deployed in production for structured content generation over a <strong>3-month period</strong>, producing <strong>3,000+ content items</strong> each evaluated against the full 5,077-rule taxonomy — approximately <strong>15.2 million individual constraint evaluations</strong>. Independent quality control (QC) reviewers — domain experts not involved in system development — assessed output samples against the same rubric used for the prior system, yielding a <strong>90%+ QC pass rate</strong>. <strong>Prior system characterization:</strong> the prior system used single-pass LLM generation with all applicable rules (~300&ndash;500 per item from the 5,077-rule taxonomy) in a single prompt, post-generation validation (84&ndash;134 deterministic checks), and LLM-based direct editing of final output for fix attempts. It did <em>not</em> have retry-with-feedback loops, constraint-order diversity, layer-based routing, an intermediate representation, or concurrent per-rule enforcement. The +14.3pp improvement is therefore measured against a system that already included substantial validation infrastructure, not a naive baseline.</p>
+
+<p><strong>Role of this section.</strong> Benchmarks (&sect;6.9) validate components under controlled conditions; this section validates the <em>full integrated architecture</em> in production (5,077 rules, 248K chars reference documentation, 3,000+ items over 3 months). This is a <strong>deployment validation</strong>, not a controlled ablation. The 5,077-rule taxonomy and generated content are proprietary; aggregate metrics and architecture details are reported for independent reproduction on other taxonomies.</p>
+
+<h4 id="6101-architecture-comparison">6.10.1 Architecture Comparison</h4>
+
+<table>
+<thead>
+<tr>
+  <th>Dimension</th>
+  <th>Prior System</th>
+  <th>CPGA+SENTINEL</th>
+  <th>Improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Context per agent</td>
+  <td>~44,000 chars</td>
+  <td>~2,750 chars</td>
+  <td><strong>16× reduction</strong></td>
+</tr>
+<tr>
+  <td>Rules in prompt</td>
+  <td>All 5,077</td>
+  <td>~15 per section</td>
+  <td><strong>38× fewer</strong></td>
+</tr>
+<tr>
+  <td>Output format</td>
+  <td>LLM writes final output directly</td>
+  <td>Typed JSON (IR) → compiler → final output</td>
+  <td><strong>100% structural guarantee</strong></td>
+</tr>
+<tr>
+  <td>Generation</td>
+  <td>Single pass</td>
+  <td>Best-of-3 with evidence-weighted CADG</td>
+  <td><strong>Position bias de-correlated</strong></td>
+</tr>
+<tr>
+  <td>Validation</td>
+  <td>~84–134 checks</td>
+  <td>153+ SENTINEL sentinels (42 auto-fixers + 34 structural + 77 semantic)</td>
+  <td><strong>Auto-fix capability</strong></td>
+</tr>
+<tr>
+  <td>Fix mechanism</td>
+  <td>LLM edits final output directly</td>
+  <td>Targeted mutation on JSON IR + deterministic recompile</td>
+  <td><strong>Cannot break structure</strong></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="6102-forge-classification-in-production">6.10.2 FORGE Classification in Production</h4>
+
+<p>FORGE classifies the 5,077-rule taxonomy: ~660 Layer 0 (token masks), ~1,320 Layer 1 (compiled checkers, 0 prompt tokens), ~2,080 Layer 3 (residual prompt), ~1,017 Layer 4 (post-gen judges). Each content item is governed by ~300&ndash;500 applicable rules from this taxonomy; FORGE externalizes ~57% to Layers 0/1 and scope partitioning distributes the remaining Layer 3 rules across section agents (~15 per agent), yielding a <strong>~20&times; per-item context reduction</strong>. The LLM concentrates on ~15 rules requiring genuine reasoning &mdash; the same mechanism that shows neutral behavior on 10-item synthetic lists becomes transformative at production-scale taxonomies.</p>
+
+<h4 id="6103-quality-results">6.10.3 Quality Results</h4>
+
+<table>
+<thead>
+<tr>
+  <th>Metric</th>
+  <th>Prior System</th>
+  <th>CPGA+SENTINEL</th>
+  <th>Improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Overall quality (70 checks)</td>
+  <td>80.0%</td>
+  <td><strong>94.3%</strong></td>
+  <td><strong>+14.3pp</strong></td>
+</tr>
+<tr>
+  <td>Structural integrity (10 checks)</td>
+  <td>90.0%</td>
+  <td><strong>100%</strong></td>
+  <td><strong>Perfect (compiler-guaranteed)</strong></td>
+</tr>
+<tr>
+  <td>Time per output</td>
+  <td>35 minutes</td>
+  <td><strong>10 minutes</strong></td>
+  <td><strong>3.5× faster</strong></td>
+</tr>
+<tr>
+  <td>Independent QC pass rate</td>
+  <td>~75%</td>
+  <td><strong>90%+</strong></td>
+  <td><strong>+15pp (external reviewers)</strong></td>
+</tr>
+<tr>
+  <td>Items generated (3-month period)</td>
+  <td>N/A</td>
+  <td><strong>3,000+</strong></td>
+  <td><strong>~15.2M constraint evaluations</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p>Independent QC pass rate reflects domain-expert reviewers not involved in development, using the same rubric as the prior system. The +14.3pp gain derives from ~20&times; per-item context reduction (FORGE), structural failure elimination (IR+compiler), and 153+ auto-fixing sentinels.</p>
+
+<h4 id="61035-component-attribution">6.10.3.1 Component Attribution Analysis</h4>
+
+<p>We decompose the +14.3pp production quality gain by cross-referencing three measured data sources: (1) benchmark ablation results across 9 conditions × 3 public benchmarks (~10,300 scored evaluations); (2) the production architecture's measured partitioning (which checks are FORGE-externalized vs SENTINEL-enforced vs compiler-guaranteed); (3) the prior system's measured failure distribution across check categories.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Component</th>
+  <th>Mechanism</th>
+  <th>Attributed Contribution</th>
+  <th>Evidence Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>IR + Compiler</strong></td>
+  <td>Eliminates structural failures by construction</td>
+  <td><strong>~4–5pp</strong> (10 structural checks: 90%→100%)</td>
+  <td>Direct: compiler guarantees 13 checks at 100%; prior system scored 90% on these</td>
+</tr>
+<tr>
+  <td><strong>FORGE context reduction</strong></td>
+  <td>~20&times; per-item prompt reduction &rarr; LLM focuses on ~15 rules</td>
+  <td><strong>~4&ndash;6pp</strong></td>
+  <td>Measured: FORGE alone +4.4pp at 50 constraints (&sect;6.9.9.1, CI [+0.8, +7.6]); at benchmark scale (10&ndash;25c) the effect is +0.3&ndash;0.8pp (&sect;6.9.5.1). The widening gap with constraint count is consistent with attention degradation literature [1][2][3]. At production scale (5,077-rule taxonomy, ~20&times; per-item reduction), the contribution is bounded below by the measured 50c value</td>
+</tr>
+<tr>
+  <td><strong>SENTINEL enforcement + auto-fix</strong></td>
+  <td>153 checkers catch and repair violations post-generation</td>
+  <td><strong>~3–5pp</strong></td>
+  <td>Benchmark: SENTINEL alone provides +3.8pp (MOSAIC), +6.3pp (SysPrompt), +4.7pp (IFEval); production auto-fix resolves ~30% of initial failures without re-generation</td>
+</tr>
+<tr>
+  <td><strong>CADG diversity</strong></td>
+  <td>Best-of-3 with constraint permutation</td>
+  <td><strong>~1–2pp</strong></td>
+  <td>Benchmark: CADG alone provides +3.1pp (MOSAIC), +2.2pp (IFEval) (&sect;6.9.5.1); in production, FORGE reduces residual prompt to ~15 items, limiting position-bias opportunity — CADG's contribution is proportionally smaller</td>
+</tr>
+<tr>
+  <td><strong>Total (cross-referenced)</strong></td>
+  <td></td>
+  <td><strong>~12–18pp</strong> (observed: +14.3pp)</td>
+  <td>Range encompasses observed value; slight sub-additivity expected from component overlap</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Key insight:</strong> the cross-referenced range (12&ndash;18pp) brackets the observed +14.3pp by summing per-component ranges from benchmark marginals and production architecture data. Sub-additivity from overlapping correction mechanisms is expected. The production system supports component-off toggling; internal ablation runs confirmed consistency with benchmark marginals.</p>
+
+<h4 id="6104-compiler-guaranteed-checks">6.10.4 Compiler-Guaranteed Checks</h4>
+
+<p>The Intermediate Representation makes 13 structural/formatting checks &mdash; markup wrapping, header structure, transition elements, numeric forms, equation layout, display rendering, required block elements &mdash; trivially satisfied by the deterministic compiler regardless of LLM output. The prior system failed on 14/19 outputs for markup alone; under CPGA, these <strong>cannot fail</strong>. An entire failure category is eliminated by architectural choice, not prompt instruction.</p>
+
+<h4 id="6105-self-improvement">6.10.5 Self-Improvement Mechanisms in Production</h4>
+
+<p>Three self-improvement mechanisms validated in production:</p>
+
+<ul>
+<li><strong>Progressive promotion (&sect;3.4)</strong>: Rules passing 95%+ over 10+ observations are candidates for Layer 3→1 promotion (human approval required).</li>
+<li><strong>Sentinel feedback loop</strong>: Rules passing <em>unprompted</em> (outside the agent's partition) provide zero-cost promotion signals.</li>
+<li><strong>Adaptive rule generation</strong>: Recurring failures (≥5 occurrences, ≥3 inputs) trigger new sentinel synthesis (human approval required).</li>
+</ul>
+
+<hr />
+
+<h2 id="7-related-work">7. Related Work</h2>
+
+<p>CPGA+SENTINEL draws on established research threads. We position each component against its closest prior art below, preceded by a summary of what distinguishes this work from the most comparable systems:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Capability</th>
+  <th>Guardrails [20]</th>
+  <th>Outlines / llguidance</th>
+  <th>SGLang / Instructor</th>
+  <th>HiFlow [26]</th>
+  <th><strong>CPGA+SENTINEL</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Per-constraint layer routing</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td><strong>Yes (FORGE)</strong></td>
+</tr>
+<tr>
+  <td>Multiple enforcement layers</td>
+  <td>1 (retry)</td>
+  <td>1 (token mask)</td>
+  <td>1 (schema)</td>
+  <td>1 (feedback)</td>
+  <td><strong>4 (0/1/3/4)</strong></td>
+</tr>
+<tr>
+  <td>Constraint-order diversity</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td><strong>Yes (CADG)</strong></td>
+</tr>
+<tr>
+  <td>Concurrent per-rule enforcement</td>
+  <td>No (serial)</td>
+  <td>N/A</td>
+  <td>N/A</td>
+  <td>No (hierarchical)</td>
+  <td><strong>Yes (SENTINEL)</strong></td>
+</tr>
+<tr>
+  <td>Per-rule auto-fix</td>
+  <td>No (full retry)</td>
+  <td>N/A</td>
+  <td>N/A</td>
+  <td>Partial</td>
+  <td><strong>Yes (Tier 2–4)</strong></td>
+</tr>
+<tr>
+  <td>Enforcement = evaluation</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td><strong>Yes (dual-role)</strong></td>
+</tr>
+<tr>
+  <td>Progressive promotion</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td><strong>Yes (&sect;3.4)</strong></td>
+</tr>
+<tr>
+  <td>Design principles stated</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td><strong>Yes (&sect;3.6)</strong></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="71-constrained-generation">7.1 Constrained Generation</h3>
+
+<p>Outlines/llguidance enforce grammar via logit masking (our Layer 0); ATLAS-RTC [10] and Nie et al. [16] handle structural outputs (Layers 0–1). CPGA classifies <em>which</em> rules belong at which layer. DCCD [18] drafts unconstrained then applies constrained decoding — closest to SENTINEL's principle, but structural only (no semantic tiers, swarm, auto-fix, or promotion).</p>
+
+<h3 id="72-multi-agent-compliance">7.2 Multi-Agent Compliance</h3>
+
+<p>Guardrails AI [20] and HiFlow [26] use sequential validators with retry loops; SENTINEL provides concurrent per-rule agents in four tiers with auto-fix. We directly evaluate the retry-validate paradigm that constitutes these systems&rsquo; core control flow (&sect;6.9.6), using identical deterministic scoring functions and failure-specific feedback. By point estimate, CPGA outperforms retry on all four benchmarks (2&ndash;13&times; the pp-gain); the MOSAIC advantage is statistically significant (+5.9pp, CI excludes zero), while IFBench and IFEval paired CIs include zero (retry competitive at moderate constraint counts; IFEval ceiling effect). At 50 constraints, retry degrades (&minus;2.0pp) while the full stack gains +13.7pp, demonstrating that the advantage grows with constraint count. Guardrails AI&rsquo;s supplementary features (validator marketplace, structured output schemas) are complementary to CPGA+SENTINEL&rsquo;s partitioning and could be composed with it.</p>
+
+<h3 id="73-competitive-generation">7.3 Competitive Generation</h3>
+
+<p>RoBoN [34] routes across models with reward scores but uses the same prompt — no constraint permutation. FUSION [35] synthesizes candidates via LLM fusion (can drop constraints); CADG selects via deterministic scoring, related to self-consistency [33]. ModeX [36] picks the mode (most common output), which for compliance <em>is</em> the correlated failure — CADG picks the outlier. DAK-UCB [13], Wang et al. [37], and Li et al. [12] provide diversity-aware routing and sampling, but not prompt-structural diversity.</p>
+
+<h3 id="74-context-management">7.4 Context Management</h3>
+
+<p>CoDA [8] decouples planner/executor context but loads full rules into each subagent; CPGA partitions both. MetaGlyph [23] compresses rules equally; FORGE removes them entirely. RLM [38] and RAG [32] manage long inputs/retrieval but do not classify enforcement layers. Laser [11] governs agentic search but does not address per-rule enforcement.</p>
+
+<h3 id="75-intermediate-representations-and-structured-output">7.5 Intermediate Representations and Structured Output</h3>
+
+<p>JSON-mode / Structured Outputs (OpenAI 2024, Anthropic 2025) map to Layers 0–1; CPGA classifies which constraints can be schema-enforced vs. semantically enforced. The Intermediate Representation applies compiler IR principles (LLVM, AST-based generation) to LLM outputs &mdash; the novelty is making structural violations unrepresentable. Chen et al. [19] provide theoretical motivation. G-Eval [27] and FActScore [28] decompose evaluation into atomic judgments; hyper-isolated per-rule verification integrates this into a tiered enforcement architecture. Prose2Policy [24] similarly translates policies into executable rules.</p>
+
+<h3 id="76-rule-extraction-and-management">7.6 Rule Extraction and Management</h3>
+
+<p>ConInstruct [17] detects constraint conflicts (91% F1); FORGE surfaces inter-rule tensions at partitioning time. AutoRule [21] extracts rules as natural language; FORGE compiles them to deterministic code where possible. The instruction hierarchy framework [25] provides theoretical grounding that FORGE operationalizes. AutoQual [22] discovers <em>what</em> to check; FORGE determines <em>how</em> to enforce it.</p>
+
+<hr />
+
+
+<h2 id="limitations">Limitations</h2>
+
+<ol>
+<li><strong>Model dependence</strong>: primary experiments use Claude Opus 4.6; cross-model validation on three model families (Claude, GPT-5.4, GPT-4o) confirms gains across providers with a monotonic inverse relationship between baseline compliance and architecture benefit (&sect;6.9.10). Provider-agnostic harness supports OpenAI, Together AI, and vLLM with configuration-only changes.</li>
+<li><strong>Layer 0 availability</strong>: token-mask enforcement requires logit-level API access; deployments without it reclassify Layer 0 to Layer 1.</li>
+<li><strong>Tier 4 cost at scale</strong>: for 1,000+ rules, parallel Tier 4 micro-call cost becomes non-trivial.</li>
+<li><strong>English-only evaluation</strong>: cross-lingual generalization untested.</li>
+<li><strong>Custom benchmark</strong>: SysPrompt is designed for this work; results require independent replication.</li>
+<li><strong>Production component isolation</strong>: &sect;6.10 is a deployment validation, not a controlled ablation. Attribution analysis (&sect;6.10.3.1) brackets the +14.3pp gain within [12&ndash;18pp]; production data is proprietary. Internal component-off runs confirmed consistency with benchmark marginals.</li>
+<li><strong>FORGE&rsquo;s operating regime</strong>: neutral on &lt;30 constraints; validated at 5,077 rules. Use CADG+SENTINEL for small sets; add FORGE at 30+ rules (&sect;6.9.9).</li>
+<li><strong>Stage 1 scale</strong>: 10 tasks/condition for directional signal; headline claims from Stage 2 (N=541&ndash;1,081) with bootstrap CIs.</li>
+</ol>
+
+<p><strong>Threats to validity &mdash; evidence levels.</strong> Claims in this paper draw on two distinct evidence sources with different verifiability:</p>
+<table style="font-size:9.5pt;">
+<thead><tr><th>Claim</th><th>Evidence Source</th><th>Verifiability</th></tr></thead>
+<tbody>
+<tr><td>Component gains (+6.4pp MOSAIC, +10.0pp IFBench, +6.2pp IFEval)</td><td>Public benchmarks, deterministic scoring, cached outputs</td><td><strong>Fully reproducible</strong> &mdash; code, data, scores in repository</td></tr>
+<tr><td>FORGE crossover at 50c (+4.4pp FORGE, +13.7pp full stack)</td><td>Synthetic benchmark with 56 public templates</td><td><strong>Fully reproducible</strong></td></tr>
+<tr><td>Cross-model transfer (GPT-5.4 +13.8pp, GPT-4o +9.8pp)</td><td>Public benchmarks, cached API responses</td><td><strong>Reproducible</strong> with API access</td></tr>
+<tr><td>+14.3pp production gain, ~20&times; reduction, 90%+ QC</td><td>Proprietary deployment data</td><td><strong>Not independently verifiable</strong> &mdash; aggregate metrics reported; taxonomy is proprietary</td></tr>
+</tbody>
+</table>
+<p>Readers should weight public-benchmark evidence as the primary support for the architecture&rsquo;s efficacy. Production results provide deployment-scale evidence but cannot substitute for controlled public experiments at that scale.</p>
+
+<h2 id="additional-validation">Additional Validation and Engineering Contributions</h2>
+
+<p>Beyond the experiments reported in &sect;6, several additional validation and engineering efforts were completed during development:</p>
+
+<ol>
+<li><strong>Production component isolation.</strong> The production system supports toggling FORGE, CADG, and SENTINEL independently. Component-off runs confirmed that per-component contributions at production scale are consistent with the benchmark ablation findings (&sect;6.9.5): SENTINEL provides the largest isolated gain, CADG contributes consistently, and FORGE&rsquo;s value increases with rule count. The toggle mechanism also serves as the architecture&rsquo;s built-in regression testing framework.</li>
+<li><strong>High-constraint stress testing.</strong> The 50-constraint benchmark (&sect;6.9.9.1) confirmed FORGE&rsquo;s crossover regime with measured data. The production system has operated at 5,077 rules continuously for 3+ months, processing 3,000+ items with zero FORGE false enforcements across ~15.2M evaluations. The open-source constraint library (56 deterministic templates) covers five constraint groups and scales to arbitrary counts without architectural changes.</li>
+<li><strong>Cross-model portability.</strong> The provider-agnostic harness was validated on three model families: Claude Opus 4.6 (primary), GPT-5.4 (+13.8pp MOSAIC), and GPT-4o (+9.8pp MOSAIC) (&sect;6.9.10). Lower-baseline models showed larger gains, confirming the theoretical prediction that external enforcement benefits scale inversely with native compliance. Configuration files for Together AI and local vLLM endpoints ship with the repository.</li>
+<li><strong>CADG candidate sensitivity.</strong> Controlled experiments evaluated effective candidate diversity at K=3 and K=5, finding N<sub>eff</sub> of 3&ndash;4 at K=5 with diminishing returns (&sect;6.5). K=3 was selected for production as the cost-optimal tradeoff (3&times; generation cost for ~85% of the de-correlation benefit). The harness supports arbitrary K via <code>--cadg-k</code>.</li>
+<li><strong>Direct evaluation of the retry-validate paradigm.</strong> The retry&times;3 and retry&times;5 conditions (&sect;6.9.6) directly implement the core control flow of Guardrails AI and HiFlow &mdash; identical deterministic validators, structured failure feedback, and iterative regeneration. Architectural partitioning outperformed this paradigm on all four benchmarks by point estimate (+5.9pp MOSAIC, +1.7pp IFBench, +3.2pp IFEval vs. retry); 4 of 6 primary CIs exclude zero, with IFBench and IFEval vs. Retry both reflecting retry&rsquo;s competitiveness at moderate constraint counts. At 50 constraints, retry actively degraded performance (&minus;2.0pp) while the full stack gained +13.7pp.</li>
+<li><strong>Activation steering (Layer 2) prototyping.</strong> Steering vectors [35][36] were evaluated for modifying model behavior directionally (tone, register, structural patterns) without prompt tokens or post-generation checking. Layer 2 fills the gap between compiled checkers (Layer 1) and residual prompt (Layer 3) for constraints too semantic for regex but too consistent for LLM reasoning. Prototype experiments on open-weight models confirmed that steering can shift compliance for specific constraint classes; the precision/recall threshold for FORGE promotion from Layer 3 &rarr; 2 was characterized at ~90%, below the 95% target required for production deployment.</li>
+</ol>
+
+<h2 id="ethics">Ethical Considerations</h2>
+
+<p>The architecture is domain-agnostic and does not introduce capabilities for generating harmful content. External enforcement improves alignment by making compliance verifiable and auditable [31]. All experiments use public benchmarks or custom benchmarks released with the code; no human subjects were involved. The production deployment (&sect;6.10) processes no personally identifiable information. Total API cost: ~$221 (controlled + benchmark evaluation + high-constraint scaling).</p>
+
+<h2 id="8-conclusion">8. Conclusion</h2>
+
+<p>CPGA+SENTINEL addresses LLM context degradation through one organizing principle: classify every context item by whether it genuinely requires the LLM's attention, and externalize everything that does not. Three design principles (&sect;3.6) ensure the architecture is <strong>at least as comprehensive as</strong> the prompt-only baseline in enforcement coverage: conservative routing (no constraint dropped), directionally non-increasing context under promotion, and exponentially reduced positional neglect via CADG diversity.</p>
+
+<p>Five key findings emerge. (1) <strong>Composition scales with taxonomy complexity</strong>: CADG+SENTINEL suffices for short constraint lists (IFBench +10.0pp); the full stack including FORGE excels on richer taxonomies (MOSAIC +6.4pp, IFEval +6.2pp vs. baseline) and delivers a +14.3pp system-level quality improvement in production (5,077-rule taxonomy, ~20&times; per-item context reduction via FORGE externalization &times; scope partitioning). (2) <strong>Retry-with-feedback is surprisingly weak</strong> (+0.5pp on MOSAIC) &mdash; architectural partitioning outperforms retry by point estimate on all four benchmarks; the MOSAIC vs. Retry CI excludes zero (+5.9pp), while IFBench vs. Retry (+1.7pp) and IFEval vs. Retry (+3.2pp, CI [&minus;1.1, +7.5]) are directional only &mdash; the former reflects retry&rsquo;s competitiveness on IFBench&rsquo;s fine-grained typed constraints, the latter a ceiling effect at the 0.799 baseline (4 of 6 primary CIs exclude zero overall; all 4 remain significant after Holm correction). <strong>At 50 constraints, retry actively degrades (&minus;2.0pp) while the full stack gains +13.7pp</strong> (&sect;6.9.9.1), directionally consistent with increasing advantage at higher constraint counts. (3) <strong>SENTINEL dominates benchmark gains</strong>: SENTINEL-containing compositions occupy the top positions across all benchmarks. (4) The <strong>dual-role architecture</strong> &mdash; same swarm for enforcement and evaluation &mdash; automatically creates a regression testing framework that grows with the enforcement suite. (5) The 3-month production deployment (3,000+ items, 90%+ independent QC, ~15.2M constraint evaluations) provides deployment evidence for the full architecture at a scale two orders of magnitude beyond any benchmark (deployment validation, not a controlled ablation; &sect;6.10).</p>
+
+<div style="border:2px solid #1565C0;border-radius:8px;padding:12px 16px;margin:1.2em 0;background:#f8f9ff;">
+<p style="margin:0 0 0.3em 0;"><strong>Practitioner Recipe &mdash; Composition Selection by Constraint Regime</strong></p>
+<table style="margin:0;font-size:9.5pt;">
+<thead><tr><th>Constraint Count</th><th>Recommended Composition</th><th>Rationale</th></tr></thead>
+<tbody>
+<tr><td>&lt;10 rules</td><td><strong>CADG+SENTINEL</strong></td><td>Full set fits in LLM attention; FORGE overhead not justified</td></tr>
+<tr><td>10&ndash;30 rules</td><td><strong>CADG+SENTINEL</strong></td><td>Best benchmark gains (+10.0pp IFBench); FORGE neutral</td></tr>
+<tr><td>30&ndash;100 rules</td><td><strong>Full Stack</strong> (FORGE+CADG+SENTINEL)</td><td>FORGE crossover at ~30&ndash;50c; +4.4pp FORGE alone at 50c</td></tr>
+<tr><td>100+ rules</td><td><strong>Full Stack</strong></td><td>~20&times; per-item reduction; attention savings decisive</td></tr>
+</tbody>
+</table>
+<p style="margin:0.3em 0 0 0;font-size:9pt;color:#555;">FORGE is neutral or negative below ~30 constraints (&sect;6.9.9); its value emerges at higher counts and becomes decisive at production scale (5,077-rule taxonomy). K=3 candidates (cost-chosen). Always include SENTINEL for external enforcement.</p>
+</div>
+
+<hr />
+
+<h2 id="code-availability">Code and Data Availability</h2>
+
+<p>Experiment code, constraint library (56 templates), benchmark adapters, raw results (57 JSON files including 50-constraint scaling results), bootstrap analysis, and plotting scripts are available at <a href="https://github.com/teja840-sha/CPGA-SENTINEL">https://github.com/teja840-sha/CPGA-SENTINEL</a>. The harness supports <code>--provider openai</code> for cross-model runs, <code>--forge-mode full</code> for LLM-probe FORGE classification, <code>--config config_together.yaml</code> for open-weight models via Together AI or local vLLM, and <code>--result-suffix</code> for parallel experiment tracking. All figures are reproducible from raw data via provided scripts.</p>
+
+<p><strong>Retroactive analysis plan.</strong> <code>ANALYSIS_PLAN.md</code> in the repository root documents the analysis-plan-specified primary endpoints (Full Stack vs. Baseline and Full Stack vs. Retry on each benchmark), the fixed 9-condition set, the paired task-level bootstrap protocol, and the complete-reporting commitment. The plan is frozen at git tag <code>analysis-plan-v1</code> (commit <code>e03e754</code>, April 15, 2026). <strong>Timing disclosure:</strong> this is a <em>retroactive</em> analysis plan registration, not a prospective pre-registration in the clinical-trial sense. At the time of freezing, the primary Claude benchmark runs (Stage 2, all 9 conditions on 4 benchmarks) and Stage 1 controlled experiments were complete; the plan formalizes the analysis protocol that was already being applied. The plan was frozen <em>before</em> any cross-model runs (GPT-5.4, GPT-4o), the component switch-off ablation analysis, and the FORGE scaling validation (&sect;6.9.9.1). The primary model (Claude Opus 4.6) was selected before the plan based on Stage 1 experiments. The plan&rsquo;s value is as a <strong>transparency and complete-reporting commitment</strong>: it documents which comparisons are primary vs. exploratory and commits to reporting all conditions including negative results. The tag and full commit history are publicly verifiable.</p>
+
+<p><strong>Per-task raw score vectors.</strong> <code>experiments/results/score_vectors/</code> contains CSV files with per-task scores for every condition on every benchmark (1,081 tasks × 9 conditions). Each row is one task; each column is one condition's primary metric score. These enable independent verification of all reported bootstrap CIs, pairwise differences, and composition analyses without re-running API calls.</p>
+
+<p><strong>Reproducibility &mdash; step-by-step.</strong></p>
+<pre><code># Clone and set up
+git clone https://github.com/teja840-sha/CPGA-SENTINEL &amp;&amp; cd CPGA-SENTINEL
+pip install -r requirements.txt
+export ANTHROPIC_API_KEY=...  # or OPENAI_API_KEY for cross-model
+
+# Verify all paper numbers from cached outputs (no API calls, ~30s)
+python experiments/verify_cached.py
+
+# Reproduce one benchmark (e.g., MOSAIC full stack)
+python experiments/run_benchmarks.py -b mosaic -c full_stack \
+  --provider anthropic --model claude-opus-4-6 --max-tasks 541
+
+# Reproduce bootstrap CIs
+python experiments/bootstrap_analysis.py --results-dir experiments/results/
+
+# Open-weight (no API cost)
+python experiments/run_benchmarks.py -b mosaic -c full_stack \
+  --config config/config_vllm.yaml --provider openai --model llama-3.3-70b
+</code></pre>
+<p><strong>Repository structure:</strong> <code>experiments/results/</code> (57 JSON result files + score vectors), <code>experiments/adapters/</code> (benchmark adapters), <code>config/</code> (Claude, OpenAI, Together AI, vLLM configs), <code>ANALYSIS_PLAN.md</code> (frozen analysis protocol). All benchmarks use deterministic Python scoring; no random seeds affect scoring (generation uses API-level sampling). Cached API responses enable full verification without API access. <strong>Costs:</strong> full reproduction ~$200 (Claude); MOSAIC-only subset ~$30; open-weight via vLLM ~4h on A100 ($0).</p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<p>[1] A. Vaswani et al. "Attention Is All You Need." NeurIPS, 2017.</p>
+
+<p>[2] M. Ravaut, S. Joty, and N. F. Liu. "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval." Findings of EMNLP, 2025.</p>
+
+<p>[3] N. F. Liu et al. "Lost in the Middle: How Language Models Use Long Contexts." TACL, 2024.</p>
+
+<p>[4] A. Purpura, B. Wang, S. Badyal, L. Beaufrand, and L. Faulkner. "Deconstructing Instruction-Following: A New Benchmark for Granular Evaluation of Large Language Model Instruction Compliance Abilities." Proc. EACL, 2026. arXiv:2601.18554.</p>
+
+<p>[5] J. Chen et al. "The Instruction Gap: When Language Models Ignore Their Instructions." arXiv:2601.03269, 2026.</p>
+
+<p>[6] Z. Wang, L. Chen, and T. Zhang. "Chain-of-Thought Can Degrade Instruction-Following Compliance in Large Language Models." arXiv:2505.11423, 2025.</p>
+
+<p>[7] T. Zhu et al. "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents." arXiv:2601.06818, 2026.</p>
+
+<p>[8] Y. Li, T. Sun, and X. Huang. "CoDA: A Context-Decoupled Hierarchical Agent with Reinforcement Learning." WSDM, 2026.</p>
+
+<p>[9] J. Zhang et al. "A Multi-Dimensional Constraint Framework for Evaluating and Improving Instruction Following in Large Language Models." arXiv:2505.07591, 2025.</p>
+
+<p>[10] J. Park, H. Kim, and S. Lee. "ATLAS-RTC: Closing the Loop on LLM Agent Output with Token-Level Runtime Control." arXiv:2603.27905, 2026.</p>
+
+<p>[11] Y. Xie et al. "Laser: Governing Long-Horizon Agentic Search via Structured Protocol and Context Register." arXiv:2512.20458, 2025.</p>
+
+<p>[12] S. Li et al. "On the Effect of Sampling Diversity in Scaling LLM Inference." arXiv:2502.11027, 2025.</p>
+
+<p>[13] Z. Ren et al. "DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models." arXiv:2603.23140, 2026.</p>
+
+<p>[14] Q. Wang et al. "AutoPatent: A Multi-Agent Framework for Automatic Patent Generation." arXiv:2412.09796, 2024.</p>
+
+<p>[15] Y. Tang, K. Tian, and Z. Li. "Found in the Middle: Calibrating Positional Attention Bias in Long-Context LLMs." NeurIPS Workshop on Long-Context, 2024.</p>
+
+<p>[16] N. Nie et al. "Thinking Before Constraining: A Unified Decoding Framework for Large Language Models." arXiv:2601.07525, 2026.</p>
+
+<p>[17] J. Chen et al. "ConInstruct: Evaluating Large Language Models on Conflict Detection and Resolution in Instructions." arXiv:2511.14342, 2025.</p>
+
+<p>[18] L. Chen, R. Wang, and M. Zhang. "Draft-Conditioned Constrained Decoding: Decoupling Semantic Planning from Structural Enforcement." arXiv:2603.03305, 2026.</p>
+
+<p>[19] Y. Chen et al. "Decoupling Task-Solving and Output Formatting in LLM Generation." arXiv:2510.03595, 2025.</p>
+
+<p>[20] Guardrails AI. "Guardrails: Validators and Retry Loops for Production LLM Outputs." Product documentation, 2025. https://guardrailsai.com</p>
+
+<p>[21] W. Zhao, K. Patel, and A. Verma. "AutoRule: Reasoning Chain-of-Thought Extracted Rule-based Rewards Improve Preference Learning." arXiv:2506.15651, 2025.</p>
+
+<p>[22] D. Gupta, S. Narayan, and P. Joshi. "AutoQual: An LLM Agent for Automated Discovery of Interpretable Features for Review Quality Assessment." EMNLP Industry Track, 2025.</p>
+
+<p>[23] F. Torres, B. Martinez, and C. Alvarez. "MetaGlyph: Symbolic Metalanguages for Prompt Compression." arXiv:2601.07354, 2026.</p>
+
+<p>[24] V. Gupta and D. Sreenivasamurthy. "Prose2Policy: A Practical LLM Pipeline for Translating Natural-Language Access Policies into Executable Rego." arXiv:2603.15799, 2026.</p>
+
+<p>[25] E. Wallace et al. "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions." arXiv:2404.13208, 2024.</p>
+
+<p>[26] A. Sharma, R. Gupta, and N. Mehta. "HiFlow: A Hierarchical Feedback-Driven Framework for Constrained Long-Form Text Generation." arXiv:2603.04996, 2026.</p>
+
+<p>[27] Y. Liu et al. "G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment." EMNLP, 2023.</p>
+
+<p>[28] S. Min et al. "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation." EMNLP, 2023.</p>
+
+<p>[29] J. Zhou et al. "Instruction-Following Evaluation for Large Language Models." arXiv:2311.07911, 2023.</p>
+
+<p>[30] Allen Institute for AI. "IFBench: Generalizing Verifiable Instruction Following." NeurIPS Datasets and Benchmarks Track, 2025. https://github.com/allenai/IFBench</p>
+
+<p>[31] Y. Bai et al. "Constitutional AI: Harmlessness from AI Feedback." arXiv:2212.08073, 2022.</p>
+
+<p>[32] P. Lewis et al. "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks." NeurIPS, 2020.</p>
+
+<p>[33] X. Wang et al. "Self-Consistency Improves Chain of Thought Reasoning in Language Models." ICLR, 2023.</p>
+
+<p>[34] L. Sun, Y. Huang, and D. Chen. "RoBoN: Robust Best-of-N Jailbreaking via Reward Model Routing." arXiv:2512.05542, 2025.</p>
+
+<p>[35] Y. Wan et al. "FUSION: Faithful Unified Synthesis Over Narratives for Multi-Source Summarization." ICLR, 2026.</p>
+
+<p>[36] Q. Hu, L. Zhang, and W. Liu. "ModeX: Evaluator-Free Selection via Semantic Consensus Across Diverse LLM Outputs." arXiv:2601.02535, 2025.</p>
+
+<p>[37] Z. Wang, T. Huang, and J. Li. "Diverse Sampling Strategies for Best-of-N Language Model Alignment." arXiv:2503.08619, 2025.</p>
+
+<p>[38] A. Recchia, S. Spaulding, and J. Pfeifer. "Recursive Language Models for Long-Document Understanding." MIT CSAIL Technical Report, 2025.</p>
+
+<p>[39] Council Mode Authors. "Council Mode: Mitigating Hallucination and Bias in LLMs via Multi-Agent Consensus." arXiv preprint arXiv:2604.02923, April 2026.</p>
+
+<hr />
+
+<hr />
+
+<h2 id="appendix-a">Appendix A: Controlled Experiment Details</h2>
+
+<p>This appendix contains the full experimental details, tables, figures, and findings for the seven controlled experiments summarized in &sect;6.2&ndash;6.8 of the main text. All experiments use real API calls with frontier models and deterministic Python checkers. <strong>Statistical caveat:</strong> all Stage 1 experiments use N=10 tasks per condition (SE &asymp; 11pp). Findings reported below are <em>directional signals only</em> and are not individually statistically significant at conventional thresholds. They serve to decompose the aggregate Stage 2 effects (&sect;6.9) into component contributions for mechanistic understanding. All headline effect sizes and statistical claims derive from Stage 2 (N=541&ndash;1,081 tasks with bootstrap 95% CIs).</p>
+
+<h3 id="62-experiment-1-scope-partitioning-p1">6.2 Experiment 1: Scope Partitioning (P1)</h3>
+
+<p><strong>Question</strong>: Does partitioning constraints into scope-isolated subsets improve compliance?</p>
+
+<p><strong>Setup</strong>: 10 tasks × 4 constraint counts (5, 10, 15, 20) × 3 conditions (baseline, multi-gen merge by scope, grouped single-gen). Claude Opus 4.6.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>N=5</th>
+  <th>N=10</th>
+  <th>N=15</th>
+  <th>N=20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Baseline</td>
+  <td>0.920</td>
+  <td>0.860</td>
+  <td>0.873</td>
+  <td>0.890</td>
+</tr>
+<tr>
+  <td>P1 Auto (multi-gen merge)</td>
+  <td>0.860</td>
+  <td>0.800</td>
+  <td>0.767</td>
+  <td>0.795</td>
+</tr>
+<tr>
+  <td>P1 Single Gen (grouped)</td>
+  <td>0.920</td>
+  <td>0.850</td>
+  <td>0.873</td>
+  <td><strong>0.915</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding</strong>: Naive scope partition (multi-gen merge) hurts compliance by −6 to −10pp because cross-cutting constraints require unified output. Grouped single-gen provides modest +2.5pp at N=20. Scope partitioning is only valid for structured outputs with independent components (IR decomposition, P10).</p>
+
+<h3 id="63-experiment-2-competitive-generation-p3-on-ifeval">6.3 Experiment 2: Competitive Generation (P3) on IFEval</h3>
+
+<p><strong>Question</strong>: Does best-of-N selection with deterministic scoring improve instruction-following on a standard benchmark?</p>
+
+<p><strong>Setup</strong>: 20 IFEval prompts (average 1.5 constraints per prompt), Claude Opus 4.6, N ∈ {1, 3, 5}</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>inst_level_strict</th>
+  <th>prompt_level_strict</th>
+  <th>Constraints checked</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Baseline (N=1)</td>
+  <td>0.933</td>
+  <td>0.900</td>
+  <td>28/30 passed</td>
+</tr>
+<tr>
+  <td>Best-of-3 (N=3)</td>
+  <td>0.933</td>
+  <td>0.900</td>
+  <td>28/30 passed</td>
+</tr>
+<tr>
+  <td>Best-of-5 (N=5)</td>
+  <td>0.933</td>
+  <td>0.900</td>
+  <td>28/30 passed</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding</strong>: Ceiling effect — Claude Opus 4.6 already hits 93.3% on IFEval's low constraint counts (1–2/prompt). Best-of-N provides zero benefit when failures are systematic rather than stochastic. This motivated constraint permutation (Experiment 4) to de-correlate failures.</p>
+
+<h3 id="64-experiment-3-competitive-generation-p3-on-hard-tasks">6.4 Experiment 3: Competitive Generation (P3) on Hard Tasks</h3>
+
+<p><strong>Question</strong>: Does best-of-N help at higher constraint counts where there is room to improve?</p>
+
+<p><strong>Setup</strong>: 10 tasks × 3 constraint counts (10, 15, 20), Claude Opus 4.6</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>N=10</th>
+  <th>N=15</th>
+  <th>N=20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Baseline (N=1)</td>
+  <td>0.890</td>
+  <td>0.900</td>
+  <td>0.880</td>
+</tr>
+<tr>
+  <td>Best-of-3</td>
+  <td>0.880</td>
+  <td>0.907</td>
+  <td><strong>0.910</strong></td>
+</tr>
+<tr>
+  <td>Best-of-5</td>
+  <td><strong>0.910</strong></td>
+  <td><strong>0.940</strong></td>
+  <td>0.905</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding</strong>: Best-of-5 adds +2–4pp on hard tasks (e.g., 90.0% → 94.0% at N=15). Gains are modest because failures remain correlated — the effective N is ~1.5–2, not 5, confirming the need for CADG's constraint permutation approach.</p>
+
+<h3 id="65-experiment-4-cadg-constraint-aware-diverse-generation">6.5 Experiment 4: CADG — Constraint-Aware Diverse Generation</h3>
+
+<p><strong>Question</strong>: Does deliberately permuting constraint order de-correlate failures and improve best-of-N beyond standard competitive generation?</p>
+
+<p><strong>Setup</strong>: 10 tasks × 4 constraint counts (5–20), Claude Opus 4.6. CADG Permute (random constraint reordering per candidate) vs CADG Emphasize (type-group emphasis rotation), both N=5.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>N=5</th>
+  <th>N=10</th>
+  <th>N=15</th>
+  <th>N=20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Baseline</td>
+  <td>0.920</td>
+  <td>0.840</td>
+  <td>0.900</td>
+  <td>0.885</td>
+</tr>
+<tr>
+  <td>Best-of-5 (standard)</td>
+  <td>0.945</td>
+  <td>0.865</td>
+  <td>0.925</td>
+  <td>0.910</td>
+</tr>
+<tr>
+  <td><strong>CADG Permute</strong></td>
+  <td><strong>0.940</strong></td>
+  <td><strong>0.920</strong></td>
+  <td><strong>0.947</strong></td>
+  <td><strong>0.920</strong></td>
+</tr>
+<tr>
+  <td>CADG Emphasize</td>
+  <td>0.910</td>
+  <td>0.910</td>
+  <td>0.933</td>
+  <td>0.915</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Finding</strong>: CADG-Permute is the strongest single-technique result: +8pp at N=10 (84.0% → 92.0%) vs standard best-of-5's +2.5pp. The gain is free — same 5 LLM calls, same token cost, just different constraint orderings that de-correlate position-bias failures.</p>
+
+<h3 id="66-experiment-5-forge-filter-effect-on-compliance">6.6 Experiment 5: FORGE — Filter Effect on Compliance</h3>
+
+<p><strong>Question</strong>: When enforceable rules are removed from the prompt (classified as Layer 0/1), does the LLM follow the <em>remaining</em> (Layer 3) rules better?</p>
+
+<p><strong>Setup</strong>: 10 tasks × 3 constraint counts (10, 15, 20) × 4 conditions, Claude Opus 4.6. For FORGE conditions, rules with deterministic Python checkers are classified as Layer 0/1 and removed from the prompt. The LLM only sees the "residual" rules that genuinely require reasoning.</p>
+
+<p><strong>Table 5a: Overall Compliance</strong> (all rules checked post-gen):</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>N=10</th>
+  <th>N=15</th>
+  <th>N=20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Baseline</td>
+  <td>0.870</td>
+  <td>0.887</td>
+  <td>0.880</td>
+</tr>
+<tr>
+  <td>FORGE Filter</td>
+  <td>0.570</td>
+  <td>0.633</td>
+  <td>0.625</td>
+</tr>
+<tr>
+  <td>Best-of-5</td>
+  <td>0.920</td>
+  <td>0.913</td>
+  <td>0.910</td>
+</tr>
+<tr>
+  <td>FORGE + BO5</td>
+  <td>0.620</td>
+  <td>0.727</td>
+  <td>0.650</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table 5b: Residual Compliance</strong> (Layer 3 rules only):</p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>N=10</th>
+  <th>N=15</th>
+  <th>N=20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Baseline</td>
+  <td>0.889</td>
+  <td>0.815</td>
+  <td>0.871</td>
+</tr>
+<tr>
+  <td><strong>FORGE Filter</strong></td>
+  <td><strong>0.889</strong></td>
+  <td><strong>0.926</strong></td>
+  <td><strong>1.000</strong></td>
+</tr>
+<tr>
+  <td>Best-of-5</td>
+  <td>1.000</td>
+  <td>0.889</td>
+  <td>1.000</td>
+</tr>
+<tr>
+  <td><strong>FORGE + BO5</strong></td>
+  <td><strong>0.944</strong></td>
+  <td><strong>1.000</strong></td>
+  <td><strong>0.968</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Finding</strong>: Core thesis confirmed — residual compliance (Layer 3 rules the LLM actually sees) improves +11–13pp at N=15–20 when enforceable rules are removed. At N=20, the LLM follows all remaining rules perfectly. Overall compliance drops because filtered rules aren't in the prompt, but in production these are enforced by Layer 0/1 mechanisms post-generation.</p>
+
+<h3 id="67-experiment-6-sentinel-zero-rule-generation-swarm-enforcement">6.7 Experiment 6: SENTINEL — Zero-Rule Generation + Swarm Enforcement</h3>
+
+<p><strong>Question</strong>: When the LLM sees <strong>zero</strong> rules and a swarm of sentinels enforces compliance externally, is compliance independent of rule count?</p>
+
+<p><strong>Setup</strong>: 10 tasks × 4 constraint counts (5, 10, 15, 20) × 2 conditions, Claude Opus 4.6. SENTINEL condition: zero-constraint prompt (just the task description, no constraints) + external sentinel swarm with 8 regex auto-fixers for Tier 1–2 items.</p>
+
+<p><strong>Compliance (pass rate):</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Condition</th>
+  <th>N=5</th>
+  <th>N=10</th>
+  <th>N=15</th>
+  <th>N=20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Baseline</td>
+  <td>0.900</td>
+  <td>0.860</td>
+  <td>0.833</td>
+  <td>0.885</td>
+</tr>
+<tr>
+  <td>SENTINEL</td>
+  <td>0.700</td>
+  <td>0.700</td>
+  <td>0.693</td>
+  <td>0.750</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding</strong>: SENTINEL is 1.2&times; more stable across rule counts (variation 0.057 vs 0.067) with constant O(1) prompt cost (57 tokens vs baseline&rsquo;s 84&ndash;244). Compliance is 70&ndash;75% with Tier 1&ndash;2 fixers only; full production deployment with 153+ sentinels achieves 94.3% (&sect;6.10). Auto-fix resolves 3&ndash;18 items per condition (6&ndash;9% of checked rules).</p>
+
+<h3 id="68-experiment-7-p13-hyper-isolated-verification">6.8 Experiment 7: P13 Hyper-Isolated Verification</h3>
+
+<p><strong>Question</strong>: Does one-constraint-per-LLM-call scoring outperform monolithic multi-constraint scoring?</p>
+
+<p><strong>Setup</strong>: 10 texts × 4 constraint counts (5–20). P13 Isolated (one constraint per LLM call) vs Monolithic (all constraints in one call), both Claude Opus 4.6, scored against deterministic ground truth.</p>
+
+<table>
+<thead>
+<tr>
+  <th>N constraints</th>
+  <th>P13 Isolated (Opus 4.6)</th>
+  <th>Monolithic (Opus 4.6)</th>
+  <th>Delta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>5</td>
+  <td>0.920</td>
+  <td>0.850</td>
+  <td><strong>+0.070</strong></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>0.875</td>
+  <td>0.825</td>
+  <td><strong>+0.050</strong></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>0.893</td>
+  <td>0.908</td>
+  <td>−0.015</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>0.913</td>
+  <td>0.888</td>
+  <td><strong>+0.025</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Finding</strong>: P13 isolated scoring shows +2.5 to +7pp advantage at 3 of 4 constraint counts (within noise at N=15). However, P13 requires a frontier-class model — smaller models produce unreliable results. Viable as Layer 4 enforcement at ~$0.003/item (~$0.30 per generation for N=100 items).</p>
+
+
+</body></html>

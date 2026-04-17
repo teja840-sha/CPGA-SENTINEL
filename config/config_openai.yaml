@@ -1,0 +1,15 @@
+# OpenAI — GPT-5.4 / GPT-4o cross-model transfer runs
+# Used for §6.9.10 Cross-Model Validation results in the paper.
+openai:
+  api_key: ${OPENAI_API_KEY}
+  model: gpt-5.4               # switch to gpt-4o for GPT-4o transfer runs
+  base_url: https://api.openai.com/v1
+
+experiment:
+  seed: 42
+  tasks_per_condition: 15
+  cadg_candidates: 5
+  constraint_counts: [5, 10, 15, 20]
+  max_tokens: 4096
+  retry_max_rounds: 2
+  budget_limit_usd: 150.0
