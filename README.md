@@ -1,15 +1,24 @@
 # CPGA+SENTINEL Experiment Suite
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19686834.svg)](https://doi.org/10.5281/zenodo.19686834)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Paper](https://img.shields.io/badge/paper-PDF-blue)](./paper/CPGA_SENTINEL_preprint.pdf)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fteja840-sha%2FCPGA-SENTINEL&label=Visitors&countColor=%23263759)
 
 > Reproducible experiments for **"Context-Partitioned Generic Assembly with Swarm-External Enforcement for Overcoming LLM Context Degradation"**
 
 ## Paper
 
-- **PDF**: [`paper/CPGA_SENTINEL.pdf`](paper/CPGA_SENTINEL.pdf) (36 pages, ~540 KB, arXiv-compliant embedded fonts)
-- **HTML**: [`paper/CPGA_SENTINEL.html`](paper/CPGA_SENTINEL.html) (source, for diffs and reference)
+- **Zenodo preprint (citable DOI)**: [10.5281/zenodo.19686834](https://doi.org/10.5281/zenodo.19686834)
+- **Preprint PDF (TMLR-formatted, 29 pp)**: [`paper/CPGA_SENTINEL_preprint.pdf`](paper/CPGA_SENTINEL_preprint.pdf)
+- **Original HTML-sourced PDF (36 pp, pre-LaTeX)**: [`paper/CPGA_SENTINEL.pdf`](paper/CPGA_SENTINEL.pdf)
+- **HTML source**: [`paper/CPGA_SENTINEL.html`](paper/CPGA_SENTINEL.html)
 
 Author: Siva Teja Narayana (Independent Researcher), April 2026.
+
+> **Status:** A double-blind anonymized version of this manuscript is in review at
+> [Transactions on Machine Learning Research (TMLR)](https://jmlr.org/tmlr/) via OpenReview.
+> The Zenodo release above is the citable preprint of record.
 
 ## What This Repo Contains
 
@@ -64,7 +73,8 @@ CPGA-SENTINEL/
 ├── LICENSE                              # MIT
 ├── ANALYSIS_PLAN.md                     # Pre-registered analysis plan (frozen)
 ├── paper/
-│   ├── CPGA_SENTINEL.pdf                # Full manuscript (36 pp)
+│   ├── CPGA_SENTINEL_preprint.pdf       # TMLR-formatted LaTeX preprint (29 pp, Zenodo DOI 10.5281/zenodo.19686834)
+│   ├── CPGA_SENTINEL.pdf                # Original HTML-sourced PDF (36 pp)
 │   └── CPGA_SENTINEL.html               # HTML source of paper
 ├── config/
 │   ├── config.yaml                      # Anthropic Claude (default)
@@ -198,19 +208,31 @@ The monotonic "lower baseline → larger gain" pattern is the predicted signatur
 
 ## Citation
 
+If you use CPGA+SENTINEL, please cite the Zenodo preprint:
+
 ```bibtex
-@techreport{narayana2026cpga,
-  author = {Narayana, Siva Teja},
-  title  = {Context-Partitioned Generic Assembly with Swarm-External
-            Enforcement for Overcoming {LLM} Context Degradation},
-  institution = {Independent Researcher},
-  year   = {2026},
-  month  = apr,
-  url    = {https://github.com/teja840-sha/CPGA-SENTINEL},
-  note   = {Preprint. PDF: paper/CPGA\_SENTINEL.pdf}
+@misc{narayana2026cpga,
+  author       = {Narayana, Siva Teja},
+  title        = {Context-Partitioned Generic Assembly with Swarm-External
+                  Enforcement for Overcoming {LLM} Context Degradation},
+  year         = {2026},
+  month        = apr,
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.19686834},
+  url          = {https://doi.org/10.5281/zenodo.19686834},
+  howpublished = {Preprint, under review at TMLR}
 }
 ```
 
+**APA:** Narayana, S. T. (2026). *Context-Partitioned Generic Assembly with
+Swarm-External Enforcement for Overcoming LLM Context Degradation* (Version
+1.0.0) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.19686834
+
+Always cite the **concept DOI** `10.5281/zenodo.19686834` (resolves to the
+latest version). To cite a specific snapshot, use the **version DOI**
+`10.5281/zenodo.19686835`.
+
 ## License
 
-MIT
+MIT — see [`LICENSE`](./LICENSE).
