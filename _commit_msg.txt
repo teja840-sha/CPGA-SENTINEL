@@ -1,0 +1,17 @@
+Fix double-numbered section headings + missing Figure 1
+
+Regenerate paper/CPGA_SENTINEL_preprint.pdf after fixing two bugs in
+the pandoc->LaTeX postprocessor:
+
+* Section headings were rendered as "1 1. Introduction" because the
+  manually-numbered headings from the HTML source were kept inside
+  \section{} arguments while LaTeX auto-numbered them as well. The
+  postprocessor now strips leading dotted-number prefixes ("1. ",
+  "6.9.1.2 ", etc.) from section/subsection/subsubsection arguments.
+* The Figure 1 architecture diagram placeholder never got replaced
+  because pandoc had escaped the underscores to "FIGURE\_1\_PLACEHOLDER"
+  and the regex was matching the unescaped form. Regex now accepts
+  either form, so the architecture figure environment is now emitted.
+
+No content changes. Recompiled PDF is 29 pp, 544 KB, fonts embedded,
+all 39 \citep{refN} resolve, no undefined references.
