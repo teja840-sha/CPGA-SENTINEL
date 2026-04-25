@@ -9,8 +9,9 @@
 
 ## Paper
 
-- **Zenodo preprint (citable DOI)**: [10.5281/zenodo.19686834](https://doi.org/10.5281/zenodo.19686834)
-- **Preprint PDF (TMLR-formatted, 29 pp)**: [`paper/CPGA_SENTINEL_preprint.pdf`](paper/CPGA_SENTINEL_preprint.pdf)
+- **Zenodo preprint (concept DOI, always-latest)**: [10.5281/zenodo.19686834](https://doi.org/10.5281/zenodo.19686834)
+- **Latest version DOI** (v1.0.1, Apr 26, 2026): [10.5281/zenodo.19774032](https://doi.org/10.5281/zenodo.19774032)
+- **Preprint PDF (TMLR-formatted, 31 pp)**: [`paper/CPGA_SENTINEL_preprint.pdf`](paper/CPGA_SENTINEL_preprint.pdf)
 - **Original HTML-sourced PDF (36 pp, pre-LaTeX)**: [`paper/CPGA_SENTINEL.pdf`](paper/CPGA_SENTINEL.pdf)
 - **HTML source**: [`paper/CPGA_SENTINEL.html`](paper/CPGA_SENTINEL.html)
 
@@ -73,7 +74,7 @@ CPGA-SENTINEL/
 ├── LICENSE                              # MIT
 ├── ANALYSIS_PLAN.md                     # Pre-registered analysis plan (frozen)
 ├── paper/
-│   ├── CPGA_SENTINEL_preprint.pdf       # TMLR-formatted LaTeX preprint (29 pp, Zenodo DOI 10.5281/zenodo.19686834)
+│   ├── CPGA_SENTINEL_preprint.pdf       # TMLR-formatted LaTeX preprint (31 pp, Zenodo DOI 10.5281/zenodo.19686834)
 │   ├── CPGA_SENTINEL.pdf                # Original HTML-sourced PDF (36 pp)
 │   └── CPGA_SENTINEL.html               # HTML source of paper
 ├── config/
@@ -218,7 +219,7 @@ If you use CPGA+SENTINEL, please cite the Zenodo preprint:
   year         = {2026},
   month        = apr,
   publisher    = {Zenodo},
-  version      = {1.0.0},
+  version      = {1.0.1},
   doi          = {10.5281/zenodo.19686834},
   url          = {https://doi.org/10.5281/zenodo.19686834},
   howpublished = {Preprint, under review at TMLR}
@@ -227,11 +228,15 @@ If you use CPGA+SENTINEL, please cite the Zenodo preprint:
 
 **APA:** Narayana, S. T. (2026). *Context-Partitioned Generic Assembly with
 Swarm-External Enforcement for Overcoming LLM Context Degradation* (Version
-1.0.0) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.19686834
+1.0.1) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.19686834
 
 Always cite the **concept DOI** `10.5281/zenodo.19686834` (resolves to the
-latest version). To cite a specific snapshot, use the **version DOI**
-`10.5281/zenodo.19686835`.
+latest version). To cite specific snapshots, use the version DOIs:
+
+| Version | Date | Version DOI | Notes |
+|---------|------|-------------|-------|
+| 1.0.0   | 2026-04-21 | `10.5281/zenodo.19686835` | Initial release |
+| 1.0.1   | 2026-04-26 | `10.5281/zenodo.19774032` | Cross-reference fixes; PDF only |
 
 ## License
 
